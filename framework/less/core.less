@@ -1,0 +1,814 @@
+/**
+ * CORE.LESS
+ * This file contains core styles for common WordPress components as well as general html elements & basic layout.
+ */
+
+
+/**
+ * Typography
+ */
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('@{FontAwesomePath}/fontawesome-webfont.eot?v=3.0.1');
+	src: url('@{FontAwesomePath}/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+	url('@{FontAwesomePath}/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+	url('@{FontAwesomePath}/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	.clearfix;
+	text-align: left;
+	overflow-x:hidden;
+	-ms-word-wrap: break-word;
+	word-wrap:break-word;
+}
+
+.assistive-text, .screen-reader-text {
+	display: none;
+}
+
+/**
+ * Wrappers
+ */
+.outer-wrap {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	.borderbox;
+}
+.inner-wrap {
+	position: relative;
+	width: 100%;
+	.borderbox;
+	left:0;
+}
+
+
+/**
+ * Images
+ */
+
+img, .wp-caption {
+	max-width:100%;
+	height:auto;
+}
+
+
+/**
+ * Forms
+ */
+form {
+	label {
+		display: block;
+	}
+	.comment-form-author, .comment-form-email, .comment-form-url {
+		width:30.75%;
+		float: left;
+		margin-right:3.8%;
+		label {
+			display: inline-block;
+			float: left;
+		}
+		input {
+			clear: left;
+		}
+	}
+	.comment-form-url {
+		float: right;
+		margin-right:0;
+	}
+	[placeholder]:focus::-webkit-input-placeholder {
+		-webkit-transition: opacity 0.5s 0.5s ease;
+		-moz-transition: opacity 0.5s 0.5s ease;
+		transition: opacity 0.5s 0.5s ease;
+		opacity: 0;
+	}
+}
+.required {
+	color: darkRed;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="search"], textarea {
+	width:100%;
+	.borderbox;
+	outline:none;
+}
+
+input[type="submit"],
+.button,
+.navigation-post a {
+	display: inline-block;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	border:0;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+/**
+ * Header
+ */
+.header {
+	.clearfix;
+	margin:0;
+	.nav-toggle {
+		.icon_button;
+		&:after {
+			content: "\f0c9";
+		}
+	}
+}
+.site-intro {
+	display: block;
+}
+.site-title {
+	margin:0;
+}
+
+
+/**
+ * Navigation
+ */
+ul.menu {
+	list-style: none;
+	margin:0;
+	ul {
+		margin:0 0 0 1em;
+		list-style: none;
+	}
+}
+.main-nav {
+	clear:both;
+	width:80%;
+	left:-80%;
+	position: absolute;
+	top:0;
+	height:100%;
+	z-index: 99999;
+	.buttons {
+		margin: 0;
+		.clearfix;
+		list-style: none;
+		a {
+			.icon_button;
+			&:after {
+				content: "\f00d";
+			}
+		}
+		li.home {
+			float: right;
+			a:after {
+				content: "\f015";
+			}
+		}
+		li.close {
+			float: left;
+		}
+		& + hr {
+			margin:0 0 2.665em;
+		}
+	}
+	h2 {
+		font-size:1em;
+		letter-spacing: 0 !important;
+	}
+}
+// Reveal the navigation
+.show-nav {
+	.inner-wrap {
+		left:80%;
+		-webkit-transform: translateZ(0);
+		.transition(left,ease,.4s);
+	}
+}
+// Modernizr detects 3d transforms and then uses it to greatly enhance animation performance
+.csstransforms3d.csstransitions {
+	.main-nav {
+		left: 0;
+	    -webkit-transform: translate3d(-100%, 0, 0);
+	    -moz-transform: translate3d(-100%, 0, 0);
+	    -ms-transform: translate3d(-100%, 0, 0);
+	    -o-transform: translate3d(-100%, 0, 0);
+	    transform: translate3d(-100%, 0, 0);
+	    -webkit-backface-visibility: hidden;
+	    -moz-backface-visibility: hidden;
+	    -ms-backface-visibility: hidden;
+	    -o-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	}
+	.inner-wrap {
+		left: 0 !important;
+	    -webkit-transform: translate3d(0, 0, 0);
+	    -moz-transform: translate3d(0, 0, 0);
+	    -ms-transform: translate3d(0, 0, 0);
+	    -o-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	    -webkit-transition: -webkit-transform 200ms ease;
+	    -moz-transition: -moz-transform 200ms ease;
+	    -o-transition: -o-transform 200ms ease;
+	    transition: transform 200ms ease;
+	    -webkit-backface-visibility: hidden;
+	    -moz-backface-visibility: hidden;
+	    -ms-backface-visibility: hidden;
+	    -o-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	}
+	.show-nav {
+		.main-nav {
+			-webkit-transform: translate3d(-100%, 0, 0);
+		    -moz-transform: translate3d(-100%, 0, 0);
+		    -ms-transform: translate3d(-100%, 0, 0);
+		    -o-transform: translate3d(-100%, 0, 0);
+		    transform: translate3d(-100%, 0, 0);
+		}
+		.inner-wrap {
+		    -webkit-transform: translate3d(80%, 0, 0);
+		    -moz-transform: translate3d(80%, 0, 0);
+		    -ms-transform: translate3d(80%, 0, 0);
+		    -o-transform: translate3d(80%, 0, 0);
+		    transform: translate3d(80%, 0, 0);
+		    -webkit-transform-origin: 50% 0%;
+		    -moz-transform-origin: 50% 0%;
+		    -ms-transform-origin: 50% 0%;
+		    -o-transform-origin: 50% 0%;
+		    transform-origin: 50% 0%;
+		}
+	}
+}
+
+
+/**
+ * Images
+ */
+.aligncenter {
+	display: block;
+}
+
+.alignright {
+	display: block;
+	float: right;
+}
+
+img.alignleft {
+	max-width: none;
+	float: left;
+	max-width:100%;
+}
+
+img.wp-post-image {
+	width:100%;
+	max-width:none;
+}
+.post img {
+	.borderbox;
+	&.wp-smiley {
+		padding:0;
+		background: none;
+	}
+}
+.attachment {
+	margin-bottom:1.333em;
+}
+.gallery {
+	img {
+		border:0 !important;
+		margin-bottom:1.333em;
+	}
+	dl.gallery-item {
+		margin:0;
+		.borderbox;
+	}
+}
+
+
+/**
+ * Gallery
+ */
+.gallery-nav {
+	.clearfix();
+	a {
+		display: block;
+		float: left;
+		&:nth-child(2n) {
+			float:right;
+		}
+	}
+}
+
+
+/**
+ * Comments
+ */
+p.nocomments {
+	.column(8,8);
+	&:before {
+		.iconbefore;
+		content: "\f056";
+	}
+}
+#comment-nav-above, #comment-nav-below {
+	.clearfix;
+	clear:both;
+	.column(8,8);
+	h1 {
+		display: none;
+	}
+	.nav-previous {
+		float: right;
+	}
+	.nav-next {
+		float: left;
+	}
+}
+.comments {
+	ol.commentlist, ul.children {
+		padding-left:0;
+		clear:both;
+		list-style: none;
+		.clearfix;
+		#respond {
+			margin-left:0;
+			margin-right:0;
+			width:auto;
+			float:none;
+		}
+	}
+	ul.children {
+		margin-bottom:0;
+		margin-left:0;
+		.row(8);
+		> li {
+			.column(7,8);
+			float:right;
+		}
+		ul.children {
+			.row(7);
+			>li {
+				.column(6,7);
+				float:right;
+			}
+			ul.children {
+				.row(6);
+				>li {
+					.column(5,6);
+					float:right;
+				}
+				ul.children {
+					.row(5);
+					>li {
+						.column(4,5);
+						float:right;
+					}
+				}
+			}
+		}
+	}
+	.comment-author {
+		.clearfix;
+		margin-bottom:1.5em;
+		img {
+			float: left;
+			height:3.157em;
+			width:3.157em;
+			margin-right:1em;
+			.border_radius;
+		}
+		cite {
+			font-style: normal;
+			.gamma;
+			color: inherit;
+			a {
+				.icon_external;
+			}
+		}
+		.comment-meta {
+			a {
+				.opacity(0.3);
+				.transition(opacity,ease,.4s);
+				&:hover {
+					.opacity(1);
+					text-decoration: none;
+				}
+			}
+			.date-link {
+				.icon_date;
+			}
+			.comment-edit-link {
+				margin-left:1.333em;
+				.icon_edit;
+			}
+		}
+	}
+	.comment-reply-link {
+		&:before {
+			.iconbefore;
+			content: "\f112";
+		}
+	}
+}
+
+#respond {
+	clear:both;
+}
+
+/**
+ * Widgets
+ */
+.widget {
+	ul, ol {
+		list-style: none;
+	}
+}
+
+form.searchform {
+	position: relative;
+	input#searchsubmit {
+		position:absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		background:none;
+		-webkit-box-shadow:none;
+		box-shadow:none;
+		width:3.157em;
+		text-indent: -999em;
+		border:0;
+	}
+	input#s {
+		padding-right:3.552em;
+	}
+	&:before {
+		content: "\f002";
+		font-family: "FontAwesome";
+		display: block;
+		position: absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		text-indent: 0;
+		width:3.157em;
+		text-align: center;
+		line-height: 2.9;
+	}
+}
+
+
+/**
+ * Posts
+ */
+.post-date {
+	.icon_date;
+}
+.sticky .post-date:before {
+	.iconbefore;
+	content: "\f08d";
+}
+.post-meta {
+	ul, li {
+		list-style: none;
+		ul {
+			margin:0;
+		}
+	}
+	li {
+		display: inline;
+		margin-right:1em;
+	}
+	li.comment {
+		.icon_comment;
+	}
+	li.categories {
+		.icon_folder;
+	}
+	li.tags {
+		.icon_tag;
+	}
+}
+
+.navigation-paging, .navigation-post, .navigation-comments {
+	clear:both;
+	.clearfix;
+	.nav-previous, .nav-next {
+		float: left;
+	}
+	.nav-previous {
+		a {
+			&:before {
+				.iconbefore;
+				content: "\f053";
+			}
+		}
+	}
+	.nav-next {
+		text-align: right;
+		float: right;
+		a {
+			&:after {
+				.iconafter;
+				content: "\f054";
+			}
+		}
+	}
+}
+
+/**
+ * Footer
+ */
+.footer {
+	p {
+		margin:0;
+		float: left;
+	}
+	a.back-to-top {
+		float: right;
+		text-indent: -999em;
+		width:2.369em;
+		display: block;
+		position: relative;
+		padding-left:0;
+		padding-right:0;
+		position: fixed;
+		bottom:1em;
+		right:1em;
+		display: none;
+		&:after {
+			.iconafter;
+			content: "\f062";
+			text-indent: 0;
+			text-align: center;
+			margin:0;
+			position: absolute;
+			top:0;
+			right:0;
+			bottom:0;
+			left:0;
+			display: block;
+			width:100%;
+			line-height: 2.665;
+		}
+		&:active {
+			position: fixed;
+			top:auto;
+		}
+	}
+}
+
+
+/**
+ * Main Layout
+ * @type Desktop
+ */
+@media only screen and (min-width: 769px) {
+
+/* Only apply the layout if the user is on a desktop / tablet */
+
+	html {
+		-webkit-text-size-adjust: none;
+	}
+
+	/**
+	 * Wrappers
+	 */
+	.inner-wrap {
+		left:0 !important; // Reset the mobile nav effects
+		-webkit-transform: none !important;
+	    -moz-transform: none !important;
+	    -ms-transform: none !important;
+	    -o-transform: none !important;
+	    transform: none !important;
+	    max-width: 74.55em;
+		margin: 1.777em auto;
+		.clearfix;
+	}
+	.content-wrapper {
+		.clearfix;
+	}
+
+
+	/**
+	 * Layout
+	 */
+	.content {
+		.column(8);
+		float: right;
+	}
+	.inner-wrap {
+		margin-top:0;
+		margin-bottom:0;
+	}
+	.sidebar {
+		.column(4);
+	}
+	.footer-widgets {
+		.row(12);
+		&.columns-1 {
+			.footer-sidebar {
+				.column(12);
+			}
+		}
+		&.columns-2 {
+			.footer-sidebar {
+				.column(6);
+			}
+		}
+		&.columns-3 {
+			.footer-sidebar {
+				.column(4);
+			}
+		}
+	}
+	.page-template-templatestemplate-fullwidth-php {
+		.content {
+			.column(12);
+			float: none;
+		}
+	}
+
+
+	/**
+	 * Header
+	 */
+	.toggle-container {
+		display:none !important;
+	}
+	.site-intro {
+		.column(12);
+	}
+	.main-nav {
+		clear: none;
+		position: fixed;
+		left:0;
+		width:100%;
+		-webkit-transform: none !important;
+	    -moz-transform: none !important;
+	    -ms-transform: none !important;
+	    -o-transform: none !important;
+	    transform: none !important;
+	    -webkit-box-shadow:none;
+	    box-shadow:none;
+	    height: auto;
+		h2, .buttons, hr {
+			display: none;
+		}
+		.highwind-navigation {
+			max-width: 74.55em;
+			padding:0 1.777em;
+			margin:0 auto;
+			.clearfix;
+			.borderbox;
+		}
+		ul.menu {
+			.column(12);
+		}
+	}
+
+
+	/**
+	 * Navigation
+	 */
+	.main-nav {
+		margin-bottom:0;
+		ul.menu {
+		    position: relative;
+		    margin-bottom:0;
+		    padding:0;
+		    li {
+		        position: relative;
+		        display:block;
+		        float: left;
+		        list-style: none;
+		    }
+		    a {
+	            display: inline-block;
+	            .borderbox;
+	        }
+
+		    /* CHILDREN */
+		    ul {
+		        position: absolute;
+		        top:100%;
+		        left: 0;
+		        z-index: 9999;
+		        margin:0;
+		        padding:0;
+		        text-align: left;
+		        -webkit-transition:opacity ease .3s;
+		        -moz-transition:opacity ease .3s;
+		        -o-transition:opacity ease .3s;
+		        transition:opacity ease .3s;
+		        .opacity(0);
+		        height:0;
+		        overflow: hidden;
+		        li {
+		            float: none;
+		            display: block;
+		        }
+		        a {
+	                width: 100%;
+	                display: inline-block;
+	                text-transform: none;
+	            }
+		    }
+		    ul ul {
+		        left:100%;
+		        top:0;
+		    }
+		    li:hover > ul {
+		        height:auto;
+		        .opacity(1);
+		        overflow: visible;
+		    }
+		}
+	}
+
+
+	/**
+	 * Layout
+	 */
+	.post, article.attachment {
+		.attachment-post-thumbnail {
+			height: auto;
+		}
+	}
+
+
+	/**
+	 * Posts
+	 */
+	.post {
+	 	.clearfix;
+	 	.article-content {
+			.attachment-post-thumbnail {
+				width:auto;
+				max-width:100%;
+				float: none;
+			}
+		}
+	 }
+
+
+	/**
+	 * Pages
+	 */
+	.page {
+		.clearfix;
+	}
+
+
+	/**
+	 * Comments
+	 */
+	.comments {
+		ol.commentlist {
+			margin-bottom:0;
+		}
+	}
+
+
+	/**
+	 * Footer
+	 */
+	.footer {
+		clear: both;
+		float: none;
+		display: block;
+		.footer-content {
+			.column(12);
+		}
+	}
+
+
+	/**
+	 * Styles applied when admin bar is present
+	 */
+	.admin-bar {
+		.main-nav {
+			top:28px;
+		}
+	}
+
+
+	/**
+	 * Layout options
+	 * sidebar-content is default, these styles override floats / margins etc for content-sidebar
+	 */
+	body.content-sidebar {
+		.sidebar {
+			float: right;
+		}
+		.content {
+			float: left;
+		}
+	}
+}

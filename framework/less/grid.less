@@ -1,0 +1,50 @@
+/**
+ * GRID.LESS
+ * Based on semanticgrid.gs
+ */
+
+// Defaults which you can freely override
+@column-width: 35.409;
+@gutter-width: 62.918;
+@columns: 12;
+
+// Utility variable — you should never need to modify this
+@gridsystem-width: (@column-width*@columns) + (@gutter-width*@columns) * 1px;
+
+// @total-width: @gridsystem-width; // Static
+@total-width: 100%; // Fluid
+
+// Comment these two lines and the star-hack width/margin lines below to disable sub-pixel fix for IE6 & 7. See http://tylertate.com/blog/2012/01/05/subpixel-rounding.html
+@min-width: 960;
+@correction: 0.5 / @min-width * 100 * 1%;
+
+//////////
+// GRID //
+//////////
+
+.row(@columns:@columns) {
+	display: block;
+	width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width);
+	margin-left: @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1);
+	margin-right: @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1);
+	*width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width)-@correction;
+	*margin-left: @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1)-@correction;
+	*margin-right: @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1)-@correction;
+	.clearfix;
+}
+.column(@x,@columns:@columns) {
+	display: inline;
+	float: left;
+	width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width);
+	margin-left: @total-width*((@gutter-width*.5)/@gridsystem-width);
+	margin-right: @total-width*((@gutter-width*.5)/@gridsystem-width);
+	*width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width)-@correction;
+	*margin-left: @total-width*((@gutter-width*.5)/@gridsystem-width)-@correction;
+	*margin-right: @total-width*((@gutter-width*.5)/@gridsystem-width)-@correction;
+}
+.push(@offset:1) {
+	margin-left: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+.pull(@offset:1) {
+	margin-right: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}

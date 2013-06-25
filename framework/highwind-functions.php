@@ -11,9 +11,11 @@
  */
 if ( ! function_exists( 'highwind_setup' ) ) {
 	function highwind_setup() {
-		$header_args = array(
+		apply_filters( 'highwind_header_args', $header_args = array(
 			'header-text'	=> false,
-		);
+			'width'			=> 2500,
+			'height'		=> 600,
+		) );
 
 		// Navigation
 		register_nav_menu( 'main', __( 'Main menu', 'highwind' ) );
@@ -135,7 +137,7 @@ if ( ! function_exists( 'highwind_move_textarea' ) ) {
  */
 if ( ! function_exists( 'highwind_get_menu_name' ) ) {
 	function highwind_get_menu_name( $location ){
-	    if( ! has_nav_menu( $location ) ) return false;
+	    if ( ! has_nav_menu( $location ) ) return false;
 	    $menus 		= get_nav_menu_locations();
 	    $menu_title = wp_get_nav_menu_object( $menus[$location] ) -> name;
 	    return $menu_title;

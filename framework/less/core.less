@@ -95,7 +95,11 @@ form {
 .required {
 	color: darkRed;
 }
-
+fieldset {
+	padding:1.5em;
+	border:1px solid rgba(0,0,0,0.1);
+	.border_radius;
+}
 input[type="text"], input[type="password"], input[type="email"], input[type="search"], textarea {
 	width:100%;
 	.borderbox;
@@ -444,6 +448,17 @@ form.searchform {
 		width:3.157em;
 		text-indent: -999em;
 		border:0;
+		&:hover {
+			-webkit-animation: none;
+			-moz-animation: none;
+			-o-animation: none;
+			animation: none;
+			background: rgba(0,0,0,0.05);
+			.border_radius_left(0);
+		}
+		&:active {
+			-webkit-transform:none;
+		}
 	}
 	input#s {
 		padding-right:3.552em;
@@ -483,7 +498,7 @@ form.searchform {
 	}
 	li {
 		display: inline;
-		margin-right:1em;
+		margin-right:1.5em;
 	}
 	li.comment {
 		.icon_comment;
@@ -542,7 +557,8 @@ form.searchform {
 		bottom:1em;
 		right:1em;
 		display: none;
-		&:after {
+		overflow: hidden;
+		&:after, &:before {
 			.iconafter;
 			content: "\f062";
 			text-indent: 0;
@@ -556,10 +572,21 @@ form.searchform {
 			display: block;
 			width:100%;
 			line-height: 2.665;
+			.transition;
 		}
-		&:active {
-			position: fixed;
-			top:auto;
+		&:before {
+			-webkit-transform:translateY(3em);
+			transform:translateY(3em);
+		}
+		&:hover {
+			&:after {
+				-webkit-transform:translateY(-3em);
+				transform:translateY(-3em);
+			}
+			&:before {
+				-webkit-transform:translateY(0);
+				transform:translateY(0);
+			}
 		}
 	}
 }
@@ -628,7 +655,7 @@ form.searchform {
 			}
 		}
 	}
-	.page-template-templatestemplate-fullwidth-php {
+	.page-template-templatestemplate-fullwidth-php, body.fullwidth {
 		.content {
 			.column(12);
 			float: none;
@@ -703,13 +730,11 @@ form.searchform {
 		        margin:0;
 		        padding:0;
 		        text-align: left;
-		        -webkit-transition:opacity ease .3s;
-		        -moz-transition:opacity ease .3s;
-		        -o-transition:opacity ease .3s;
-		        transition:opacity ease .3s;
+		        .transition;
 		        .opacity(0);
-		        height:0;
 		        overflow: hidden;
+		        -webkit-transform:translateY(1em);
+		        visibility: hidden;
 		        li {
 		            float: none;
 		            display: block;
@@ -725,9 +750,10 @@ form.searchform {
 		        top:0;
 		    }
 		    li:hover > ul {
-		        height:auto;
 		        .opacity(1);
 		        overflow: visible;
+		        visibility: visible;
+		        -webkit-transform:translateY(0);
 		    }
 		}
 	}

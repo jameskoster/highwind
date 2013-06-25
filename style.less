@@ -4,7 +4,7 @@ Theme URI: https://jameskoster.co.uk
 Description: Clean and simple WordPress theme.
 Author: jameskoster
 Author URI: http://jameskoster.co.uk
-Version: 1.0
+Version: 1.0.1
 Tags: white, two-columns, left-sidebar, right-sidebar, flexible-width, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light
 
 License: GNU General Public License v2.0
@@ -241,18 +241,22 @@ a {
 /**
  * Forms
  */
-input[type="text"], input[type="password"], input[type="email"], input[type="search"], textarea {
+input[type="text"], input[type="password"], input[type="email"], input[type="search"], input.input-text, textarea {
 	padding:.844em;
+	padding-bottom:1.082em;
 	background: rgba(0,0,0,0.05);
 	color: @color_body;
 	border:0;
 	.border_radius;
+	outline: none;
+	.borderbox;
+	.inset_box_shadow(0,-.238em,0,0,rgba(0,0,0,0.05));
 }
 textarea {
 	padding:1em;
 }
 input[type="radio"] {
-    -webkit-appearance:none;  /* Hides the default checkbox style */
+    -webkit-appearance:none;  /* Hides the default radio style */
     height:1.5em;
     width:1.5em;
     .borderbox;
@@ -303,18 +307,35 @@ input[type="submit"],
 input[type="button"],
 .navigation-post a,
 .navigation-paging a {
-	padding:.844em 1.125em;
+	padding:.844em 1.125em 1.082em;
 	color: @color_bg;
 	font-weight: 600;
 	background:@color_theme;
 	.border_radius();
+	border:0;
+	.inset_box_shadow(0,-.238em,0,0,rgba(0,0,0,0.1));
+	text-shadow:0 1px 0 rgba(0,0,0,0.1);
 	&:hover {
 		text-decoration: none;
+		-webkit-animation: buttonshadow 0.5s ease-in-out;
+		-moz-animation: buttonshadow 0.5s ease-in-out;
+		-o-animation: buttonshadow 0.5s ease-in-out;
+		animation: buttonshadow 0.5s ease-in-out;
+		-webkit-box-shadow:
+			inset 0 -.238em 0 0 rgba(0,0,0,0.05),
+			inset 0 -5em 0 0 rgba(0,0,0,0.1);
+		box-shadow:
+			inset 0 -.238em 0 0 rgba(0,0,0,0.05),
+			inset 0 -5em 0 0 rgba(0,0,0,0.1);
 	}
 	&:active {
-		.inset_box_shadow(0,2px,0,0,rgba(0,0,0,0.2));
-		position: relative;
-		top:.085em;
+		-webkit-transform:translateY(.075em);
+		-webkit-box-shadow:
+			inset 0 -.163em 0 0 rgba(0,0,0,0.05),
+			inset 0 -5em 0 0 rgba(0,0,0,0.1);
+		box-shadow:
+			inset 0 -.163em 0 0 rgba(0,0,0,0.05),
+			inset 0 -5em 0 0 rgba(0,0,0,0.1);
 	}
 }
 
@@ -333,15 +354,11 @@ table {
 	border-collapse: separate;
 	th, td {
 		padding:.563em;
+		padding-left:0;
 	}
 	tr {
 		th, td {
 			border-bottom:.134em solid rgba(0,0,0,0.05);
-		}
-		&.alt {
-			th, td {
-				background:rgba(0,0,0,0.025);
-			}
 		}
 	}
 }
@@ -417,6 +434,7 @@ ul.menu {
 .main-nav {
 	border-right:1px solid rgba(0,0,0,0.1);
 	margin-bottom: 2.618em;
+	background: @color_bg;
 	.buttons {
 		padding: 1.777em;
 	}
@@ -442,6 +460,9 @@ article.post, article.page, #respond {
 }
 .page-title, .post-title {
 	.psi;
+}
+.post-meta, .post-date {
+	font-size:.844em;
 }
 
 
@@ -572,11 +593,13 @@ img.wp-post-image {
 	.site-intro {
 		.avatar {
 			margin:0 auto;
-			.transition(top,ease,.2s);
-			-webkit-transform: translateZ(0);
+			.transition(all,ease,.4s);
 			&:hover {
 				position:relative;
-				top:-.536em;
+				-webkit-transform: translateY(-.75em);
+				-moz-transform: translateY(-.75em);
+				-ms-transform: translateY(-.75em);
+				transform: translateY(-.75em);
 			}
 		}
 		.site-title, .site-description {
@@ -589,14 +612,27 @@ img.wp-post-image {
 	 * Navigation
 	 */
 	.main-nav {
-		background: @color_bg;
 		border-right:0;
 		border-bottom:.422em solid @color_theme;
 		ul.menu {
 			> li {
-				&:hover > a, &.current-menu-item > a, > a:hover {
+				&:hover > a, > a:hover {
 		        	background-color: @color_theme;
 		        	color: #fff;
+		        }
+		        &.current-menu-item > a {
+		        	position: relative;
+		        	&:before {
+		        		content: "";
+		        		display: block;
+		        		position: absolute;
+		        		bottom:0;
+		        		left:50%;
+		        		margin-left:-.563em;
+		        		color: @color_theme;
+		        		border:.563em solid @color_theme;
+		        		border-color:transparent transparent @color_theme transparent;
+		        	}
 		        }
 		        &.parent { // Styles applied to all parent list items
 		            > a:after {
@@ -608,6 +644,7 @@ img.wp-post-image {
 		    a {
 				padding:.844em 1.125em;
 				text-decoration: none;
+				.transition;
 			}
 		    /* CHILDREN */
 		    ul {
@@ -625,6 +662,7 @@ img.wp-post-image {
 		            }
 	        		&:hover > a, &.current-menu-item > a, > a:hover {
 	        			background-color:rgba(0,0,0,0.05);
+	        			padding-left:1.5em;
 	        		}
 		        }
 		        a {
@@ -642,16 +680,17 @@ img.wp-post-image {
 	 .sidebar {
 	 	background:rgba(0,0,0,0.02);
 		padding:4.209rem 0 1.999rem 1.999rem;
-		.border_radius;
 		.borderbox;
 		font-size:.844em;
 		margin-top:-4.209rem;
 		-webkit-box-shadow:
 			14.5em 0 0 rgba(0,0,0,0.025),
-			38em 0 0 rgba(0,0,0,0.025);
+			38em 0 0 rgba(0,0,0,0.025),
+			61.5em 0 0 rgba(0,0,0,0.025);
 		box-shadow:
 			14.5em 0 0 rgba(0,0,0,0.025),
-			38em 0 0 rgba(0,0,0,0.025);
+			38em 0 0 rgba(0,0,0,0.025),
+			61.5em 0 0 rgba(0,0,0,0.025);
 		/**
 		  * Sidebar Widgets
 		  */
@@ -683,10 +722,12 @@ img.wp-post-image {
 			padding:4.209rem 1.999rem 1.999rem 0;
 			-webkit-box-shadow:
 				-14.5em 0 0 rgba(0,0,0,0.025),
-				-38em 0 0 rgba(0,0,0,0.025);
+				-38em 0 0 rgba(0,0,0,0.025),
+				-61.5em 0 0 rgba(0,0,0,0.025);
 			box-shadow:
 				-14.5em 0 0 rgba(0,0,0,0.025),
-				-38em 0 0 rgba(0,0,0,0.025);
+				-38em 0 0 rgba(0,0,0,0.025),
+				-61.5em 0 0 rgba(0,0,0,0.025);
 		}
 	}
 }

@@ -138,7 +138,7 @@ class HighwindOptions {
                     self::generate_css( apply_filters( 'highwind_text_color_color_selectors', $selectors = 'body' ), 'color', 'textcolor' );
 
                     // Text color applied to background
-                    self::generate_css( apply_filters( 'highwind_text_color_background_selectors', $selectors = 'hr, ul.menu li.current-menu-item a:before, input[type="checkbox"], input[type="radio"]' ), 'background', 'textcolor' );
+                    self::generate_css( apply_filters( 'highwind_text_color_background_selectors', $selectors = 'hr, input[type="checkbox"], input[type="radio"]' ), 'background', 'textcolor' );
 
                     // Text color applied to border color
                     self::generate_css( apply_filters( 'highwind_text_color_border_color_selectors', $selectors = 'input[type="radio"]' ), 'border-color', 'textcolor' );
@@ -151,21 +151,30 @@ class HighwindOptions {
 
                     // Background color applied to border-color
                     self::generate_css( apply_filters( 'highwind_background_color_border_color_selectors', $selectors = '.comments .comment-content:after' ), 'border-bottom-color', 'background_color', '#' );
+
+                    // Background color applied to background
+                    self::generate_css( apply_filters( 'highwind_desktop_background_color_background_selectors', $selectors = '.main-nav' ), 'background-color', 'background_color', '#' );
                 ?>
                 @media only screen and (min-width: 769px) {
                     /* Styles only applied to desktop */
                     <?php
                         // Link color applied to background
-                        self::generate_css( apply_filters( 'highwind_desktop_link_color_background_selectors',  $selectors = '.main-nav ul.menu ul, .main-nav ul.menu > li:hover > a, .main-nav ul.menu li.current-menu-item > a, .main-nav ul.menu > li > a:hover' ), 'background', 'link_textcolor' );
+                        self::generate_css( apply_filters( 'highwind_desktop_link_color_background_selectors',  $selectors = '.main-nav ul.menu ul, .main-nav ul.menu > li:hover > a, .main-nav ul.menu > li > a:hover' ), 'background', 'link_textcolor' );
+
+                        // Link color applied to color
+                        self::generate_css( apply_filters( 'highwind_desktop_link_color_background_selectors',  $selectors = '.main-nav ul.menu li.current-menu-item > a' ), 'color', 'link_textcolor', '#' );
 
                         // Link color applied to border-color
                         self::generate_css( apply_filters( 'highwind_desktop_link_color_border_color_selectors',  $selectors = '.main-nav' ), 'border-color', 'link_textcolor' );
 
+                        // Link color applied to border-bottom-color
+                        self::generate_css( apply_filters( 'highwind_desktop_link_color_border_color_selectors',  $selectors = '.main-nav ul.menu li.current-menu-item > a:before' ), 'border-bottom-color', 'link_textcolor' );
+
                         // Background color applied to color
-                        self::generate_css( apply_filters( 'highwind_background_color_color_selectors', $selectors = '.main-nav ul.menu > li.current-menu-item > a, .main-nav ul.menu ul a, .main-nav ul.menu > li:hover > a' ), 'color', 'background_color', '#' );
+                        self::generate_css( apply_filters( 'highwind_background_color_color_selectors', $selectors = '.main-nav ul.menu ul a, .main-nav ul.menu > li:hover > a' ), 'color', 'background_color', '#' );
 
                         // Background color applied to background
-                        self::generate_css( apply_filters( 'highwind_desktop_background_color_background_selectors', $selectors = 'body, .main-nav' ), 'background-color', 'background_color', '#' );
+                        self::generate_css( apply_filters( 'highwind_desktop_background_color_background_selectors', $selectors = 'body' ), 'background-color', 'background_color', '#' );
                     ?>
                 }
         </style>

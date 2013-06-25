@@ -59,7 +59,12 @@ if ( ! function_exists( 'highwind_main_navigation' ) ) {
 	function highwind_main_navigation() {
 		?>
 
+		<?php do_action( 'highwind_navigation_before' ); ?>
+
 		<nav class="main-nav" id="navigation" role="navigation">
+
+			<?php do_action( 'highwind_navigation_top' ); ?>
+
 			<ul class="buttons">
 				<li class="home"><a href="<?php echo home_url(); ?>" class="nav-home button"><span><?php _e( 'Home', 'highwind' ); ?></span></a></li>
 				<li class="close"><a href="#top" class="nav-close button"><span><?php _e( 'Return to Content', 'highwind' ); ?></span></a></li>
@@ -72,7 +77,13 @@ if ( ! function_exists( 'highwind_main_navigation' ) ) {
 				'container_class' => 'highwind-navigation',
 				'fallback_cb' => '' )
 			); ?>
+
+			<?php do_action( 'highwind_navigation_bottom' ); ?>
+
 		</nav><!-- /.main-nav -->
+
+		<?php do_action( 'highwind_navigation_after' ); ?>
+
 		<?php
 	}
 }
@@ -271,9 +282,9 @@ if ( ! function_exists( 'highwind_comments_template' ) ) {
  * @since 1.0
  */
 if ( ! function_exists( 'highwind_featured_image' ) ) {
-	function highwind_featured_image( $content ) {
+	function highwind_featured_image() {
 		global $post;
-	    return get_the_post_thumbnail( $post->ID ) . $content;
+	    echo get_the_post_thumbnail( $post->ID );
 	}
 }
 
@@ -319,7 +330,7 @@ function highwind_footer_widgets() {
 function highwind_credit() {
 	?>
 	<p>
-		<?php _e( 'Powered by', 'highwind' ); ?> <a href="http://wordpress.org" title="WordPress.org">WordPress</a> &amp; Highwind.
+		<?php _e( 'Powered by', 'highwind' ); ?> <a href="http://wordpress.org" title="WordPress.org">WordPress</a> &amp; <a href="http://jameskoster.co.uk/highwind/" title="<?php _e( 'Highwind - Customisable and extendable WordPress theme', 'highwind' ); ?>">Highwind</a>.
 	</p>
 	<?php
 }

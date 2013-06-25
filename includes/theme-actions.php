@@ -31,7 +31,7 @@ add_action( 'highwind_content_bottom',   		'highwind_content_nav', 10 );        
 add_action( 'highwind_content_bottom',   		'highwind_comments_template', 20 );     			// Comments
 add_action( 'highwind_content_header_top',		'highwind_post_date', 10 );							// Post date
 add_action( 'highwind_entry_bottom', 			'highwind_post_meta', 10 );			 				// Post meta
-add_filter( 'the_content', 						'highwind_featured_image', 20 );					// Adds the featured image to the_content
+add_action( 'highwind_content_entry_top',		'highwind_featured_image', 20 );					// Adds the featured image to the_content
 add_action( 'highwind_content_after', 			'highwind_sidebar' );                 				// The sidebar
 
 

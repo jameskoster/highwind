@@ -14,6 +14,14 @@ jQuery(document).ready(function($){
     // Add .parent class to appropriate menu items
     jQuery( 'ul.sub-menu' ).parent().addClass( 'parent' );
 
+    // Add translucent class to nav when scrolling
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 61 ) {
+            $( '.main-nav' ).addClass( 'translucent' );
+        } else {
+            $( '.main-nav' ).removeClass( 'translucent' );
+        }
+    });
 
     // Add the 'show-nav' class to the body when the nav toggle is clicked
     jQuery( '.nav-toggle' ).click(function(e) {

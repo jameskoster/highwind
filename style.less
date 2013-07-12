@@ -1,16 +1,19 @@
 /*
 Theme Name: Highwind
-Theme URI: https://jameskoster.co.uk
-Description: Clean and simple WordPress theme.
+Theme URI: https://jameskoster.co.uk/highwind/
+Description: Highwind is a lightweight, free WordPress theme designed to showcase content. It features a clean design with a strong focus on typography, plus a bunch of presentational options and widgetised regions allowing you to give your site a unique touch.
 Author: jameskoster
 Author URI: http://jameskoster.co.uk
 Version: 1.0.1
 Tags: white, two-columns, left-sidebar, right-sidebar, flexible-width, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light
 
-License: GNU General Public License v2.0
+License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
 Modular Scale: http://modularscale.com/scale/?px1=16&px2=18&ra1=1.333&ra2=0
+
+Highwind WordPress Theme, Copyright 2013 jameskoster.co.uk
+Highwind is distributed under the terms of the GNU GPL
 */
 
 /**
@@ -614,6 +617,15 @@ img.wp-post-image {
 	.main-nav {
 		border-right:0;
 		border-bottom:.422em solid @color_theme;
+		.transition(all,ease,.5s);
+		&.translucent {
+			.opacity(0.618);
+			-webkit-filter:blur(.113em);
+			&:hover {
+				.opacity(1);
+				-webkit-filter:blur(0);
+			}
+		}
 		ul.menu {
 			> li {
 				&:hover > a, > a:hover {

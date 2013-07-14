@@ -25,6 +25,9 @@ Just enough options to make your site unique. There are options to change colors
 ## Typography
 All aspects of typography are set up in accordance to a Modular Scale ensuring consistent typographical hierarchy.
 
+## Documentation
+Ever evolving documentation available in the [wiki](https://github.com/jameskoster/highwind/wiki).
+
 # Usage
 
 ## Theme options

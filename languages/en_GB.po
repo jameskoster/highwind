@@ -1,0 +1,332 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Highwind v1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-07-14 08:46:12+0000\n"
+"Last-Translator: admin <james@jameskoster.co.uk>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED KINGDOM\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:24
+#@ highwind
+msgid "404 not found"
+msgstr ""
+
+#: 404.php:34
+#@ highwind
+msgid "It seems the page you're looking for no longer (or indeed never did) exists at this location. Please try searching..."
+msgstr ""
+
+#: 404.php:40
+#@ highwind
+msgid "Try looking in the monthly archives."
+msgstr ""
+
+#: archive.php:25
+#, php-format
+#@ highwind
+msgid "Category Archives: %s"
+msgstr ""
+
+#: archive.php:28
+#, php-format
+#@ highwind
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: archive.php:35
+#, php-format
+#@ highwind
+msgid "Author Archives: %s"
+msgstr ""
+
+#: archive.php:43
+#, php-format
+#@ highwind
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:46
+#, php-format
+#@ highwind
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:49
+#, php-format
+#@ highwind
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:52
+#@ highwind
+msgid "Archives"
+msgstr ""
+
+#: archive.php:90
+#: index.php:36
+#: search.php:42
+#@ highwind
+msgid "Nothing Found"
+msgstr ""
+
+#: archive.php:100
+#: index.php:46
+#: search.php:48
+#@ highwind
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr ""
+
+#: comments.php:17
+#@ highwind
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:30
+#, php-format
+#@ highwind
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:45
+#@ highwind
+msgid "Comments are closed."
+msgstr ""
+
+#: content-page.php:29
+#@ highwind
+msgid "Pages:"
+msgstr ""
+
+#: content.php:18
+#: framework/highwind-template.php:144
+#: image.php:27
+#, php-format
+#@ highwind
+msgid "Permalink to %s"
+msgstr ""
+
+#: framework/highwind-functions.php:21
+#@ highwind
+msgid "Main menu"
+msgstr ""
+
+#: framework/highwind-functions.php:76
+#@ highwind
+msgid "Sidebar"
+msgstr ""
+
+#: framework/highwind-functions.php:86
+#@ highwind
+msgid "Footer #1"
+msgstr ""
+
+#: framework/highwind-functions.php:94
+#@ highwind
+msgid "Footer #2"
+msgstr ""
+
+#: framework/highwind-functions.php:102
+#@ highwind
+msgid "Footer #3"
+msgstr ""
+
+#: framework/highwind-functions.php:185
+#, php-format
+#@ highwind
+msgid "Page %s"
+msgstr ""
+
+#: framework/highwind-options.php:61
+#@ highwind
+msgid "Navigation"
+msgstr ""
+
+#: framework/highwind-options.php:68
+#@ highwind
+msgid "Layout"
+msgstr ""
+
+#: framework/highwind-options.php:79
+#@ highwind
+msgid "Link Color"
+msgstr ""
+
+#: framework/highwind-options.php:86
+#@ highwind
+msgid "Header Color"
+msgstr ""
+
+#: framework/highwind-options.php:93
+#@ highwind
+msgid "Text Color"
+msgstr ""
+
+#: framework/highwind-options.php:100
+#@ highwind
+msgid "Background Color"
+msgstr ""
+
+#: framework/highwind-options.php:270
+#@ highwind
+msgid "Content on left"
+msgstr ""
+
+#: framework/highwind-options.php:274
+#@ highwind
+msgid "Content on right"
+msgstr ""
+
+#: framework/highwind-template.php:20
+#@ highwind
+msgid "Skip to navigation"
+msgstr ""
+
+#: framework/highwind-template.php:69
+#@ highwind
+msgid "Home"
+msgstr ""
+
+#: framework/highwind-template.php:70
+#@ highwind
+msgid "Return to Content"
+msgstr ""
+
+#: framework/highwind-template.php:125
+#@ highwind
+msgid "0 Comments"
+msgstr ""
+
+#: framework/highwind-template.php:125
+#@ highwind
+msgid "1 Comment"
+msgstr ""
+
+#: framework/highwind-template.php:125
+#@ highwind
+msgid "% Comments"
+msgstr ""
+
+#: framework/highwind-template.php:159
+#@ highwind
+msgid "Comment navigation"
+msgstr ""
+
+#: framework/highwind-template.php:160
+#@ highwind
+msgid "Older Comments"
+msgstr ""
+
+#: framework/highwind-template.php:161
+#@ highwind
+msgid "Newer Comments"
+msgstr ""
+
+#: framework/highwind-template.php:194
+#@ highwind
+msgid "Post navigation"
+msgstr ""
+
+#: framework/highwind-template.php:198
+#@ highwind
+msgctxt "Previous post link"
+msgid ""
+msgstr ""
+
+#: framework/highwind-template.php:199
+#@ highwind
+msgctxt "Next post link"
+msgid ""
+msgstr ""
+
+#: framework/highwind-template.php:204
+#@ highwind
+msgid "Older posts"
+msgstr ""
+
+#: framework/highwind-template.php:208
+#@ highwind
+msgid "Newer posts"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: framework/highwind-template.php:244
+#, php-format
+#@ highwind
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: framework/highwind-template.php:244
+#@ highwind
+msgid "Edit"
+msgstr ""
+
+#: framework/highwind-template.php:247
+#, php-format
+#@ default
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: framework/highwind-template.php:251
+#@ highwind
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: framework/highwind-template.php:333
+#@ highwind
+msgid "Powered by"
+msgstr ""
+
+#: framework/highwind-template.php:333
+#@ highwind
+msgid "Highwind - Customisable and extendable WordPress theme"
+msgstr ""
+
+#: framework/highwind-template.php:347
+#@ highwind
+msgid "Back to top"
+msgstr ""
+
+#: index.php:12
+#@ highwind
+msgid "You do not have sufficient permissions to access this page!"
+msgstr ""
+
+#: search.php:22
+#, php-format
+#@ highwind
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:8
+#@ highwind
+msgctxt "assistive text"
+msgid "Search"
+msgstr ""
+
+#: searchform.php:9
+#@ highwind
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:10
+#@ highwind
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+

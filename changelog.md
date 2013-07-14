@@ -1,6 +1,10 @@
 # Highwind changelog
 ============================
 
+## 14.07.2013 - 1.0.2
+* Created en_GB .po/.mo and xx_XX.pot.
+* Polish translation (kudos pd_wordpress).
+
 ## 12.07.2013 - 1.0.1
 * Added header image default dimensions.
 * Featured image now hooked in rather than added via the_content filter.

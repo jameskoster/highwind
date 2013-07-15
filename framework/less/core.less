@@ -206,10 +206,9 @@ ul.menu {
 	    -o-transform: translate3d(-100%, 0, 0);
 	    transform: translate3d(-100%, 0, 0);
 	    -webkit-backface-visibility: hidden;
-	    -moz-backface-visibility: hidden;
 	    -ms-backface-visibility: hidden;
 	    -o-backface-visibility: hidden;
-	    backface-visibility: hidden;
+	    // backface-visibility: hidden; Firefox doesn't like this.
 	}
 	.inner-wrap {
 		left: 0 !important;
@@ -223,10 +222,9 @@ ul.menu {
 	    -o-transition: -o-transform 200ms ease;
 	    transition: transform 200ms ease;
 	    -webkit-backface-visibility: hidden;
-	    -moz-backface-visibility: hidden;
 	    -ms-backface-visibility: hidden;
 	    -o-backface-visibility: hidden;
-	    backface-visibility: hidden;
+	    // backface-visibility: hidden; Firefox doesn't like this
 	}
 	.show-nav {
 		.main-nav {

@@ -1,6 +1,6 @@
 /*
 Theme Name: Highwind
-Theme URI: https://jameskoster.co.uk/highwind/
+Theme URI: http://jameskoster.co.uk/highwind/
 Description: Highwind is a lightweight, free WordPress theme designed to showcase content. It features a clean, responsive design with a strong focus on typography, plus a bunch of presentational options and widgetised regions allowing you to give your site a unique touch. <a href="https://github.com/jameskoster/highwind/wiki">View Documentation</a>.
 Author: jameskoster
 Author URI: http://jameskoster.co.uk
@@ -901,10 +901,8 @@ ul.menu ul {
   -o-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
   -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 .csstransforms3d.csstransitions .inner-wrap {
   left: 0 !important;
@@ -918,10 +916,8 @@ ul.menu ul {
   -o-transition: -o-transform 200ms ease;
   transition: transform 200ms ease;
   -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 .csstransforms3d.csstransitions .show-nav .main-nav {
   -webkit-transform: translate3d(-100%, 0, 0);

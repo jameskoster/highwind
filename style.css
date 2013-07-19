@@ -2862,7 +2862,7 @@ img.wp-post-image {
   	 */
   .sidebar {
     background: rgba(0, 0, 0, 0.02);
-    padding: 4.209rem 0 1.999rem 1.999rem;
+    padding: 4.209rem 0 1.999rem 3.157rem;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
   
@@ -2900,7 +2900,7 @@ img.wp-post-image {
   	 * Sidebar-Content layout
   	 */
   body.sidebar-content .sidebar {
-    padding: 4.209rem 1.999rem 1.999rem 0;
+    padding: 4.209rem 3.157rem 1.999rem 0;
     -webkit-box-shadow: -14.5em 0 0 rgba(0, 0, 0, 0.025), -38em 0 0 rgba(0, 0, 0, 0.025), -61.5em 0 0 rgba(0, 0, 0, 0.025);
     box-shadow: -14.5em 0 0 rgba(0, 0, 0, 0.025), -38em 0 0 rgba(0, 0, 0, 0.025), -61.5em 0 0 rgba(0, 0, 0, 0.025);
   }

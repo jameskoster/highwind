@@ -1,7 +1,7 @@
 # Highwind changelog
 ============================
 
-## 14.07.2013 - 1.0.2
+## 19.07.2013 - 1.0.2
 * Created en_GB .po/.mo and xx_XX.pot.
 * Polish translation (kudos pd_wordpress).
 * Fixed Firefox nav issue.

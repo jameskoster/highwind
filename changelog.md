@@ -6,6 +6,8 @@
 * Polish translation (kudos pd_wordpress).
 * Fixed Firefox nav issue
 * Minified editor-styles.css
+* Updated FontAwesome.
+* Iconised standard widgets.
 
 ## 12.07.2013 - 1.0.1
 * Added header image default dimensions.

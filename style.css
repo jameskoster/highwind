@@ -206,6 +206,61 @@ Highwind is distributed under the terms of the GNU GPL
   line-height: 1;
   content: "\f040";
 }
+.icon_archive:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f115";
+}
+.icon_category:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f114";
+}
+.icon_page:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f0f6";
+}
+.icon_comment:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f0e5";
+}
+.icon_post:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f016";
+}
 /**
  * Animation
  */
@@ -764,6 +819,9 @@ input[type="submit"]:hover,
 .button:hover,
 .navigation-post a:hover {
   text-decoration: none;
+}
+select {
+  max-width: 100%;
 }
 /**
  * Header
@@ -1432,6 +1490,17 @@ form.searchform:before {
   display: inline-block;
   line-height: 1;
   content: "\f075";
+}
+.post-meta li.comment:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f0e5";
 }
 .post-meta li.categories:before {
   font-family: "FontAwesome";
@@ -2559,6 +2628,83 @@ img.wp-post-image {
  */
 .widget {
   margin-bottom: 3.552em;
+}
+.widget_archive li:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f115";
+}
+.widget_categories li:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f114";
+}
+.widget_pages li:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f0f6";
+}
+.widget_recent_comments li:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f075";
+}
+.widget_recent_comments li:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f0e5";
+}
+.widget_recent_entries li:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f0f6";
+}
+.widget_recent_entries li:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f016";
 }
 /**
  * Footer

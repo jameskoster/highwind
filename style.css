@@ -1009,7 +1009,6 @@ ul.menu ul {
 img.alignleft {
   max-width: none;
   float: left;
-  max-width: 100%;
 }
 img.wp-post-image {
   width: 100%;
@@ -2421,6 +2420,8 @@ img {
   display: block;
   -webkit-border-radius: 0.201em;
   border-radius: 0.201em;
+  max-width: 100%;
+  height: auto;
 }
 /**
  * Header

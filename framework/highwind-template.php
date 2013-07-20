@@ -301,6 +301,8 @@ function highwind_footer_widgets() {
 		$columns = 2;
 	} elseif ( is_active_sidebar( 'footer-sidebar-1' ) ) {
 		$columns = 1;
+	} else {
+		$columns = 0;
 	}
 	?>
 	<section class="footer-widgets columns-<?php echo $columns; ?>">

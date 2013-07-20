@@ -1,6 +1,10 @@
 # Highwind changelog
 ============================
 
+## 20.07.2013 - 1.0.2.1
+* Fixed undefined variable when no footer widgets are set
+* Set max-width:100% on all images.
+
 ## 19.07.2013 - 1.0.2
 * Created en_GB .po/.mo and xx_XX.pot.
 * Polish translation (kudos pd_wordpress).

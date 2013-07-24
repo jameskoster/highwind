@@ -1,6 +1,9 @@
 # Highwind changelog
 ============================
 
+## 24.07.2013 - 1.0.3
+* Tweaked date and category icons
+
 ## 20.07.2013 - 1.0.2.1
 * Fixed undefined variable when no footer widgets are set
 * Set max-width:100% on all images.

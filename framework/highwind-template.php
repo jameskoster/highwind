@@ -284,7 +284,10 @@ if ( ! function_exists( 'highwind_comments_template' ) ) {
 if ( ! function_exists( 'highwind_featured_image' ) ) {
 	function highwind_featured_image() {
 		global $post;
-	    echo get_the_post_thumbnail( $post->ID );
+		if ( ! is_404() ) {
+			$post_image = get_the_post_thumbnail( $post->ID );
+			echo $post_image;
+		}
 	}
 }
 

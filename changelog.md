@@ -5,6 +5,7 @@
 * Tweaked date and category icons.
 * WordPress Smileys display inline.
 * No longer tries to display post image on 404.php.
+* German translation (kudos daviddamm)
 
 ## 20.07.2013 - 1.0.2.1
 * Fixed undefined variable when no footer widgets are set

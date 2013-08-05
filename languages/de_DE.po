@@ -1,0 +1,319 @@
+# @ highwind
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: David Damm <daviddamm@yahoo.de>\n"
+"Language-Team: David Damm (www.silbenton.de) <daviddamm@yahoo.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+
+# @ highwind
+#: 404.php:24
+msgid "404 not found"
+msgstr "404 - Nicht gefunden"
+
+# @ highwind
+#: 404.php:34
+msgid ""
+"It seems the page you're looking for no longer (or indeed never did) exists "
+"at this location. Please try searching..."
+msgstr ""
+"Die gesuchte Seite existiert an dieser Stelle nicht (oder hat nie "
+"existiert). Bitte verwenden Sie die Suche."
+
+# @ highwind
+#: 404.php:40
+msgid "Try looking in the monthly archives."
+msgstr "Versuchen Sie im Monats-Archiv zu suchen."
+
+# @ highwind
+#: archive.php:25
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Kategorie-Archiv: %s"
+
+# @ highwind
+#: archive.php:28
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Tag-Archiv: %s"
+
+# @ highwind
+#: archive.php:35
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Autoren-Archiv: %s"
+
+# @ highwind
+#: archive.php:43
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Tages-Archiv: %s"
+
+# @ highwind
+#: archive.php:46
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Monats-Archiv: %s"
+
+# @ highwind
+#: archive.php:49
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Jahres-Archiv: %s"
+
+# @ highwind
+#: archive.php:52
+msgid "Archives"
+msgstr "Archive"
+
+# @ highwind
+#: archive.php:90 index.php:36 search.php:42
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+# @ highwind
+#: archive.php:100 index.php:46 search.php:48
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+"Es wurden keine Ergebnisse in diesem Archiv gefunden. Verwenden Sie die "
+"Suche, um einen Eintrag zu finden."
+
+# @ highwind
+#: comments.php:17
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Dieser Eintrag ist passwortgeschützt. Bitte geben Sie das Passwort ein, um "
+"ihn zu sehen."
+
+# @ highwind
+#: comments.php:30
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Ein Gedanke zu &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Gedanken zu &ldquo;%2$s&rdquo;"
+
+# @ highwind
+#: comments.php:45
+msgid "Comments are closed."
+msgstr "Kommentare sind deaktiviert."
+
+# @ highwind
+#: content-page.php:29
+msgid "Pages:"
+msgstr "Seiten:"
+
+# @ highwind
+#: content.php:18 framework/highwind-template.php:144 image.php:27
+#, php-format
+msgid "Permalink to %s"
+msgstr "Permalink auf %s"
+
+# @ highwind
+#: framework/highwind-functions.php:21
+msgid "Main menu"
+msgstr "Hauptmenü"
+
+# @ highwind
+#: framework/highwind-functions.php:76
+msgid "Sidebar"
+msgstr ""
+
+# @ highwind
+#: framework/highwind-functions.php:86
+msgid "Footer #1"
+msgstr ""
+
+# @ highwind
+#: framework/highwind-functions.php:94
+msgid "Footer #2"
+msgstr ""
+
+# @ highwind
+#: framework/highwind-functions.php:102
+msgid "Footer #3"
+msgstr ""
+
+# @ highwind
+#: framework/highwind-functions.php:185
+#, php-format
+msgid "Page %s"
+msgstr "Seite %s"
+
+# @ highwind
+#: framework/highwind-options.php:61
+msgid "Navigation"
+msgstr ""
+
+# @ highwind
+#: framework/highwind-options.php:68
+msgid "Layout"
+msgstr ""
+
+# @ highwind
+#: framework/highwind-options.php:79
+msgid "Link Color"
+msgstr "Link-Farbe"
+
+# @ highwind
+#: framework/highwind-options.php:86
+msgid "Header Color"
+msgstr "Header-Farbe"
+
+# @ highwind
+#: framework/highwind-options.php:93
+msgid "Text Color"
+msgstr "Text-Farbe"
+
+# @ highwind
+#: framework/highwind-options.php:100
+msgid "Background Color"
+msgstr "Hintergrund-Farbe"
+
+# @ highwind
+#: framework/highwind-options.php:270
+msgid "Content on left"
+msgstr "Inhalt auf linker Seite"
+
+# @ highwind
+#: framework/highwind-options.php:274
+msgid "Content on right"
+msgstr "Inhalt auf rechter Seite"
+
+# @ highwind
+#: framework/highwind-template.php:20
+msgid "Skip to navigation"
+msgstr "Zur Navigation wechseln"
+
+# @ highwind
+#: framework/highwind-template.php:69
+msgid "Home"
+msgstr ""
+
+# @ highwind
+#: framework/highwind-template.php:70
+msgid "Return to Content"
+msgstr "Zurück zum Inhalt"
+
+# @ highwind
+#: framework/highwind-template.php:125
+msgid "0 Comments"
+msgstr "0 Kommentare"
+
+# @ highwind
+#: framework/highwind-template.php:125
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+# @ highwind
+#: framework/highwind-template.php:125
+msgid "% Comments"
+msgstr "% Kommentare"
+
+# @ highwind
+#: framework/highwind-template.php:159
+msgid "Comment navigation"
+msgstr "Kommentar-Navigation"
+
+# @ highwind
+#: framework/highwind-template.php:160
+msgid "Older Comments"
+msgstr "Ältere Kommentare"
+
+# @ highwind
+#: framework/highwind-template.php:161
+msgid "Newer Comments"
+msgstr "Neuere Kommentare"
+
+# @ highwind
+#: framework/highwind-template.php:194
+msgid "Post navigation"
+msgstr "Beitrag-Navigation"
+
+# @ highwind
+#: framework/highwind-template.php:204
+msgid "Older posts"
+msgstr "Ältere Einträge"
+
+# @ highwind
+#: framework/highwind-template.php:208
+msgid "Newer posts"
+msgstr "Neuere Einträge"
+
+# @ highwind
+#. translators: 1: date, 2: time
+#: framework/highwind-template.php:244
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s um %2$s"
+
+# @ highwind
+#: framework/highwind-template.php:244
+msgid "Edit"
+msgstr "Bearbeiten"
+
+# @ default
+#: framework/highwind-template.php:247
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+# @ highwind
+#: framework/highwind-template.php:251
+msgid "Your comment is awaiting moderation."
+msgstr "Der Kommentar wartet darauf, freigeschaltet zu werden."
+
+# @ highwind
+#: framework/highwind-template.php:333
+msgid "Powered by"
+msgstr "Bereitgestellt von"
+
+# @ highwind
+#: framework/highwind-template.php:333
+msgid "Highwind - Customisable and extendable WordPress theme"
+msgstr ""
+
+# @ highwind
+#: framework/highwind-template.php:347
+msgid "Back to top"
+msgstr "Zurück nach oben"
+
+# @ highwind
+#: index.php:12
+msgid "You do not have sufficient permissions to access this page!"
+msgstr ""
+"Sie haben keine ausreichenden Berechtigungen, um auf diese Seite zuzugreifen!"
+
+# @ highwind
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+# @ highwind
+#: searchform.php:8
+msgctxt "assistive text"
+msgid "Search"
+msgstr "Suchen"
+
+# @ highwind
+#: searchform.php:9
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Suchen &hellip;"
+
+# @ highwind
+#: searchform.php:10
+msgctxt "submit button"
+msgid "Search"
+msgstr "Suchen"

@@ -28,7 +28,7 @@
 
 		highwind_content_entry_top();
 
-		the_content();
+		the_content( __( 'Continue Reading...', 'highwind' ) );
 
 		wp_link_pages();
 

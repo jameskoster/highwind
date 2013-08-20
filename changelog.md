@@ -1,12 +1,13 @@
 # Highwind changelog
 ============================
 
-## 24.07.2013 - 1.0.3
+## 20.08.2013 - 1.0.3
 * Tweaked date and category icons.
 * WordPress Smileys display inline.
 * No longer tries to display post image on 404.php.
 * German translation (kudos daviddamm)
 * Added translatable 'Continue Reading' link to `the_content()`.
+* Ditch the translucent menu effect
 
 ## 20.07.2013 - 1.0.2.1
 * Fixed undefined variable when no footer widgets are set

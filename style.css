@@ -2769,24 +2769,6 @@ img.wp-post-image {
   .main-nav {
     border-right: 0;
     border-bottom: 0.422em solid #53a1b8;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-  }
-  .main-nav.translucent {
-    filter: alpha(opacity=@opacity * 100);
-    -moz-opacity: 0.618;
-    -khtml-opacity: 0.618;
-    opacity: 0.618;
-    -webkit-filter: blur(0.113em);
-  }
-  .main-nav.translucent:hover {
-    filter: alpha(opacity=@opacity * 100);
-    -moz-opacity: 1;
-    -khtml-opacity: 1;
-    opacity: 1;
-    -webkit-filter: blur(0);
   }
   .main-nav ul.menu {
     /* CHILDREN */

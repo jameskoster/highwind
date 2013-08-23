@@ -1,6 +1,9 @@
 # Highwind changelog
 ============================
 
+## 22.08.2013 - 1.1.0
+* WooCommerce Integration
+
 ## 20.08.2013 - 1.0.3
 * Tweaked date and category icons.
 * WordPress Smileys display inline.

@@ -187,3 +187,14 @@ if ( ! function_exists( 'highwind_wp_title' ) ) {
 		return $title;
 	}
 }
+
+
+/**
+ * Checks if WooCommerce is activated
+ * @since 1.1
+ */
+if ( ! function_exists( 'is_woocommerce_activated' ) ) {
+	function is_woocommerce_activated() {
+		if ( class_exists( 'woocommerce' ) ) { return true; } else { return false; }
+	}
+}

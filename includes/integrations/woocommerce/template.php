@@ -35,7 +35,6 @@ function highwind_woocommerce_content_wrapper_end() {
  * @since 1.1.0
  */
 function woocommerce_upsell_display() {
-	global $woo_options, $post;
     woocommerce_upsell_display( -1, 3 );
 }
 

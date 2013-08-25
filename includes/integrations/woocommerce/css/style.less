@@ -171,6 +171,9 @@ div.product {
 			}
 		}
 	}
+	.comment-form-comment {
+		clear: both;
+	}
 }
 
 
@@ -463,12 +466,14 @@ dl.variation {
 			.clearfix;
 			list-style: none;
 			margin-left:0;
-			border-top:1px solid rgba(0,0,0,0.1);
+			border:1px solid rgba(0,0,0,0.1);
+			border-width:1px 0;
 			li {
 				float: left;
+				border-right:1px dotted rgba(0,0,0,0.1);
 				&.active {
 					a {
-						.inset_box_shadow(0,.238em,0,0,rgba(0,0,0,0.1));
+						.inset_box_shadow(0,-.238em,0,0,rgba(0,0,0,0.1));
 						color: @color_body;
 						&:hover {
 							text-decoration: none;
@@ -479,6 +484,7 @@ dl.variation {
 			a {
 				display: inline-block;
 				padding: .844em 1.125em;
+				font-weight: 700;
 			}
 		}
 	}

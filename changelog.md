@@ -5,6 +5,7 @@
 * WooCommerce Integration
 * Added Content Background Color option
 * Tweaked sidebar appearance
+* Some typography tweaks for handheld devices
 
 ## 20.08.2013 - 1.0.3
 * Tweaked date and category icons.

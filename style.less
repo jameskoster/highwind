@@ -420,7 +420,7 @@ img {
 	}
 }
 .site-title {
-	.omega;
+	.psi;
 	color: #fff;
 	text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 	margin-bottom:0;
@@ -466,9 +466,6 @@ ul.menu {
 article.post, article.page, #respond {
 	margin-bottom:2.665em;
 	padding-bottom:1.999em;
-}
-.page-title, .post-title {
-	.psi;
 }
 .post-meta, .post-date {
 	font-size:.844em;
@@ -627,6 +624,10 @@ img.wp-post-image {
 		background-color: @color_theme;
 
 	}
+	.site-title {
+		.omega;
+		color: #fff;
+	}
 	.site-intro {
 		.avatar {
 			margin:0 auto;
@@ -736,6 +737,15 @@ img.wp-post-image {
 		 }
 	 }
 
+
+	/**
+	 * Posts
+	 */
+	.page-title, .post-title {
+		.psi;
+	}
+
+
 	/**
 	 * Comments
 	 */
@@ -744,6 +754,8 @@ img.wp-post-image {
 			padding:1.999em;
 		}
 	}
+
+
 	/**
 	 * Footer
 	 */

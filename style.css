@@ -2476,8 +2476,8 @@ img.wp-smiley {
   line-height: 1.333;
   position: relative;
   text-align: left;
-  font-size: 4.209em;
-  letter-spacing: -2px;
+  font-size: 2.665em;
+  letter-spacing: -1px;
   font-weight: 700;
   color: #fff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -2536,30 +2536,6 @@ article.page,
 #respond {
   margin-bottom: 2.665em;
   padding-bottom: 1.999em;
-}
-.page-title,
-.post-title {
-  font-weight: 600;
-  margin: 0;
-  margin-bottom: 1rem;
-  color: #444854;
-  line-height: 1.333;
-  position: relative;
-  text-align: left;
-  font-size: 2.665em;
-  letter-spacing: -1px;
-  font-weight: 700;
-}
-.page-title small,
-.post-title small {
-  filter: alpha(opacity=@opacity * 100);
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
-}
-.page-title a,
-.post-title a {
-  text-decoration: none;
 }
 .post-meta,
 .post-date {
@@ -2749,6 +2725,28 @@ img.wp-post-image {
     margin-right: -999em;
     background-color: #53a1b8;
   }
+  .site-title {
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: #444854;
+    line-height: 1.333;
+    position: relative;
+    text-align: left;
+    font-size: 4.209em;
+    letter-spacing: -2px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .site-title small {
+    filter: alpha(opacity=@opacity * 100);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+  }
+  .site-title a {
+    text-decoration: none;
+  }
   .site-intro .avatar {
     margin: 0 auto;
     -webkit-transition: all ease 0.4s;
@@ -2876,6 +2874,33 @@ img.wp-post-image {
     -moz-opacity: 0.8;
     -khtml-opacity: 0.8;
     opacity: 0.8;
+  }
+  /**
+  	 * Posts
+  	 */
+  .page-title,
+  .post-title {
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: #444854;
+    line-height: 1.333;
+    position: relative;
+    text-align: left;
+    font-size: 2.665em;
+    letter-spacing: -1px;
+    font-weight: 700;
+  }
+  .page-title small,
+  .post-title small {
+    filter: alpha(opacity=@opacity * 100);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+  }
+  .page-title a,
+  .post-title a {
+    text-decoration: none;
   }
   /**
   	 * Comments

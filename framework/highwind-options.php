@@ -53,7 +53,7 @@ class HighwindOptions {
 
         // Background Color Default
         $wp_customize->add_setting( 'content_background_color', array(
-                'default'       => apply_filters( 'highwind_content_background_color_default', $color = 'ffffff' )
+                'default'       => apply_filters( 'highwind_content_background_color_default', $color = 'f8f8f9' )
         ) );
 
 

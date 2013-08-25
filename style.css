@@ -2015,6 +2015,7 @@ body {
  */
 .inner-wrap {
   padding: 0 1.777em;
+  background: #ffffff;
 }
 /**
  * Typography
@@ -2727,6 +2728,9 @@ img.wp-post-image {
   /* Only apply the layout if the user is on a desktop / tablet */
   body {
     padding: 0;
+  }
+  .inner-wrap {
+    padding: 0 3.157em;
   }
   /**
   	 * Layout

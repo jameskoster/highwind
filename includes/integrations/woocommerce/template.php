@@ -87,7 +87,7 @@ function highwind_woocommerce_cart_fragment( $fragments ) {
 function highwind_woocommerce_product_search() {
 	$options 			= get_option( 'highwind_woocommerce_options' );
 	$header_search 		= $options['header_search'];
-	if ( $header_search ) {
+	if ( $header_search && ! is_checkout() ) {
 		echo '<div class="highwind-product-search">';
 			get_product_search_form();
 		echo '</div>';

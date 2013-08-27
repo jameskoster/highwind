@@ -103,7 +103,7 @@ jQuery(document).ready(function($){
      * Make sidebar same height as content
      */
     var contentHeight = jQuery( '.content' ).height();
-    jQuery( '.sidebar' ).css( 'height', contentHeight );
+    jQuery( '.sidebar' ).css( 'min-height', contentHeight );
 
 });
 }(jQuery));

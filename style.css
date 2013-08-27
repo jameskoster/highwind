@@ -1294,7 +1294,7 @@ p.nocomments:before {
 }
 .comments .comment-author cite {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   margin: 0;
   margin-bottom: 1rem;
   color: #444854;
@@ -2033,7 +2033,7 @@ h6,
 .beta,
 .gamma,
 .delta {
-  font-weight: 600;
+  font-weight: 300;
   margin: 0;
   margin-bottom: 1rem;
   color: #444854;
@@ -2077,12 +2077,12 @@ h6 a,
 .omega {
   font-size: 4.209em;
   letter-spacing: -2px;
-  font-weight: 700;
+  font-weight: 300;
 }
 .psi {
   font-size: 2.665em;
   letter-spacing: -1px;
-  font-weight: 700;
+  font-weight: 300;
 }
 h1,
 .site-title,
@@ -2094,7 +2094,7 @@ h1,
 h1.archive-header,
 .site-title.archive-header,
 .alpha.archive-header {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.125em;
 }
 h2,
@@ -2469,7 +2469,6 @@ img.wp-smiley {
   color: #fff;
 }
 .site-title {
-  font-weight: 600;
   margin: 0;
   margin-bottom: 1rem;
   color: #444854;
@@ -2478,7 +2477,7 @@ img.wp-smiley {
   text-align: left;
   font-size: 2.665em;
   letter-spacing: -1px;
-  font-weight: 700;
+  font-weight: 300;
   color: #fff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   margin-bottom: 0;
@@ -2726,7 +2725,6 @@ img.wp-post-image {
     background-color: #53a1b8;
   }
   .site-title {
-    font-weight: 600;
     margin: 0;
     margin-bottom: 1rem;
     color: #444854;
@@ -2735,7 +2733,7 @@ img.wp-post-image {
     text-align: left;
     font-size: 4.209em;
     letter-spacing: -2px;
-    font-weight: 700;
+    font-weight: 300;
     color: #fff;
   }
   .site-title small {
@@ -2880,7 +2878,6 @@ img.wp-post-image {
   	 */
   .page-title,
   .post-title {
-    font-weight: 600;
     margin: 0;
     margin-bottom: 1rem;
     color: #444854;
@@ -2889,7 +2886,7 @@ img.wp-post-image {
     text-align: left;
     font-size: 2.665em;
     letter-spacing: -1px;
-    font-weight: 700;
+    font-weight: 300;
   }
   .page-title small,
   .post-title small {

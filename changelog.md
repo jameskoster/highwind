@@ -6,6 +6,7 @@
 * Added Content Background Color option
 * Tweaked sidebar appearance
 * Some typography tweaks for handheld devices
+* Tweaked heading font weights
 
 ## 20.08.2013 - 1.0.3
 * Tweaked date and category icons.
@@ -44,3 +45,9 @@
 
 ## 1.0
 * Initial release!
+
+# Release Notes
+===============
+
+## 1.1.0
+* Adds Content Background Color option. This will be set to the same color as the default background color (`#f8f8f9`) by default. If you've changed the background color you will need to update this new option (via Your Site > Customize) to match.

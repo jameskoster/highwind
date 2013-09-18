@@ -247,14 +247,12 @@ a {
  */
 input[type="text"], input[type="password"], input[type="email"], input[type="search"], input.input-text, textarea {
 	padding:.844em;
-	padding-bottom:1.082em;
 	background: rgba(0,0,0,0.05);
 	color: @color_body;
 	border:0;
 	.border_radius;
 	outline: none;
 	.borderbox;
-	.inset_box_shadow(0,-.238em,0,0,rgba(0,0,0,0.05));
 }
 textarea {
 	padding:1em;
@@ -311,34 +309,25 @@ input[type="submit"],
 input[type="button"],
 .navigation-post a,
 .navigation-paging a {
-	padding:.844em 1.125em 1.082em;
+	padding:.844em 1.125em;
 	color: @color_bg;
 	font-weight: 600;
 	background:@color_theme;
 	.border_radius();
 	border:0;
-	.inset_box_shadow(0,-.238em,0,0,rgba(0,0,0,0.1));
 	text-shadow:0 1px 0 rgba(0,0,0,0.1);
 	&:hover {
 		text-decoration: none;
-		-webkit-animation: buttonshadow 0.5s ease-in-out;
-		-moz-animation: buttonshadow 0.5s ease-in-out;
-		-o-animation: buttonshadow 0.5s ease-in-out;
-		animation: buttonshadow 0.5s ease-in-out;
 		-webkit-box-shadow:
-			inset 0 -.238em 0 0 rgba(0,0,0,0.05),
 			inset 0 -5em 0 0 rgba(0,0,0,0.1);
 		box-shadow:
-			inset 0 -.238em 0 0 rgba(0,0,0,0.05),
 			inset 0 -5em 0 0 rgba(0,0,0,0.1);
 	}
 	&:active {
 		-webkit-transform:translateY(.075em);
 		-webkit-box-shadow:
-			inset 0 -.163em 0 0 rgba(0,0,0,0.05),
 			inset 0 -5em 0 0 rgba(0,0,0,0.1);
 		box-shadow:
-			inset 0 -.163em 0 0 rgba(0,0,0,0.05),
 			inset 0 -5em 0 0 rgba(0,0,0,0.1);
 	}
 }
@@ -404,12 +393,7 @@ img {
 		height: auto;
 		display: block;
 		.border_radius(100%);
-		-webkit-box-shadow:
-			0 1px 3px rgba(0,0,0,0.4),
-			0 0 0 6px rgba(0,0,0,0.1);
-		box-shadow:
-			0 1px 3px rgba(0,0,0,0.4),
-			0 0 0 6px rgba(0,0,0,0.1);
+		.box_shadow(0,0,0,.618em,rgba(0,0,0,0.05));
 	}
 }
 .site-title, .site-description {

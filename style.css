@@ -1812,7 +1812,7 @@ form.searchform:before {
   }
   .main-nav .highwind-navigation {
     max-width: 74.55em;
-    padding: 0 1.777em;
+    padding: 0 3.157em;
     margin: 0 auto;
     *zoom: 1;
     -webkit-box-sizing: border-box;
@@ -2261,7 +2261,6 @@ input[type="search"],
 input.input-text,
 textarea {
   padding: .844em;
-  padding-bottom: 1.082em;
   background: rgba(0, 0, 0, 0.05);
   color: #666a76;
   border: 0;
@@ -2277,8 +2276,6 @@ textarea {
   box-sizing: border-box;
   /* Opera/IE 8+ */
 
-  -webkit-box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.05);
 }
 textarea {
   padding: 1em;
@@ -2359,15 +2356,13 @@ input[type="submit"],
 input[type="button"],
 .navigation-post a,
 .navigation-paging a {
-  padding: .844em 1.125em 1.082em;
+  padding: .844em 1.125em;
   color: #f8f8f9;
   font-weight: 600;
   background: #53a1b8;
   -webkit-border-radius: 0.201em;
   border-radius: 0.201em;
   border: 0;
-  -webkit-box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.1);
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 input[type="submit"]:hover,
@@ -2376,12 +2371,8 @@ input[type="button"]:hover,
 .navigation-post a:hover,
 .navigation-paging a:hover {
   text-decoration: none;
-  -webkit-animation: buttonshadow 0.5s ease-in-out;
-  -moz-animation: buttonshadow 0.5s ease-in-out;
-  -o-animation: buttonshadow 0.5s ease-in-out;
-  animation: buttonshadow 0.5s ease-in-out;
-  -webkit-box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.05), inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.05), inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
 }
 input[type="submit"]:active,
 .button:active,
@@ -2389,8 +2380,8 @@ input[type="button"]:active,
 .navigation-post a:active,
 .navigation-paging a:active {
   -webkit-transform: translateY(0.075em);
-  -webkit-box-shadow: inset 0 -0.163em 0 0 rgba(0, 0, 0, 0.05), inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 -0.163em 0 0 rgba(0, 0, 0, 0.05), inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
 }
 /**
  * General
@@ -2456,8 +2447,8 @@ img.wp-smiley {
   display: block;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 0 6px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 0 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0 0.618em rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 0.618em rgba(0, 0, 0, 0.05);
 }
 .site-title,
 .site-description {

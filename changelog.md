@@ -7,6 +7,8 @@
 * Tweaked sidebar appearance
 * Some typography tweaks for handheld devices
 * Tweaked heading font weights
+* Tweaked button / input styles
+* Tweaked gravatar shadow
 
 ## 20.08.2013 - 1.0.3
 * Tweaked date and category icons.

@@ -20,7 +20,7 @@
 /**
  * Functions
  */
-.iconbefore {
+.iconbefore( @glyph: "\f179" ) {
 	font-family: "FontAwesome";
 	font-weight: normal;
 	font-style: normal;
@@ -29,9 +29,10 @@
 	width:1.5em;
 	display: inline-block;
 	line-height: 1;
+	content: @glyph;
 }
 
-.iconafter {
+.iconafter( @glyph: "\f179" ) {
 	font-family: "FontAwesome";
 	font-weight: normal;
 	font-style: normal;
@@ -41,6 +42,34 @@
 	display: inline-block;
 	text-align: right;
 	line-height: 1;
+	content: @glyph;
+}
+
+.ir() {
+	display: block;
+	text-indent: -999px;
+	position: relative;
+	height:1em;
+	width:1em;
+}
+
+.icon( @glyph: "\f179" ) {
+	font-family: 'FontAwesome';
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	margin:0;
+	text-indent: 0;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	text-align: center;
+	content: @glyph;
 }
 
 .clearfix() {

@@ -10,6 +10,9 @@
 @color_bg: 			#f8f8f9;	// Background
 @color_theme: 		#53a1b8;	// Links
 @color_body: 		#666A76;	// Body Copy
+@info: 				#56acd3;	// For messages
+@success: 			#8ada46;	// For messages
+@error: 			#eeb44c;	// For messages
 
 @FontAwesomePath:   "framework/typefaces";
 
@@ -70,6 +73,35 @@
 	height: 100%;
 	text-align: center;
 	content: @glyph;
+}
+
+.message( @glyph: "\f129", @color: @info ) {
+	padding:1em 1.999em 1em 3.157em;
+	list-style-type: none;
+	.border_radius_right;
+	margin-bottom:1.5em;
+	position: relative;
+	background:lighten(@color,30%);
+	border-left:.236em solid @color;
+	color: darken(@color,30%);
+	&:before {
+		.iconbefore( @glyph );
+		display: block;
+		color: @color;
+		position: absolute;
+		top:1.333em;
+		left:1.333em;
+		width:1em;
+		height:1em;
+		padding:.317em;
+		line-height: 1;
+		text-align: center;
+		.border_radius;
+		font-size:.844em;
+	}
+	.button {
+		float: right;
+	}
 }
 
 .clearfix() {

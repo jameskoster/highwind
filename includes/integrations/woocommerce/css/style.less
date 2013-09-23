@@ -4,6 +4,11 @@
 
 //===============================================================
 
+// Vars
+@info: 		#42a2ce;
+@success: 	#9fdb46;
+@error: 	#ee594c;
+
 // General WooCommerce
 p.demo_store {
 	position: fixed;
@@ -19,16 +24,17 @@ p.demo_store {
 }
 .woocommerce-message, .woocommerce-error, .woocommerce-info {
 	padding:1em 1.999em 1em 3.157em;
-	border:1px solid rgba(0,0,0,0.1);
 	list-style-type: none;
-	.border_radius;
+	.border_radius_right;
 	margin-bottom:1.5em;
 	position: relative;
+	background:lighten(@info,35%);
+	border-left:.236em solid @info;
+	color: darken(@info,30%);
 	&:before {
-		.iconbefore;
-		content: "\f129";
+		.iconbefore( "\f129" );
 		display: block;
-		color: #1868c3;
+		color: @info;
 		position: absolute;
 		top:1.333em;
 		left:1.333em;
@@ -37,7 +43,6 @@ p.demo_store {
 		padding:.317em;
 		line-height: 1;
 		text-align: center;
-		background-color: rgba(0,0,0,0.05);
 		.border_radius;
 		font-size:.844em;
 	}
@@ -46,15 +51,21 @@ p.demo_store {
 	}
 }
 .woocommerce-error {
+	background:lighten(@error,35%);
+	border-left-color:@error;
+	color: darken(@error,30%);
 	&:before {
-		color: #edbd1d;
 		content: "\f12a";
+		color: @error;
 	}
 }
 .woocommerce-message {
+	background:lighten(@success,35%);
+	border-left-color:@success;
+	color: darken(@success,30%);
 	&:before {
-		color: #2cc718;
 		content: "\f00c";
+		color: @success;
 	}
 }
 .onsale {

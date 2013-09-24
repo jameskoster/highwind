@@ -2347,7 +2347,6 @@ input[type="button"],
   -webkit-border-radius: 0.201em;
   border-radius: 0.201em;
   border: 0;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 input[type="submit"]:hover,
 .button:hover,

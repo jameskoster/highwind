@@ -1306,21 +1306,7 @@ p.nocomments:before {
   content: "\f179";
   content: "\f08e";
 }
-.comments .comment-author .comment-meta a {
-  filter: alpha(opacity=@opacity * 100);
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  opacity: 0.3;
-  -webkit-transition: opacity ease 0.4s;
-  -moz-transition: opacity ease 0.4s;
-  -o-transition: opacity ease 0.4s;
-  transition: opacity ease 0.4s;
-}
 .comments .comment-author .comment-meta a:hover {
-  filter: alpha(opacity=@opacity * 100);
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  opacity: 1;
   text-decoration: none;
 }
 .comments .comment-author .comment-meta .date-link {

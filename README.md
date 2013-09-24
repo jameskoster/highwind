@@ -1,4 +1,5 @@
 # Highwind
+Highwind is a lightweight, free WordPress theme designed to showcase content. It features a clean, responsive design with a strong focus on typography, plus a bunch of presentational options and widgetised regions allowing you to give your site a unique touch. [View Documentation](https://github.com/jameskoster/highwind/wiki).
 
 # License
 
@@ -27,6 +28,10 @@ All aspects of typography are set up in accordance to a Modular Scale ensuring c
 
 ## Documentation
 Ever evolving documentation available in the [wiki](https://github.com/jameskoster/highwind/wiki).
+
+## WooCommerce Integration
+Use Highwind to create an online store using [WooCommerce](http://woothemes.com/woocommerce).
+
 
 # Usage
 

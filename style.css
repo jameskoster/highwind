@@ -2319,6 +2319,10 @@ input[type="radio"] {
 
   margin-right: 1em;
   float: left;
+  -webkit-transition: all ease 0.238s;
+  -moz-transition: all ease 0.238s;
+  -o-transition: all ease 0.238s;
+  transition: all ease 0.238s;
 }
 input[type="radio"]:checked {
   background: none;
@@ -2350,9 +2354,13 @@ input[type="checkbox"]:checked:before {
   content: "\f00c";
   color: #f8f8f9;
   filter: alpha(opacity=@opacity * 100);
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  opacity: 0.3;
+  -moz-opacity: 0.1;
+  -khtml-opacity: 0.1;
+  opacity: 0.1;
+  -webkit-transition: all ease 0.238s;
+  -moz-transition: all ease 0.238s;
+  -o-transition: all ease 0.238s;
+  transition: all ease 0.238s;
 }
 input[type="checkbox"]:checked:before {
   filter: alpha(opacity=@opacity * 100);

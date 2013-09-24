@@ -271,6 +271,7 @@ input[type="radio"] {
     .borderbox;
     margin-right:1em;
     float: left;
+    .transition;
 }
 
 input[type="radio"]:checked {
@@ -298,7 +299,8 @@ input[type="checkbox"]:before, input[type="checkbox"]:checked:before {
     line-height: 1.5;
     content: "\f00c";
     color: @color_bg;
-    .opacity(0.3);
+    .opacity(0.1);
+    .transition;
 }
 
 input[type="checkbox"]:checked:before {

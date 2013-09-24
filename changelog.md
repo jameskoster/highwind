@@ -10,6 +10,7 @@
 * Tweaked button / input styles.
 * Tweaked gravatar shadow.
 * More German translations (kudos daviddamm).
+* Fixes issue with Jetpacks Hovercards compontent.
 
 ## 20.08.2013 - 1.0.3
 * Tweaked date and category icons.

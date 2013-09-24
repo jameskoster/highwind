@@ -116,6 +116,9 @@ p.stars {
 		margin-right:.201em;
 	}
 }
+.woocommerce-breadcrumb {
+	font-size: .844em;
+}
 
 
 // Header Cart Link
@@ -355,6 +358,11 @@ table.cart {
 			margin-right:0;
 		}
 	}
+	#place_order {
+		font-size:1.333em;
+		width:100%;
+		text-align: center;
+	}
 }
 #payment {
 	ul.payment_methods {
@@ -367,10 +375,7 @@ table.cart {
 		}
 	}
 	.payment_box {
-		.box_shadow(0,0,0,.134em,rgba(0,0,0,0.1));
-		padding:1em;
-		.border_radius;
-		margin-bottom:1.777em;
+		.message( "\f178" );
 		p:last-child {
 			margin-bottom:0;
 		}
@@ -728,6 +733,14 @@ dl.variation {
 				width:48%;
 				float: left;
 				margin:0;
+				text-align: left;
+				.input-text {
+					float: none;
+				}
+				.button {
+					width:auto;
+					float: none;
+				}
 			}
 		}
 	}

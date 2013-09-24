@@ -4,7 +4,7 @@ Theme URI: http://jameskoster.co.uk/highwind/
 Description: Highwind is a lightweight, free WordPress theme designed to showcase content. It features a clean, responsive design with a strong focus on typography, plus a bunch of presentational options and widgetised regions allowing you to give your site a unique touch. <a href="https://github.com/jameskoster/highwind/wiki">View Documentation</a>.
 Author: jameskoster
 Author URI: http://jameskoster.co.uk
-Version: 1.0.3
+Version: 1.1.0
 Tags: white, two-columns, left-sidebar, right-sidebar, flexible-width, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light
 
 License: GNU General Public License v2 or later
@@ -52,6 +52,7 @@ body {
  */
 .inner-wrap {
 	padding: 0 1.777em;
+	background-color: @color_bg;
 }
 
 
@@ -59,7 +60,7 @@ body {
  * Typography
  */
 h1, h2, h3, h4, h5, h6, .heading, .omega, .psi, .alpha, .beta, .gamma, .delta {
-	font-weight: 600;
+	font-weight: 300;
 	margin:0;
 	margin-bottom:1rem;
 	color: @color_body - #222;
@@ -77,13 +78,13 @@ h1, h2, h3, h4, h5, h6, .heading, .omega, .psi, .alpha, .beta, .gamma, .delta {
 .omega {
 	font-size:4.209em;
 	letter-spacing: -2px;
-	font-weight: 700;
+	font-weight: 300;
 }
 
 .psi {
 	font-size:2.665em;
 	letter-spacing: -1px;
-	font-weight: 700;
+	font-weight: 300;
 }
 
 h1, .site-title, .alpha {
@@ -91,7 +92,7 @@ h1, .site-title, .alpha {
 	font-size:1.777em;
 	letter-spacing: -1px;
 	&.archive-header {
-		font-weight: 400;
+		font-weight: 300;
 		font-size:1.125em;
 	}
 }
@@ -246,14 +247,12 @@ a {
  */
 input[type="text"], input[type="password"], input[type="email"], input[type="search"], input.input-text, textarea {
 	padding:.844em;
-	padding-bottom:1.082em;
 	background: rgba(0,0,0,0.05);
 	color: @color_body;
 	border:0;
 	.border_radius;
 	outline: none;
 	.borderbox;
-	.inset_box_shadow(0,-.238em,0,0,rgba(0,0,0,0.05));
 }
 textarea {
 	padding:1em;
@@ -272,6 +271,7 @@ input[type="radio"] {
     .borderbox;
     margin-right:1em;
     float: left;
+    .transition;
 }
 
 input[type="radio"]:checked {
@@ -299,7 +299,8 @@ input[type="checkbox"]:before, input[type="checkbox"]:checked:before {
     line-height: 1.5;
     content: "\f00c";
     color: @color_bg;
-    .opacity(0.3);
+    .opacity(0.1);
+    .transition;
 }
 
 input[type="checkbox"]:checked:before {
@@ -310,34 +311,25 @@ input[type="submit"],
 input[type="button"],
 .navigation-post a,
 .navigation-paging a {
-	padding:.844em 1.125em 1.082em;
+	padding:.844em 1.125em;
 	color: @color_bg;
 	font-weight: 600;
 	background:@color_theme;
 	.border_radius();
 	border:0;
-	.inset_box_shadow(0,-.238em,0,0,rgba(0,0,0,0.1));
-	text-shadow:0 1px 0 rgba(0,0,0,0.1);
+	.transition;
 	&:hover {
 		text-decoration: none;
-		-webkit-animation: buttonshadow 0.5s ease-in-out;
-		-moz-animation: buttonshadow 0.5s ease-in-out;
-		-o-animation: buttonshadow 0.5s ease-in-out;
-		animation: buttonshadow 0.5s ease-in-out;
 		-webkit-box-shadow:
-			inset 0 -.238em 0 0 rgba(0,0,0,0.05),
 			inset 0 -5em 0 0 rgba(0,0,0,0.1);
 		box-shadow:
-			inset 0 -.238em 0 0 rgba(0,0,0,0.05),
 			inset 0 -5em 0 0 rgba(0,0,0,0.1);
 	}
 	&:active {
 		-webkit-transform:translateY(.075em);
 		-webkit-box-shadow:
-			inset 0 -.163em 0 0 rgba(0,0,0,0.05),
 			inset 0 -5em 0 0 rgba(0,0,0,0.1);
 		box-shadow:
-			inset 0 -.163em 0 0 rgba(0,0,0,0.05),
 			inset 0 -5em 0 0 rgba(0,0,0,0.1);
 	}
 }
@@ -403,12 +395,10 @@ img {
 		height: auto;
 		display: block;
 		.border_radius(100%);
-		-webkit-box-shadow:
-			0 1px 3px rgba(0,0,0,0.4),
-			0 0 0 6px rgba(0,0,0,0.1);
-		box-shadow:
-			0 1px 3px rgba(0,0,0,0.4),
-			0 0 0 6px rgba(0,0,0,0.1);
+		.box_shadow(0,0,0,.618em,rgba(0,0,0,0.05));
+	}
+	.grav-clone {
+		display: none;
 	}
 }
 .site-title, .site-description {
@@ -419,7 +409,7 @@ img {
 	}
 }
 .site-title {
-	.omega;
+	.psi;
 	color: #fff;
 	text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 	margin-bottom:0;
@@ -465,9 +455,6 @@ ul.menu {
 article.post, article.page, #respond {
 	margin-bottom:2.665em;
 	padding-bottom:1.999em;
-}
-.page-title, .post-title {
-	.psi;
 }
 .post-meta, .post-date {
 	font-size:.844em;
@@ -601,6 +588,9 @@ img.wp-post-image {
 	body {
 		padding:0;
 	}
+	.inner-wrap {
+		padding:0 3.157em;
+	}
 
 
 	/**
@@ -622,6 +612,10 @@ img.wp-post-image {
 		margin-right:-999em;
 		background-color: @color_theme;
 
+	}
+	.site-title {
+		.omega;
+		color: #fff;
 	}
 	.site-intro {
 		.avatar {
@@ -721,7 +715,7 @@ img.wp-post-image {
 			38em 0 0 rgba(0,0,0,0.025),
 			61.5em 0 0 rgba(0,0,0,0.025);
 		box-shadow:
-			14.5em 0 0 rgba(0,0,0,0.025),
+			15.45em 0 0 rgba(0,0,0,0.025),
 			38em 0 0 rgba(0,0,0,0.025),
 			61.5em 0 0 rgba(0,0,0,0.025);
 		/**
@@ -732,6 +726,15 @@ img.wp-post-image {
 		 }
 	 }
 
+
+	/**
+	 * Posts
+	 */
+	.page-title, .post-title {
+		.psi;
+	}
+
+
 	/**
 	 * Comments
 	 */
@@ -740,6 +743,8 @@ img.wp-post-image {
 			padding:1.999em;
 		}
 	}
+
+
 	/**
 	 * Footer
 	 */

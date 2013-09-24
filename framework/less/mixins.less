@@ -1,15 +1,14 @@
-/**
- * MIXINS.LESS
- * Contains {LESS} variables, mixins & objects
- */
+// MIXINS.LESS
+// Contains {LESS} variables, mixins & objects
 
 
-/**
- * Variables
- */
+// Variables
 @color_bg: 			#f8f8f9;	// Background
 @color_theme: 		#53a1b8;	// Links
 @color_body: 		#666A76;	// Body Copy
+@info: 				#56acd3;	// For messages
+@success: 			#8ada46;	// For messages
+@error: 			#eeb44c;	// For messages
 
 @FontAwesomePath:   "framework/typefaces";
 
@@ -17,10 +16,8 @@
 @fontstack_serif:	"Georgia", serif;
 
 
-/**
- * Functions
- */
-.iconbefore {
+// Functions
+.iconbefore( @glyph: "\f179" ) {
 	font-family: "FontAwesome";
 	font-weight: normal;
 	font-style: normal;
@@ -29,9 +26,10 @@
 	width:1.5em;
 	display: inline-block;
 	line-height: 1;
+	content: @glyph;
 }
 
-.iconafter {
+.iconafter( @glyph: "\f179" ) {
 	font-family: "FontAwesome";
 	font-weight: normal;
 	font-style: normal;
@@ -41,6 +39,63 @@
 	display: inline-block;
 	text-align: right;
 	line-height: 1;
+	content: @glyph;
+}
+
+.ir() {
+	display: block;
+	text-indent: -999px;
+	position: relative;
+	height:1em;
+	width:1em;
+}
+
+.icon( @glyph: "\f179" ) {
+	font-family: 'FontAwesome';
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	margin:0;
+	text-indent: 0;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	text-align: center;
+	content: @glyph;
+}
+
+.message( @glyph: "\f129", @color: @info ) {
+	padding:1em 1.999em 1em 3.157em;
+	list-style-type: none;
+	.border_radius_right;
+	margin-bottom:1.5em;
+	position: relative;
+	background:lighten(@color,30%);
+	border-left:.236em solid @color;
+	color: darken(@color,30%);
+	&:before {
+		.iconbefore( @glyph );
+		display: block;
+		color: @color;
+		position: absolute;
+		top:1.333em;
+		left:1.333em;
+		width:1em;
+		height:1em;
+		padding:.317em;
+		line-height: 1;
+		text-align: center;
+		.border_radius;
+		font-size:.844em;
+	}
+	.button {
+		float: right;
+	}
 }
 
 .clearfix() {
@@ -57,9 +112,7 @@
 }
 
 
-/**
- * Objects
- */
+// Objects
 .media() {
 	.clearfix;
 	img, .img {
@@ -212,9 +265,7 @@
 	}
 }
 
-/**
- * Animation
- */
+// Animation
 @-webkit-keyframes buttonshadow {
     0%   {
     	.inset_box_shadow(0,-.238em,0,0,rgba(0,0,0,0.1));
@@ -269,9 +320,7 @@
 }
 
 
-/**
- * Mixins
- */
+// Mixins
 .border_radius(@radius:.201em) {
     -webkit-border-radius:@radius;
     border-radius:@radius;

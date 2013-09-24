@@ -120,6 +120,11 @@ msgid "Permalink to %s"
 msgstr "Permalink auf %s"
 
 # @ highwind
+#: content.php:31
+msgid "Continue Reading..."
+msgstr "Weiterlesen..."
+
+# @ highwind
 #: framework/highwind-functions.php:21
 msgid "Main menu"
 msgstr "Hauptmenü"

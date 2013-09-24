@@ -80,7 +80,7 @@ function highwind_woocommerce_customize_register( $wp_customize ){
  * Removes content wrappers and other unnecessary functions etc then hooks in replacements
  * @since 1.1.0
  */
-function woocommerce_prep() {
+function highwind_woocommerce_prep() {
 	$options 			= get_option( 'highwind_woocommerce_options' );
 	$archive_fullwidth 	= $options['archive_fullwidth'];
 	$details_fullwidth 	= $options['details_fullwidth'];

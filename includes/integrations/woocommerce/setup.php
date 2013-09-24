@@ -14,7 +14,7 @@ add_action( 'customize_register', 'highwind_woocommerce_customize_register' );
 
 
 // Prepare WooCommerce, fix the layout etc
-add_action( 'wp', 'woocommerce_prep' );
+add_action( 'wp', 'highwind_woocommerce_prep' );
 
 
 // Add the fullwidth class to the body tag if specified in the options

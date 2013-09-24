@@ -2437,6 +2437,9 @@ img.wp-smiley {
   -webkit-box-shadow: 0 0 0 0.618em rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 0 0.618em rgba(0, 0, 0, 0.05);
 }
+.site-intro .grav-clone {
+  display: none;
+}
 .site-title,
 .site-description {
   color: #fff;

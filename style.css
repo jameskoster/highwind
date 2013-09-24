@@ -2347,6 +2347,10 @@ input[type="button"],
   -webkit-border-radius: 0.201em;
   border-radius: 0.201em;
   border: 0;
+  -webkit-transition: all ease 0.238s;
+  -moz-transition: all ease 0.238s;
+  -o-transition: all ease 0.238s;
+  transition: all ease 0.238s;
 }
 input[type="submit"]:hover,
 .button:hover,

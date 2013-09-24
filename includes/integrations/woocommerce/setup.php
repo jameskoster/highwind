@@ -31,4 +31,4 @@ add_action( 'highwind_content_before', 'highwind_woocommerce_product_search' );
 
 
 // Add style
-add_action( 'wp_enqueue_scripts', 'setup_styles', 999 );
+add_action( 'wp_enqueue_scripts', 'highwind_woocommerce_setup_styles', 999 );

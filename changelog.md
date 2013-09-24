@@ -1,14 +1,15 @@
 # Highwind changelog
 ============================
 
-## 22.08.2013 - 1.1.0
-* WooCommerce Integration
-* Added Content Background Color option
-* Tweaked sidebar appearance
-* Some typography tweaks for handheld devices
-* Tweaked heading font weights
-* Tweaked button / input styles
-* Tweaked gravatar shadow
+## 24.09.2013 - 1.1.0
+* WooCommerce Integration.
+* Added Content Background Color option.
+* Tweaked sidebar appearance.
+* Some typography tweaks for handheld devices.
+* Tweaked heading font weights.
+* Tweaked button / input styles.
+* Tweaked gravatar shadow.
+* More German translations (kudos daviddamm).
 
 ## 20.08.2013 - 1.0.3
 * Tweaked date and category icons.

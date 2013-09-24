@@ -28,6 +28,10 @@ All aspects of typography are set up in accordance to a Modular Scale ensuring c
 ## Documentation
 Ever evolving documentation available in the [wiki](https://github.com/jameskoster/highwind/wiki).
 
+## WooCommerce Integration
+Use Highwind to create an online store using [WooCommerce](http://woothemes.com/woocommerce).
+
+
 # Usage
 
 ## Theme options

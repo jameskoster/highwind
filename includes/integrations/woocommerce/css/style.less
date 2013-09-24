@@ -313,6 +313,7 @@ table.cart {
 	}
 	.actions {
 		text-align: right;
+		padding-right:0;
 		.coupon {
 			.clearfix;
 			margin-bottom:1em;
@@ -716,6 +717,20 @@ dl.variation {
 
 
 	// Cart
+	table.cart {
+		.actions {
+			text-align: right;
+			.button {
+				width:auto;
+				float: none;
+			}
+			.coupon {
+				width:48%;
+				float: left;
+				margin:0;
+			}
+		}
+	}
 	.cart-collaterals {
 		.clearfix;
 		.row(12);

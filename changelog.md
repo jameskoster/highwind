@@ -1,10 +1,10 @@
 # Highwind changelog
-============================
 
 ## 25.09.2013 - 1.1.1
 * Renamed setup_styles() to highwind_woocommerce_setup_styles().
 * Renamed woocommerce_prep() to highwind_woocommerce_prep().
 * Fix comment arrow color.
+* Textareas and inputs now adopt body color from theme options.
 
 ## 24.09.2013 - 1.1.0
 * WooCommerce Integration.

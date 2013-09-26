@@ -6,6 +6,7 @@
 * Fix comment arrow color.
 * Textareas and inputs now adopt body color from theme options.
 * Buttons now adopt color from content background option rather than body background option.
+* General style tweaks.
 
 ## 24.09.2013 - 1.1.0
 * WooCommerce Integration.

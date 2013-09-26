@@ -2723,6 +2723,7 @@ img.wp-post-image {
     letter-spacing: -2px;
     font-weight: 300;
     color: #fff;
+    margin-bottom: 0;
   }
   .site-title small {
     filter: alpha(opacity=@opacity * 100);

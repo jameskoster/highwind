@@ -158,10 +158,10 @@ class HighwindOptions {
                     // Header color applied to color
                     self::generate_css( apply_filters( 'highwind_header_color_color_selectors', $selectors = 'h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta, .page-title, .post-title' ), 'color', 'headercolor' );
 
-                    // Background color applied to color
-                    self::generate_css( apply_filters( 'highwind_background_color_color_selectors', $selectors = 'input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, input[type="checkbox"]:before, input[type="checkbox"]:checked:before' ), 'color', 'background_color', '#' );
+                    // Content Background color applied to color
+                    self::generate_css( apply_filters( 'highwind_background_color_color_selectors', $selectors = 'input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, input[type="checkbox"]:before, input[type="checkbox"]:checked:before' ), 'color', 'content_background_color' );
 
-                    // Background color applied to border-color
+                    // Content Background color applied to border-color
                     self::generate_css( apply_filters( 'highwind_background_color_border_color_selectors', $selectors = '.comments .comment-content:after' ), 'border-bottom-color', 'content_background_color' );
 
                     // Content Background color applied to background

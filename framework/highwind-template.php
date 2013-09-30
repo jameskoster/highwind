@@ -38,7 +38,7 @@ if ( ! function_exists( 'highwind_site_title' ) ) {
 				<?php
 					do_action( 'highwind_site_title_link' );
 					if ( apply_filters( 'highwind_header_gravatar', true ) ) {
-						echo get_avatar( apply_filters( 'highwind_header_gravatar_email', $email = esc_attr( get_option( 'admin_email' ) ) ), 256 );
+						echo get_avatar( apply_filters( 'highwind_header_gravatar_email', $email = esc_attr( get_option( 'admin_email' ) ) ), 256, '', esc_attr( get_bloginfo( 'name' ) ) );
 					}
 				?>
 				<h1 class="site-title"><?php esc_attr( bloginfo( 'name' ) ); ?></h1>

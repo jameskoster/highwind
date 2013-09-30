@@ -7,6 +7,7 @@
 * Textareas and inputs now adopt body color from theme options.
 * Buttons now adopt color from content background option rather than body background option.
 * Better placeholder attribute color for compatibility with wider variety of color schemes.
+* Added alt tag to header gravatar.
 * General style tweaks.
 
 ## 24.09.2013 - 1.1.0

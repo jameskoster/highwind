@@ -8,6 +8,7 @@
 * Buttons now adopt color from content background option rather than body background option.
 * Better placeholder attribute color for compatibility with wider variety of color schemes.
 * Added alt tag to header gravatar.
+* Default featured image size set to 'large' and made filterable via `highwind_featured_image_size`. Kudos BFTrick.
 * General style tweaks.
 
 ## 24.09.2013 - 1.1.0

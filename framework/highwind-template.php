@@ -285,8 +285,8 @@ if ( ! function_exists( 'highwind_featured_image' ) ) {
 	function highwind_featured_image() {
 		global $post;
 		if ( ! is_404() ) {
-			$post_image_size = apply_filters( 'highwind_featured_image_size', 'large' );
-			$post_image = get_the_post_thumbnail( $post->ID, $post_image_size );
+			$post_image_size 	= apply_filters( 'highwind_featured_image_size', 'large' );
+			$post_image 		= get_the_post_thumbnail( $post->ID, $post_image_size );
 			echo $post_image;
 		}
 	}

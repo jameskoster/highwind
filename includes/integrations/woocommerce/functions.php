@@ -80,7 +80,7 @@ function highwind_woocommerce_customize_register( $wp_customize ){
  * Removes content wrappers and other unnecessary functions etc then hooks in replacements
  * @since 1.1.0
  */
-function woocommerce_prep() {
+function highwind_woocommerce_prep() {
 	$options 			= get_option( 'highwind_woocommerce_options' );
 	$archive_fullwidth 	= $options['archive_fullwidth'];
 	$details_fullwidth 	= $options['details_fullwidth'];
@@ -169,6 +169,10 @@ function highwind_woocommerce_header_cart( $items, $args ) {
 }
 
 
-function setup_styles() {
+/**
+ * Enqueues the styles which ensure WooCommerce compatibility
+ * @since 1.1.0
+ */
+function highwind_woocommerce_setup_styles() {
     wp_enqueue_style( 'highwind-woocommerce-styles', get_template_directory_uri() . '/includes/integrations/woocommerce/css/style.css' );
 }

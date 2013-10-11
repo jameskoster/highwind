@@ -71,7 +71,7 @@ function highwind_woocommerce_cart_fragment( $fragments ) {
 
 	ob_start();
 
-	echo '<a href="' . $woocommerce->cart->get_cart_url() . '" title="' . __( 'View your cart', 'hit' ) . '" class="cart-button">' . $woocommerce->cart->get_cart_total() . ' &ndash; <small>' . sprintf( _n( '%d item', '%d items', $woocommerce->cart->cart_contents_count, 'hit' ), $woocommerce->cart->cart_contents_count ) . '</small></a>';
+	echo '<a href="' . $woocommerce->cart->get_cart_url() . '" title="' . __( 'View your cart', 'highwind' ) . '" class="cart-button">' . $woocommerce->cart->get_cart_total() . ' &ndash; <small>' . sprintf( _n( '%d item', '%d items', $woocommerce->cart->cart_contents_count, 'hit' ), $woocommerce->cart->cart_contents_count ) . '</small></a>';
 
 	$fragments['a.cart-button'] = ob_get_clean();
 

@@ -14,7 +14,7 @@ add_action( 'customize_register', 'highwind_woocommerce_customize_register' );
 
 
 // Prepare WooCommerce, fix the layout etc
-add_action( 'wp', 'woocommerce_prep' );
+add_action( 'wp', 'highwind_woocommerce_prep' );
 
 
 // Add the fullwidth class to the body tag if specified in the options
@@ -31,4 +31,4 @@ add_action( 'highwind_content_before', 'highwind_woocommerce_product_search' );
 
 
 // Add style
-add_action( 'wp_enqueue_scripts', 'setup_styles', 999 );
+add_action( 'wp_enqueue_scripts', 'highwind_woocommerce_setup_styles', 999 );

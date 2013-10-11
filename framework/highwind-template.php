@@ -38,7 +38,7 @@ if ( ! function_exists( 'highwind_site_title' ) ) {
 				<?php
 					do_action( 'highwind_site_title_link' );
 					if ( apply_filters( 'highwind_header_gravatar', true ) ) {
-						echo get_avatar( apply_filters( 'highwind_header_gravatar_email', $email = esc_attr( get_option( 'admin_email' ) ) ), 256 );
+						echo get_avatar( apply_filters( 'highwind_header_gravatar_email', $email = esc_attr( get_option( 'admin_email' ) ) ), 256, '', esc_attr( get_bloginfo( 'name' ) ) );
 					}
 				?>
 				<h1 class="site-title"><?php esc_attr( bloginfo( 'name' ) ); ?></h1>
@@ -285,7 +285,8 @@ if ( ! function_exists( 'highwind_featured_image' ) ) {
 	function highwind_featured_image() {
 		global $post;
 		if ( ! is_404() ) {
-			$post_image = get_the_post_thumbnail( $post->ID );
+			$post_image_size 	= apply_filters( 'highwind_featured_image_size', 'large' );
+			$post_image 		= get_the_post_thumbnail( $post->ID, $post_image_size );
 			echo $post_image;
 		}
 	}

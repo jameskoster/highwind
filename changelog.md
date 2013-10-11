@@ -1,5 +1,15 @@
 # Highwind changelog
-============================
+
+## 11.10.2013 - 1.1.1
+* Renamed setup_styles() to highwind_woocommerce_setup_styles().
+* Renamed woocommerce_prep() to highwind_woocommerce_prep().
+* Fix comment arrow color.
+* Textareas and inputs now adopt body color from theme options.
+* Buttons now adopt color from content background option rather than body background option.
+* Better placeholder attribute color for compatibility with wider variety of color schemes.
+* Added alt tag to header gravatar.
+* Default featured image size set to 'large' and made filterable via `highwind_featured_image_size`. Kudos BFTrick.
+* General style tweaks.
 
 ## 24.09.2013 - 1.1.0
 * WooCommerce Integration.

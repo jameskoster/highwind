@@ -27,3 +27,10 @@ if ( is_woocommerce_activated() ) {
 	require_once( get_template_directory() . '/includes/integrations/woocommerce/functions.php' );
 	require_once( get_template_directory() . '/includes/integrations/woocommerce/template.php' );
 }
+
+
+/**
+ * Custom Functions
+ * Add any custom code below. To protect your changes during updates create a child theme instead.
+ * http://codex.wordpress.org/Child_Themes
+ */

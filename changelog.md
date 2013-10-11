@@ -1,6 +1,6 @@
 # Highwind changelog
 
-## 25.09.2013 - 1.1.1
+## 11.10.2013 - 1.1.1
 * Renamed setup_styles() to highwind_woocommerce_setup_styles().
 * Renamed woocommerce_prep() to highwind_woocommerce_prep().
 * Fix comment arrow color.

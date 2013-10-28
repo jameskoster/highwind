@@ -1,5 +1,8 @@
 # Highwind changelog
 
+## 28.10.2013 - 1.1.2
+* Persian translated kudos mmnaderi.
+
 ## 11.10.2013 - 1.1.1
 * Renamed setup_styles() to highwind_woocommerce_setup_styles().
 * Renamed woocommerce_prep() to highwind_woocommerce_prep().

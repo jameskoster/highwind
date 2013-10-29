@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "farsifont";
+    src: url("framework/typefaces/farsifont.woff"),
+        url("framework/typefaces/farsifont.ttf"),
+        url("framework/typefaces/farsifont.eot");
+}
+
+@font-face {
+    font-family: "farsifont";
+    font-weight: bold;
+	src: url("framework/typefaces/farsifont.woff"),
+        url("framework/typefaces/farsifont.ttf"),
+        url("framework/typefaces/farsifont.eot");
+}
+
+body {
+	direction:rtl;
+	text-align:right;
+	font-family:"farsifont", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:"farsifont", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.besmellah {
+	height:26px;
+	background:url("images/besmellah.png") no-repeat center center;
+}
+
+.site-description {
+  font-size: 1.281em;
+  letter-spacing: 0;
+}
+
+.page-title, .post-title {
+	text-align: right;
+}
+
+.besmellah {
+	margin:-30px auto 30px;
+}
+
+form.searchform input#searchsubmit, form.searchform:before {
+  left: 0;
+  right: auto;
+}
+
+form.searchform input#s {
+  font-weight:bold;
+  padding-left:3.552em;
+  padding-right:11.397px;
+}
+
+h1, h2, h3, h4, h5, h6, .heading, .omega, .psi, .alpha, .beta, .gamma, .delta {
+  text-align:right;
+}
+
+.article-content, .post-date, .post-meta, .sidebar .widget {
+	font-size:18px;
+}
+
+.sidebar h1 {
+	font-size:26px;
+}
+
+.sidebar .widget.widget_search {
+	font-size:14px;
+}
+
+.footer p {
+	float:right;
+}
+
+ul, ol {
+  padding-right: 0;
+}
+
+.footer a.back-to-top {
+  right:auto;
+  float: left;
+  left: 1em;
+}
+
+.main-nav ul.menu li {
+	float:right;
+}
+
+.main-nav ul.menu a {
+	font-family:"farsifont", "Open Sans";
+}
+
+.main-nav ul.menu > li.current-menu-item > a:before {
+	left: auto;
+	right:50%;
+	margin-right: -0.563em;
+}
+  
+.main-nav ul.menu > li.parent > a:after {
+	text-align: left;
+}
+
+.main-nav ul.menu ul {
+	left: auto;
+	right:0;
+	text-align: right;
+}
+
+h1, .site-title, .alpha {
+  letter-spacing:0;
+}
+
+.site-title {
+  text-align: right;
+}
+
+.comments .comment-author img {
+  float: right;
+  margin-right:0;
+  margin-left: 1em;
+}
+
+.comments .comment-content:before,
+.comments .comment-content:after {
+  left:auto;
+  right:.844em;
+}
+
+.comments ul.children > li {
+  float: left;
+}
+
+form .comment-form-author label,
+form .comment-form-email label,
+form .comment-form-url label {
+  float: right;
+}
+
+form .comment-form-author,
+form .comment-form-email,
+form .comment-form-url {
+  float: right;
+  margin-right:0;
+  margin-left: 3.8%;
+}
+
+form .comment-form-url {
+  float: left;
+  margin-left: 0;
+}
+
+.form-allowed-tags code {
+	display:block;
+	direction:ltr;
+	text-align:justify;
+	font-size:0.8em;
+}
+
+blockquote:before {
+  float: right;
+}
+
+.navigation-paging .nav-previous,
+.navigation-post .nav-previous,
+.navigation-comments .nav-previous,
+.navigation-paging .nav-next,
+.navigation-post .nav-next,
+.navigation-comments .nav-next {
+  float: right;
+}
+
+.navigation-paging .nav-previous a:before,
+.navigation-post .nav-previous a:before,
+.navigation-comments .nav-previous a:before,
+.navigation-paging .nav-next a:after,
+.navigation-post .nav-next a:after,
+.navigation-comments .nav-next a:after {
+	content:"";
+}
+
+.navigation-paging .nav-next a:after,
+.navigation-post .nav-next a:after,
+.navigation-comments .nav-next a:after {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  text-align: left;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f053";
+}
+
+.navigation-paging .nav-next,
+.navigation-post .nav-next,
+.navigation-comments .nav-next {
+  text-align: right;
+  float: left;
+}
+
+.navigation-paging .nav-previous a:before,
+.navigation-post .nav-previous a:before,
+.navigation-comments .nav-previous a:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  text-align: right;
+  line-height: 1;
+  content: "\f179";
+  content: "\f054";
+}

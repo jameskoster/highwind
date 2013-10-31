@@ -2524,6 +2524,9 @@ ul.menu {
   margin-top: 1em;
   margin-bottom: 2.665em;
 }
+.infinite-scroll .navigation-paging {
+  display: none;
+}
 /**
  * Posts
  */

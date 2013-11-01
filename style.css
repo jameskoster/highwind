@@ -5,7 +5,7 @@ Description: Highwind is a lightweight, free WordPress theme designed to showcas
 Author: jameskoster
 Author URI: http://jameskoster.co.uk
 Version: 1.1.1
-Tags: white, two-columns, left-sidebar, right-sidebar, flexible-width, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light
+Tags: white, two-columns, left-sidebar, right-sidebar, flexible-width, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light, infinite-scroll
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -2523,6 +2523,9 @@ ul.menu {
 .navigation-comments {
   margin-top: 1em;
   margin-bottom: 2.665em;
+}
+.infinite-scroll .navigation-paging {
+  display: none;
 }
 /**
  * Posts

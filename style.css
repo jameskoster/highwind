@@ -341,19 +341,14 @@ audio:not([controls]) {
 html {
   background: #fff;
   /* 1 */
-
   color: #000;
   /* 2 */
-
   font-family: sans-serif;
   /* 3 */
-
   -ms-text-size-adjust: 100%;
   /* 4 */
-
   -webkit-text-size-adjust: 100%;
   /* 4 */
-
 }
 /**
  * Remove default margin.
@@ -508,10 +503,8 @@ fieldset {
 legend {
   border: 0;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /**
  * 1. Correct font family not being inherited in all browsers.
@@ -524,13 +517,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-
   font-size: 100%;
   /* 2 */
-
   margin: 0;
   /* 3 */
-
 }
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -563,10 +553,8 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-
   cursor: pointer;
   /* 3 */
-
 }
 /**
  * Re-set default cursor for disabled elements.
@@ -583,10 +571,8 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -596,11 +582,9 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-
   box-sizing: content-box;
 }
 /**
@@ -626,10 +610,8 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   /* 1 */
-
   vertical-align: top;
   /* 2 */
-
 }
 /* ==========================================================================
    Tables
@@ -692,26 +674,20 @@ body:after {
   overflow: hidden;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
 }
 .inner-wrap {
   position: relative;
   width: 100%;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   left: 0;
 }
 /**
@@ -755,12 +731,10 @@ form ::-webkit-input-placeholder {
 }
 form :-moz-placeholder {
   /* Firefox 18- */
-
   color: rgba(0, 0, 0, 0.35);
 }
 form ::-moz-placeholder {
   /* Firefox 19+ */
-
   color: rgba(0, 0, 0, 0.35);
 }
 form :-ms-input-placeholder {
@@ -789,13 +763,10 @@ textarea {
   width: 100%;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   outline: none;
 }
 input[type="submit"],
@@ -1009,13 +980,10 @@ img.wp-post-image {
 .post img {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
 }
 .post img.wp-smiley {
   padding: 0;
@@ -1032,13 +1000,10 @@ img.wp-post-image {
   margin: 0;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
 }
 /**
  * Gallery
@@ -1647,8 +1612,8 @@ form.searchform:before {
     -webkit-text-size-adjust: none;
   }
   /**
-  	 * Wrappers
-  	 */
+	 * Wrappers
+	 */
   .inner-wrap {
     left: 0 !important;
     -webkit-transform: none !important;
@@ -1680,8 +1645,8 @@ form.searchform:before {
     clear: both;
   }
   /**
-  	 * Layout
-  	 */
+	 * Layout
+	 */
   .content {
     display: inline;
     float: left;
@@ -1768,8 +1733,8 @@ form.searchform:before {
     float: none;
   }
   /**
-  	 * Header
-  	 */
+	 * Header
+	 */
   .toggle-container {
     display: none !important;
   }
@@ -1809,13 +1774,10 @@ form.searchform:before {
     *zoom: 1;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
-  
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
-  
     box-sizing: border-box;
     /* Opera/IE 8+ */
-  
   }
   .main-nav .highwind-navigation:before,
   .main-nav .highwind-navigation:after {
@@ -1836,8 +1798,8 @@ form.searchform:before {
     *margin-right: 2.614105336445398%;
   }
   /**
-  	 * Navigation
-  	 */
+	 * Navigation
+	 */
   .main-nav {
     margin-bottom: 0;
   }
@@ -1846,7 +1808,6 @@ form.searchform:before {
     margin-bottom: 0;
     padding: 0;
     /* CHILDREN */
-  
   }
   .main-nav ul.menu li {
     position: relative;
@@ -1858,13 +1819,10 @@ form.searchform:before {
     display: inline-block;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
-  
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
-  
     box-sizing: border-box;
     /* Opera/IE 8+ */
-  
   }
   .main-nav ul.menu ul {
     position: absolute;
@@ -1909,15 +1867,15 @@ form.searchform:before {
     -webkit-transform: translateY(0);
   }
   /**
-  	 * Layout
-  	 */
+	 * Layout
+	 */
   .post .attachment-post-thumbnail,
   article.attachment .attachment-post-thumbnail {
     height: auto;
   }
   /**
-  	 * Posts
-  	 */
+	 * Posts
+	 */
   .post {
     *zoom: 1;
   }
@@ -1935,8 +1893,8 @@ form.searchform:before {
     float: none;
   }
   /**
-  	 * Pages
-  	 */
+	 * Pages
+	 */
   .page {
     *zoom: 1;
   }
@@ -1949,14 +1907,14 @@ form.searchform:before {
     clear: both;
   }
   /**
-  	 * Comments
-  	 */
+	 * Comments
+	 */
   .comments ol.commentlist {
     margin-bottom: 0;
   }
   /**
-  	 * Footer
-  	 */
+	 * Footer
+	 */
   .footer {
     clear: both;
     float: none;
@@ -1973,15 +1931,15 @@ form.searchform:before {
     *margin-right: 2.614105336445398%;
   }
   /**
-  	 * Styles applied when admin bar is present
-  	 */
+	 * Styles applied when admin bar is present
+	 */
   .admin-bar .main-nav {
     top: 28px;
   }
   /**
-  	 * Layout options
-  	 * sidebar-content is default, these styles override floats / margins etc for content-sidebar
-  	 */
+	 * Layout options
+	 * sidebar-content is default, these styles override floats / margins etc for content-sidebar
+	 */
   body.content-sidebar .sidebar {
     float: right;
   }
@@ -2261,13 +2219,10 @@ textarea {
   outline: none;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
 }
 textarea {
   padding: 1em;
@@ -2275,15 +2230,11 @@ textarea {
 input[type="radio"] {
   -webkit-appearance: none;
   /* Hides the default radio style */
-
   height: 1.5em;
   width: 1.5em;
   /* Safari/Chrome, other WebKit */
-
   /* Firefox, other Gecko */
-
   /* Opera/IE 8+ */
-
   font-size: .844em;
   border: 0.422em solid #666a76;
   background: #666a76;
@@ -2293,13 +2244,10 @@ input[type="radio"] {
   border-radius: 100%;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   margin-right: 1em;
   float: left;
   -webkit-transition: all ease 0.238s;
@@ -2313,7 +2261,6 @@ input[type="radio"]:checked {
 input[type="checkbox"] {
   -webkit-appearance: none;
   /* Hides the default checkbox style */
-
   height: 1.5em;
   width: 1.5em;
   cursor: pointer;
@@ -2714,14 +2661,14 @@ img.wp-post-image {
     padding: 0 3.157em;
   }
   /**
-  	 * Layout
-  	 */
+	 * Layout
+	 */
   .content {
     padding-bottom: 4.209em;
   }
   /**
-  	 * Header
-  	 */
+	 * Header
+	 */
   .header {
     padding-top: 7.478em;
     padding-left: 999em;
@@ -2771,15 +2718,14 @@ img.wp-post-image {
     text-align: center;
   }
   /**
-  	 * Navigation
-  	 */
+	 * Navigation
+	 */
   .main-nav {
     border-right: 0;
     border-bottom: 0.422em solid #53a1b8;
   }
   .main-nav ul.menu {
     /* CHILDREN */
-  
   }
   .main-nav ul.menu > li:hover > a,
   .main-nav ul.menu > li > a:hover {
@@ -2853,28 +2799,24 @@ img.wp-post-image {
     color: #fff;
   }
   /**
-  	 * Sidebar
-  	 */
+	 * Sidebar
+	 */
   .sidebar {
     background: rgba(0, 0, 0, 0.02);
     padding: 4.209rem 0 1.999rem 3.157rem;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
-  
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
-  
     box-sizing: border-box;
     /* Opera/IE 8+ */
-  
     font-size: .844em;
     margin-top: -4.209rem;
     -webkit-box-shadow: 14.5em 0 0 rgba(0, 0, 0, 0.025), 38em 0 0 rgba(0, 0, 0, 0.025), 61.5em 0 0 rgba(0, 0, 0, 0.025);
     box-shadow: 15.45em 0 0 rgba(0, 0, 0, 0.025), 38em 0 0 rgba(0, 0, 0, 0.025), 61.5em 0 0 rgba(0, 0, 0, 0.025);
     /**
-  		  * Sidebar Widgets
-  		  */
-  
+		  * Sidebar Widgets
+		  */
   }
   .sidebar .widget {
     filter: alpha(opacity=@opacity * 100);
@@ -2883,8 +2825,8 @@ img.wp-post-image {
     opacity: 0.8;
   }
   /**
-  	 * Posts
-  	 */
+	 * Posts
+	 */
   .page-title,
   .post-title {
     margin: 0;
@@ -2909,17 +2851,17 @@ img.wp-post-image {
     text-decoration: none;
   }
   /**
-  	 * Comments
-  	 */
+	 * Comments
+	 */
   .comments .comment-content {
     padding: 1.999em;
   }
   /**
-  	 * Footer
-  	 */
+	 * Footer
+	 */
   /**
-  	 * Sidebar-Content layout
-  	 */
+	 * Sidebar-Content layout
+	 */
   body.sidebar-content .sidebar {
     padding: 4.209rem 3.157rem 1.999rem 0;
     -webkit-box-shadow: -14.5em 0 0 rgba(0, 0, 0, 0.025), -38em 0 0 rgba(0, 0, 0, 0.025), -61.5em 0 0 rgba(0, 0, 0, 0.025);

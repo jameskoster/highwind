@@ -2511,11 +2511,11 @@ img.wp-post-image {
  * Comments
  */
 .comments .bypostauthor .comment-content {
-  -webkit-box-shadow: 0 0 0 0.134em rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 0 0.134em rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0 0.134em rgba(83, 161, 184, 0.5);
+  box-shadow: 0 0 0 0.134em rgba(83, 161, 184, 0.5);
 }
 .comments .bypostauthor .comment-content:before {
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  border-color: transparent transparent rgba(83, 161, 184, 0.5) transparent;
 }
 .comments .comment-content {
   padding: 1em;

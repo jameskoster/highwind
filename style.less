@@ -496,9 +496,9 @@ img.wp-post-image {
 .comments {
 	.bypostauthor {
 		.comment-content {
-			.box_shadow(0,0,0,.134em,rgba(0,0,0,0.1));
+			.box_shadow(0,0,0,.134em,fade(@color_theme, 50%));
 			&:before {
-				border-color: transparent transparent rgba(0,0,0,0.1) transparent;
+				border-color: transparent transparent fade(@color_theme, 50%) transparent;
 			}
 		}
 	}

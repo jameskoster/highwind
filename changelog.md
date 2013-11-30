@@ -1,9 +1,10 @@
 # Highwind changelog
 
-## 28.10.2013 - 1.2.0
+## 30.11.2013 - 1.2.0
 * Persian translated kudos mmnaderi.
 * Added support for jetpack infinite scroll (Thanks BFTrick).
 * Added codekit-config.json (Thanks BFTrick).
+* Comment by post author style.
 
 ## 11.10.2013 - 1.1.1
 * Renamed setup_styles() to highwind_woocommerce_setup_styles().

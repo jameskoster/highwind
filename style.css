@@ -2163,9 +2163,6 @@ blockquote:before {
   font-family: "FontAwesome";
   line-height: 1;
 }
-blockquote + blockquote p:first-child {
-  padding-top: 1.777em;
-}
 code,
 pre {
   background: rgba(0, 0, 0, 0.05);

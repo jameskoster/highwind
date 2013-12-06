@@ -51,7 +51,7 @@ body {
  * Wrappers
  */
 .inner-wrap {
-	padding: 0 1.777em;
+	padding: 0 1.125em;
 	background-color: @color_bg;
 }
 
@@ -170,6 +170,7 @@ ins {
 
 blockquote {
 	.opacity(0.8);
+	padding-left:1.777em;
 	p:last-child {
 		margin-bottom:0;
 	}
@@ -366,9 +367,9 @@ img {
  * Header
  */
 .header {
-	padding:1.777em 1.777em 2.665em 1.777em;
-	margin-left:-1.777em;
-	margin-right:-1.777em;
+	padding:1.777em 1.125em 2.665em 1.125em;
+	margin-left:-1.125em;
+	margin-right:-1.125em;
 	margin-bottom:4.209em;
 	background-color:@color_theme;
 	background-position:center center;
@@ -736,6 +737,10 @@ img.wp-post-image {
 	 */
 	.page-title, .post-title {
 		.psi;
+	}
+
+	blockquote {
+		padding-left: 0;
 	}
 
 

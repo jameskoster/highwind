@@ -1964,7 +1964,7 @@ body {
  * Wrappers
  */
 .inner-wrap {
-  padding: 0 1.777em;
+  padding: 0 1.125em;
   background-color: #f8f8f9;
 }
 /**
@@ -2138,6 +2138,7 @@ blockquote {
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
   opacity: 0.8;
+  padding-left: 1.777em;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -2369,9 +2370,9 @@ img.wp-smiley {
  * Header
  */
 .header {
-  padding: 1.777em 1.777em 2.665em 1.777em;
-  margin-left: -1.777em;
-  margin-right: -1.777em;
+  padding: 1.777em 1.125em 2.665em 1.125em;
+  margin-left: -1.125em;
+  margin-right: -1.125em;
   margin-bottom: 4.209em;
   background-color: #53a1b8;
   background-position: center center;
@@ -2851,6 +2852,9 @@ img.wp-post-image {
   .page-title a,
   .post-title a {
     text-decoration: none;
+  }
+  blockquote {
+    padding-left: 0;
   }
   /**
 	 * Comments

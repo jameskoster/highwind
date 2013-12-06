@@ -704,13 +704,6 @@ img,
 form label {
   display: block;
 }
-form .comment-form-author,
-form .comment-form-email,
-form .comment-form-url {
-  width: 30.75%;
-  float: left;
-  margin-right: 3.8%;
-}
 form .comment-form-author label,
 form .comment-form-email label,
 form .comment-form-url label {
@@ -721,10 +714,6 @@ form .comment-form-author input,
 form .comment-form-email input,
 form .comment-form-url input {
   clear: left;
-}
-form .comment-form-url {
-  float: right;
-  margin-right: 0;
 }
 form ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.35);
@@ -1872,6 +1861,17 @@ form.searchform:before {
   .post .attachment-post-thumbnail,
   article.attachment .attachment-post-thumbnail {
     height: auto;
+  }
+  form .comment-form-author,
+  form .comment-form-email,
+  form .comment-form-url {
+    width: 30.75%;
+    float: left;
+    margin-right: 3.8%;
+  }
+  form .comment-form-url {
+    float: right;
+    margin-right: 0;
   }
   /**
 	 * Posts

@@ -70,9 +70,6 @@ form {
 		display: block;
 	}
 	.comment-form-author, .comment-form-email, .comment-form-url {
-		width:30.75%;
-		float: left;
-		margin-right:3.8%;
 		label {
 			display: inline-block;
 			float: left;
@@ -80,10 +77,6 @@ form {
 		input {
 			clear: left;
 		}
-	}
-	.comment-form-url {
-		float: right;
-		margin-right:0;
 	}
 	::-webkit-input-placeholder {
 	   color: rgba(0,0,0,0.35);
@@ -777,6 +770,18 @@ form.searchform {
 	.post, article.attachment {
 		.attachment-post-thumbnail {
 			height: auto;
+		}
+	}
+
+	form {
+		.comment-form-author, .comment-form-email, .comment-form-url {
+			width:30.75%;
+			float: left;
+			margin-right:3.8%;
+		}
+		.comment-form-url {
+			float: right;
+			margin-right:0;
 		}
 	}
 

@@ -5,6 +5,7 @@
 * Added support for jetpack infinite scroll (Thanks BFTrick).
 * Added codekit-config.json (Thanks BFTrick).
 * Comment by post author style.
+* Tweaked comment form display on handheld devices.
 
 ## 11.10.2013 - 1.1.1
 * Renamed setup_styles() to highwind_woocommerce_setup_styles().

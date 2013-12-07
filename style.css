@@ -2479,13 +2479,13 @@ ul.menu {
   background: #f8f8f9;
 }
 .main-nav .buttons {
-  padding: 1.777em;
+  padding: 1.777em 1.125em;
 }
 .main-nav .menu {
-  padding: 0 1.777em;
+  padding: 0 1.125em;
 }
 .main-nav h2 {
-  padding: 0 1.777em;
+  padding: 0 1.125em;
 }
 .navigation-paging,
 .navigation-post,

@@ -1,0 +1,294 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Highwind\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-10-26 14:25+0330\n"
+"Last-Translator: Mohammad Mahdi Naderi <info@mmnaderi.ir>\n"
+"Language-Team: Mohammad Mahdi Naderi <info@mmnaderi.ir>\n"
+"Language: Persian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\wordpress\\wp-content\\themes"
+"\\highwind\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: C:\\xampp\\htdocs\\wordpress\\wp-content\\themes"
+"\\highwind\n"
+
+#: 404.php:24
+msgid "404 not found"
+msgstr "خطای ۴۰۴، پیدا نشد"
+
+#: 404.php:34
+msgid ""
+"It seems the page you're looking for no longer (or indeed never did) exists "
+"at this location. Please try searching..."
+msgstr ""
+"به نظر می‌رسد صفحه‌ای که به دنبال آن هستید اینجا نیست و یا اصلاً وجود نداشته "
+"است. بهتر است جستجو کنید..."
+
+#: 404.php:40
+msgid "Try looking in the monthly archives."
+msgstr "یک نگاه به بایگانی ماهانه بیندازید."
+
+#: archive.php:25
+#, php-format
+msgid "Category Archives: %s"
+msgstr "بایگانی دسته‌بندی: %s"
+
+#: archive.php:28
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "بایگانی برچسب: %s"
+
+#: archive.php:35
+#, php-format
+msgid "Author Archives: %s"
+msgstr "بایگانی نویسنده: %s"
+
+#: archive.php:43
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "بایگانی روزانه: %s"
+
+#: archive.php:46
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "بایگانی ماهانه: %s"
+
+#: archive.php:49
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "بایگانی سالانه: %s"
+
+#: archive.php:52
+msgid "Archives"
+msgstr "بایگانی‌ها"
+
+#: archive.php:90 index.php:36 search.php:42
+msgid "Nothing Found"
+msgstr "چیزی پیدا نشد"
+
+#: archive.php:100 index.php:46 search.php:48
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+"عذرخواهی، هیچ نتیجه‌ای برای بایگانی درخواست‌شده یافت نشد. شاید با جستجو مطلب "
+"مرتبطی پیدا کنید."
+
+#: comments.php:17
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr "این نوشته با رمز محافظت شده است. برای نمایش دیدگاه‌ها رمز را وارد کنید."
+
+# @ highwind
+#: comments.php:30
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "یک دیدگاه در &ldquo;%2$s&rdquo; ارسال شده است."
+msgstr[1] "%1$s دیدگاه در &ldquo;%2$s&rdquo; ارسال شده است."
+
+#: comments.php:45
+msgid "Comments are closed."
+msgstr "دیدگاه‌ها بسته شده‌اند."
+
+#: content-page.php:29
+msgid "Pages:"
+msgstr "صفحات:"
+
+# @ highwind
+#: content.php:18 framework/highwind-template.php:144 image.php:27
+#, php-format
+msgid "Permalink to %s"
+msgstr "پیوند یکتا به %s"
+
+#: framework/highwind-functions.php:21
+msgid "Main menu"
+msgstr "منوی اصلی"
+
+#: framework/highwind-functions.php:76
+msgid "Sidebar"
+msgstr "ستون کناری"
+
+#: framework/highwind-functions.php:86
+msgid "Footer #1"
+msgstr "فوتر #1"
+
+#: framework/highwind-functions.php:94
+msgid "Footer #2"
+msgstr "فوتر #2"
+
+#: framework/highwind-functions.php:102
+msgid "Footer #3"
+msgstr "فوتر #3"
+
+#: framework/highwind-functions.php:185
+#, php-format
+msgid "Page %s"
+msgstr "صفحه‌ی %s"
+
+#: framework/highwind-options.php:61
+msgid "Navigation"
+msgstr "منو"
+
+#: framework/highwind-options.php:68
+msgid "Layout"
+msgstr "لایه"
+
+#: framework/highwind-options.php:79
+msgid "Link Color"
+msgstr "رنگ لینک"
+
+#: framework/highwind-options.php:86
+msgid "Header Color"
+msgstr "رنگ سربرگ"
+
+#: framework/highwind-options.php:93
+msgid "Text Color"
+msgstr "رنگ متن"
+
+#: framework/highwind-options.php:100
+msgid "Background Color"
+msgstr "رنگ پس‌زمینه"
+
+#: framework/highwind-options.php:270
+msgid "Content on left"
+msgstr "محتوا در چپ"
+
+#: framework/highwind-options.php:274
+msgid "Content on right"
+msgstr "محتوا در راست"
+
+#: framework/highwind-template.php:20
+msgid "Skip to navigation"
+msgstr "پرش به منو"
+
+#: framework/highwind-template.php:69
+msgid "Home"
+msgstr "خانه"
+
+#: framework/highwind-template.php:70
+msgid "Return to Content"
+msgstr "برگشت به محتوا"
+
+#: framework/highwind-template.php:125
+msgid "0 Comments"
+msgstr "بدون دیدگاه"
+
+#: framework/highwind-template.php:125
+msgid "1 Comment"
+msgstr "یک دیدگاه"
+
+#: framework/highwind-template.php:125
+msgid "% Comments"
+msgstr "% دیدگاه"
+
+#: framework/highwind-template.php:159
+msgid "Comment navigation"
+msgstr "منوی دیدگاه‌ها"
+
+#: framework/highwind-template.php:160
+msgid "Older Comments"
+msgstr "دیدگاه‌های قدیمی‌تر"
+
+#: framework/highwind-template.php:161
+msgid "Newer Comments"
+msgstr "دیدگاه‌های جدیدتر"
+
+#: framework/highwind-template.php:194
+msgid "Post navigation"
+msgstr "منوی پست‌ها"
+
+#: framework/highwind-template.php:204
+msgid "Older posts"
+msgstr "نوشته‌های قدیمی‌تر"
+
+#: framework/highwind-template.php:208
+msgid "Newer posts"
+msgstr "نوشته‌های جدیدتر"
+
+#. translators: 1: date, 2: time
+#: framework/highwind-template.php:244
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s در %2$s"
+
+#: framework/highwind-template.php:244
+msgid "Edit"
+msgstr "ویرایش"
+
+#: framework/highwind-template.php:247
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
+
+#: framework/highwind-template.php:251
+msgid "Your comment is awaiting moderation."
+msgstr "دیدگاه شما در انتظار بررسی است."
+
+#: framework/highwind-template.php:333
+msgid "Powered by"
+msgstr "نیروگرفته از"
+
+#: framework/highwind-template.php:333
+msgid "Highwind - Customisable and extendable WordPress theme"
+msgstr "تندباد - پوسته‌ی قابل پیکربندی و توسعه‌پذیر وردپرس"
+
+#: framework/highwind-template.php:347
+msgid "Back to top"
+msgstr "برگشت به بالا"
+
+#: index.php:12
+msgid "You do not have sufficient permissions to access this page!"
+msgstr "شما مجوز کافی برای دسترسی به این صفحه را ندارید!"
+
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr "نتایج جستجو برای: %s"
+
+# @ highwind
+#: searchform.php:8
+msgctxt "assistive text"
+msgid "Search"
+msgstr "جستجو"
+
+# @ highwind
+#: searchform.php:9
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "جستجو &hellip;"
+
+# @ highwind
+#: searchform.php:10
+msgctxt "submit button"
+msgid "Search"
+msgstr "جستجو"
+
+#~ msgid "Continue Reading..."
+#~ msgstr "بیشتر بخوانید »"
+
+#~ msgid "Content Background Color"
+#~ msgstr "رنگ پس‌زمینه محتوا"
+
+#~ msgid "WooCommerce"
+#~ msgstr "ووکامرس"
+
+#~ msgid "Display Header Cart"
+#~ msgstr "نمایش سبد در سربرگ"
+
+#~ msgid "Display Header Product Search"
+#~ msgstr "نمایش جستجو کالا در سربرگ"
+
+#~ msgid "Archives Full Width?"
+#~ msgstr "بایگانی عرض کامل داشته باشد؟"
+
+#~ msgid "Product Details Full Width?"
+#~ msgstr "جزئیات کالا عرض کامل داشته باشد؟"
+
+#~ msgid "View your cart"
+#~ msgstr "نمایش سبد شما"

@@ -4,8 +4,8 @@ Theme URI: http://jameskoster.co.uk/highwind/
 Description: Highwind is a lightweight, free WordPress theme designed to showcase content. It features a clean, responsive design with a strong focus on typography, plus a bunch of presentational options and widgetised regions allowing you to give your site a unique touch. <a href="https://github.com/jameskoster/highwind/wiki">View Documentation</a>.
 Author: jameskoster
 Author URI: http://jameskoster.co.uk
-Version: 1.1.1
-Tags: white, two-columns, left-sidebar, right-sidebar, flexible-width, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light
+Version: 1.2.0
+Tags: white, two-columns, left-sidebar, right-sidebar, flexible-width, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light, infinite-scroll
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -51,7 +51,7 @@ body {
  * Wrappers
  */
 .inner-wrap {
-	padding: 0 1.777em;
+	padding: 0 1.125em;
 	background-color: @color_bg;
 }
 
@@ -170,6 +170,7 @@ ins {
 
 blockquote {
 	.opacity(0.8);
+	padding-left:1.777em;
 	p:last-child {
 		margin-bottom:0;
 	}
@@ -194,12 +195,6 @@ blockquote {
 		font-size:3.157em;
 		font-family:"FontAwesome";
 		line-height: 1;
-	}
-}
-
-blockquote + blockquote {
-	p:first-child {
-		padding-top:1.777em;
 	}
 }
 
@@ -372,9 +367,9 @@ img {
  * Header
  */
 .header {
-	padding:1.777em 1.777em 2.665em 1.777em;
-	margin-left:-1.777em;
-	margin-right:-1.777em;
+	padding:1.777em 1.125em 2.665em 1.125em;
+	margin-left:-1.125em;
+	margin-right:-1.125em;
 	margin-bottom:4.209em;
 	background-color:@color_theme;
 	background-position:center center;
@@ -434,18 +429,21 @@ ul.menu {
 	margin-bottom: 2.618em;
 	background: @color_bg;
 	.buttons {
-		padding: 1.777em;
+		padding: 1.777em 1.125em;
 	}
 	.menu {
-		padding:0 1.777em;
+		padding:0 1.125em;
 	}
 	h2 {
-		padding:0 1.777em;
+		padding:0 1.125em;
 	}
 }
 .navigation-paging, .navigation-post, .navigation-comments {
 	margin-top:1em;
 	margin-bottom:2.665em;
+}
+.infinite-scroll .navigation-paging {
+	display: none;
 }
 
 
@@ -478,6 +476,12 @@ article.post, article.page {
 	line-height: 1.33em
 }
 
+.wp-caption {
+	img {
+		margin-bottom: 1em;
+	}
+}
+
 img.alignleft {
 	margin:1.777em 1.777em 1.777em 0;
 }
@@ -493,9 +497,15 @@ img.wp-post-image {
 .comments {
 	.bypostauthor {
 		.comment-content {
-			.box_shadow(0,0,0,.134em,rgba(0,0,0,0.1));
+			background: @color_theme;
+			-webkit-box-shadow: none;
+			box-shadow:			none;
+			color: #fff;
+			&:after {
+				border-color: transparent transparent @color_theme transparent;
+			}
 			&:before {
-				border-color: transparent transparent rgba(0,0,0,0.1) transparent;
+				display: none;
 			}
 		}
 	}
@@ -706,19 +716,10 @@ img.wp-post-image {
 	 * Sidebar
 	 */
 	 .sidebar {
-	 	background:rgba(0,0,0,0.02);
-		padding:4.209rem 0 1.999rem 3.157rem;
+		padding:4.209rem 0 0 0;
 		.borderbox;
 		font-size:.844em;
 		margin-top:-4.209rem;
-		-webkit-box-shadow:
-			14.5em 0 0 rgba(0,0,0,0.025),
-			38em 0 0 rgba(0,0,0,0.025),
-			61.5em 0 0 rgba(0,0,0,0.025);
-		box-shadow:
-			15.45em 0 0 rgba(0,0,0,0.025),
-			38em 0 0 rgba(0,0,0,0.025),
-			61.5em 0 0 rgba(0,0,0,0.025);
 		/**
 		  * Sidebar Widgets
 		  */
@@ -735,6 +736,10 @@ img.wp-post-image {
 		.psi;
 	}
 
+	blockquote {
+		padding-left: 0;
+	}
+
 
 	/**
 	 * Comments
@@ -745,28 +750,4 @@ img.wp-post-image {
 		}
 	}
 
-
-	/**
-	 * Footer
-	 */
-	.footer {
-	}
-
-
-	/**
-	 * Sidebar-Content layout
-	 */
-	body.sidebar-content {
-		.sidebar {
-			padding:4.209rem 3.157rem 1.999rem 0;
-			-webkit-box-shadow:
-				-14.5em 0 0 rgba(0,0,0,0.025),
-				-38em 0 0 rgba(0,0,0,0.025),
-				-61.5em 0 0 rgba(0,0,0,0.025);
-			box-shadow:
-				-14.5em 0 0 rgba(0,0,0,0.025),
-				-38em 0 0 rgba(0,0,0,0.025),
-				-61.5em 0 0 rgba(0,0,0,0.025);
-		}
-	}
 }

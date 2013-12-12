@@ -98,16 +98,5 @@ jQuery(document).ready(function($){
         }
     });
 
-
-    /**
-     * Make sidebar same height as content
-     */
-    var contentHeight = jQuery( '.content' ).height();
-    var sidebarHeight = jQuery( '.sidebar' ).height();
-
-    if ( contentHeight > sidebarHeight ) {
-        jQuery( '.sidebar' ).css( 'min-height', contentHeight + 220 );
-    }
-
 });
 }(jQuery));

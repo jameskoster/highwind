@@ -10,7 +10,7 @@
 
 <?php highwind_entry_before(); ?>
 
-<div class="post-wrap">
+<div id="post-wrap" class="post-wrap">
 
 <?php while ( have_posts() ) : the_post(); ?>
 

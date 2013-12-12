@@ -124,6 +124,9 @@ if ( ! function_exists( 'highwind_post_meta' ) ) {
 				<li class="categories"><?php the_category( ', ' ); ?></li>
 				<li class="comment"><?php comments_popup_link( __( '0 Comments', 'highwind' ), __( '1 Comment', 'highwind' ), __( '% Comments', 'highwind' ) ); ?></li>
 				<?php the_tags( '<li class="tags">', ', ','</li>' ); ?>
+				<?php if ( apply_filters( 'highwind_meta_author_link', true ) ) { ?>
+					<li class="author"><?php the_author_posts_link(); ?></li>
+				<?php } // endif ?>
 			</ul>
 		</aside><!-- /.post-meta -->
 		<?php

@@ -2559,6 +2559,9 @@ img.wp-post-image {
 .comments .comment-content p:last-child {
   margin-bottom: 0;
 }
+.comments .comment-content > ul, .comments .comment-content > ol {
+  margin-bottom: 1.777em;
+}
 .comments .comment-content:before,
 .comments .comment-content:after {
   content: "";

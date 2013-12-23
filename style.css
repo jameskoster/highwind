@@ -4,7 +4,7 @@ Theme URI: http://jameskoster.co.uk/highwind/
 Description: Highwind is a lightweight, free WordPress theme designed to showcase content. It features a clean, responsive design with a strong focus on typography, plus a bunch of presentational options and widgetised regions allowing you to give your site a unique touch. <a href="https://github.com/jameskoster/highwind/wiki">View Documentation</a>.
 Author: jameskoster
 Author URI: http://jameskoster.co.uk
-Version: 1.2.0
+Version: 1.2.1
 Tags: white, two-columns, left-sidebar, right-sidebar, flexible-width, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light, infinite-scroll
 
 License: GNU General Public License v2 or later
@@ -2535,16 +2535,16 @@ img.wp-post-image {
 /**
  * Comments
  */
-.comments .bypostauthor .comment-content {
+.comments .bypostauthor > .comment-body .comment-content {
   background: #53a1b8;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
 }
-.comments .bypostauthor .comment-content:after {
+.comments .bypostauthor > .comment-body .comment-content:after {
   border-color: transparent transparent #53a1b8 transparent;
 }
-.comments .bypostauthor .comment-content:before {
+.comments .bypostauthor > .comment-body .comment-content:before {
   display: none;
 }
 .comments .comment-content {
@@ -2559,7 +2559,8 @@ img.wp-post-image {
 .comments .comment-content p:last-child {
   margin-bottom: 0;
 }
-.comments .comment-content > ul, .comments .comment-content > ol {
+.comments .comment-content > ul,
+.comments .comment-content > ol {
   margin-bottom: 1.777em;
 }
 .comments .comment-content:before,

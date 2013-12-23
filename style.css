@@ -1634,7 +1634,7 @@ form.searchform:before {
     -ms-transform: none !important;
     -o-transform: none !important;
     transform: none !important;
-    max-width: 74.55em;
+    max-width: 62.918em;
     margin: 1.777em auto;
     *zoom: 1;
   }
@@ -1781,7 +1781,7 @@ form.searchform:before {
     display: none;
   }
   .main-nav .highwind-navigation {
-    max-width: 74.55em;
+    max-width: 62.918em;
     padding: 0 3.157em;
     margin: 0 auto;
     *zoom: 1;
@@ -2690,6 +2690,7 @@ img.wp-post-image {
   /* Only apply the layout if the user is on a desktop / tablet */
   body {
     padding: 0;
+    font-size: 1.125em;
   }
   .inner-wrap {
     padding: 0 3.157em;

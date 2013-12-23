@@ -1,5 +1,10 @@
 # Highwind changelog
 
+## 23.12.2013 - 1.2.1
+* Fix - Adjacent list margins.
+* Fix - Replies to author comments no longer inherit author styles.
+* Tweak - Typography on desktop orientation slightly larger with a smaller measure.
+
 ## 12.12.2013 - 1.2.0
 * Persian translated kudos mmnaderi.
 * Added support for jetpack infinite scroll (Thanks BFTrick).

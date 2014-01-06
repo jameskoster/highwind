@@ -4,6 +4,7 @@
 * Fix - By post author comment styles (links).
 * Fix - WooCommerce product image width.
 * Tweak - Gutter widths.
+* Tweak - WooCommerce star ratings no longer cut off.
 
 ## 23.12.2013 - 1.2.1
 * Fix - Adjacent list margins.

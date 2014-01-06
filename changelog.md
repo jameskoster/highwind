@@ -3,6 +3,7 @@
 ## 06.01.2014 - 1.2.2
 * Fix - By post author comment styles (links).
 * Fix - WooCommerce product image width.
+* Tweak - If the content / bg colors are different the header section will adjust in width to match the content section.
 * Tweak - Gutter widths.
 * Tweak - WooCommerce star ratings no longer cut off.
 * Tweak - WooCommerce pagination styles.

@@ -1780,7 +1780,7 @@ form.searchform:before {
     display: none;
   }
   .main-nav .highwind-navigation {
-    max-width: 62.918em;
+    max-width: 69.75em;
     padding: 0 3.157em;
     margin: 0 auto;
     *zoom: 1;
@@ -2714,6 +2714,12 @@ img.wp-post-image {
     margin-left: -999em;
     margin-right: -999em;
     background-color: #53a1b8;
+  }
+  .background-contrast .header {
+    margin-left: -3.157em;
+    margin-right: -3.157em;
+    padding-left: 0;
+    padding-right: 0;
   }
   .site-title {
     margin: 0;

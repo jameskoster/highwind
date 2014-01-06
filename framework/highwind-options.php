@@ -300,8 +300,10 @@ function highwind_layouts() {
  * @since 1.0
  */
 function highwind_layout_classes( $existing_classes ) {
-    $options            = highwind_get_theme_options();
-    $current_layout     = $options['theme_layout'];
+    $options                    = highwind_get_theme_options();
+    $current_layout             = $options['theme_layout'];
+    $background_color           = str_replace( '#', '', get_theme_mod( 'background_color' ) );
+    $content_background_color   = str_replace( '#', '', get_theme_mod( 'content_background_color' ) );
 
     if ( in_array( $current_layout, array( 'content-sidebar', 'sidebar-content' ) ) )
         $classes = array( 'two-column' );
@@ -314,6 +316,12 @@ function highwind_layout_classes( $existing_classes ) {
         $classes[] = 'sidebar-content';
     else
         $classes[] = $current_layout;
+
+    if ( $background_color == $content_background_color ) {
+        $classes[] = 'no-background-contrast';
+    } else {
+        $classes[] = 'background-contrast';
+    }
 
     $classes = apply_filters( 'highwind_layout_classes', $classes, $current_layout );
 

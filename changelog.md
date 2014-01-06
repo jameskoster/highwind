@@ -9,6 +9,7 @@
 * Tweak - Widened the max-width a little to improve readability further
 * Tweak - Font weight adjustment.
 * Tweak - Widget headings are now h2s.
+* Tweak - Removed all text-shadows.
 
 ## 23.12.2013 - 1.2.1
 * Fix - Adjacent list margins.

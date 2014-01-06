@@ -2196,7 +2196,6 @@ pre {
   color: #dc5494;
   margin: 0 .201em;
   padding: 0 .201em;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-weight: 600;
 }
@@ -2427,7 +2426,6 @@ img.wp-smiley {
 .site-title,
 .site-description {
   color: #fff;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 }
 .site-title a,
 .site-description a {
@@ -2444,7 +2442,6 @@ img.wp-smiley {
   letter-spacing: -1px;
   font-weight: 300;
   color: #fff;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   margin-bottom: 0;
 }
 .site-title small {

@@ -76,8 +76,8 @@ if ( ! function_exists( 'highwind_widgets_init' ) ) {
 			'id'            => 'primary-sidebar',
 		    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		    'after_widget' 	=> '</aside>',
-		    'before_title' 	=> '<h1>',
-		    'after_title' 	=> '</h1>',
+		    'before_title' 	=> '<h2>',
+		    'after_title' 	=> '</h2>',
 		) );
 
 		// The footer
@@ -86,8 +86,8 @@ if ( ! function_exists( 'highwind_widgets_init' ) ) {
 			'id'            => 'footer-sidebar-1',
 		    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		    'after_widget' 	=> '</aside>',
-		    'before_title' 	=> '<h1>',
-		    'after_title' 	=> '</h1>',
+		    'before_title' 	=> '<h2>',
+		    'after_title' 	=> '</h2>',
 		) );
 		register_sidebar( array(
 	    	'name'          => __( 'Footer #2', 'highwind' ),
@@ -102,8 +102,8 @@ if ( ! function_exists( 'highwind_widgets_init' ) ) {
 			'id'            => 'footer-sidebar-3',
 		    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		    'after_widget' 	=> '</aside>',
-		    'before_title' 	=> '<h1>',
-		    'after_title' 	=> '</h1>',
+		    'before_title' 	=> '<h2>',
+		    'after_title' 	=> '</h2>',
 		) );
 	}
 }

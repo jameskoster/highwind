@@ -6,6 +6,9 @@
 * Tweak - Gutter widths.
 * Tweak - WooCommerce star ratings no longer cut off.
 * Tweak - WooCommerce pagination styles.
+* Tweak - Widened the max-width a little to improve readability further
+* Tweak - Font weight adjustment.
+* Tweak - Widget headings are now h2s.
 
 ## 23.12.2013 - 1.2.1
 * Fix - Adjacent list margins.

@@ -1033,12 +1033,12 @@ img.wp-post-image {
 p.nocomments {
   display: inline;
   float: left;
-  width: 92.0014339906638%;
-  margin-left: 3.999283004668097%;
-  margin-right: 3.999283004668097%;
-  *width: 91.94935065733047%;
-  *margin-left: 3.9471996713347637%;
-  *margin-right: 3.9471996713347637%;
+  width: 90.78391716280633%;
+  margin-left: 4.608041418596831%;
+  margin-right: 4.608041418596831%;
+  *width: 90.731833829473%;
+  *margin-left: 4.555958085263498%;
+  *margin-right: 4.555958085263498%;
 }
 p.nocomments:before {
   font-family: "FontAwesome";
@@ -1058,12 +1058,12 @@ p.nocomments:before {
   clear: both;
   display: inline;
   float: left;
-  width: 92.0014339906638%;
-  margin-left: 3.999283004668097%;
-  margin-right: 3.999283004668097%;
-  *width: 91.94935065733047%;
-  *margin-left: 3.9471996713347637%;
-  *margin-right: 3.9471996713347637%;
+  width: 90.78391716280633%;
+  margin-left: 4.608041418596831%;
+  margin-right: 4.608041418596831%;
+  *width: 90.731833829473%;
+  *margin-left: 4.555958085263498%;
+  *margin-right: 4.555958085263498%;
 }
 #comment-nav-above:before,
 #comment-nav-below:before,
@@ -1117,12 +1117,12 @@ p.nocomments:before {
   margin-bottom: 0;
   margin-left: 0;
   display: block;
-  width: 107.9985660093362%;
-  margin-left: -3.999283004668097%;
-  margin-right: -3.999283004668097%;
-  *width: 107.94648267600287%;
-  *margin-left: -4.05136633800143%;
-  *margin-right: -4.05136633800143%;
+  width: 109.21608283719367%;
+  margin-left: -4.608041418596831%;
+  margin-right: -4.608041418596831%;
+  *width: 109.16399950386034%;
+  *margin-left: -4.660124751930164%;
+  *margin-right: -4.660124751930164%;
   *zoom: 1;
 }
 .comments ul.children:before,
@@ -1136,22 +1136,22 @@ p.nocomments:before {
 .comments ul.children > li {
   display: inline;
   float: left;
-  width: 79.5014339906638%;
-  margin-left: 3.999283004668097%;
-  margin-right: 3.999283004668097%;
-  *width: 79.44935065733047%;
-  *margin-left: 3.9471996713347637%;
-  *margin-right: 3.9471996713347637%;
+  width: 78.28391716280633%;
+  margin-left: 4.608041418596831%;
+  margin-right: 4.608041418596831%;
+  *width: 78.231833829473%;
+  *margin-left: 4.555958085263498%;
+  *margin-right: 4.555958085263498%;
   float: right;
 }
 .comments ul.children ul.children {
   display: block;
-  width: 109.14121829638421%;
-  margin-left: -4.570609148192111%;
-  margin-right: -4.570609148192111%;
-  *width: 109.08913496305088%;
-  *margin-left: -4.622692481525444%;
-  *margin-right: -4.622692481525444%;
+  width: 110.53266609964989%;
+  margin-left: -5.26633304982495%;
+  margin-right: -5.26633304982495%;
+  *width: 110.48058276631656%;
+  *margin-left: -5.318416383158283%;
+  *margin-right: -5.318416383158283%;
   *zoom: 1;
 }
 .comments ul.children ul.children:before,
@@ -1165,22 +1165,22 @@ p.nocomments:before {
 .comments ul.children ul.children > li {
   display: inline;
   float: left;
-  width: 76.57306741790148%;
-  margin-left: 4.570609148192111%;
-  margin-right: 4.570609148192111%;
-  *width: 76.52098408456816%;
-  *margin-left: 4.518525814858778%;
-  *margin-right: 4.518525814858778%;
+  width: 75.18161961463582%;
+  margin-left: 5.26633304982495%;
+  margin-right: 5.26633304982495%;
+  *width: 75.12953628130249%;
+  *margin-left: 5.214249716491617%;
+  *margin-right: 5.214249716491617%;
   float: right;
 }
 .comments ul.children ul.children ul.children {
   display: block;
-  width: 110.66475467911492%;
-  margin-left: -5.332377339557463%;
-  margin-right: -5.332377339557463%;
-  *width: 110.61267134578159%;
-  *margin-left: -5.384460672890796%;
-  *margin-right: -5.384460672890796%;
+  width: 112.28811044959156%;
+  margin-left: -6.144055224795776%;
+  margin-right: -6.144055224795776%;
+  *width: 112.23602711625823%;
+  *margin-left: -6.196138558129109%;
+  *margin-right: -6.196138558129109%;
   *zoom: 1;
 }
 .comments ul.children ul.children ul.children:before,
@@ -1194,22 +1194,22 @@ p.nocomments:before {
 .comments ul.children ul.children ul.children > li {
   display: inline;
   float: left;
-  width: 72.66857865421841%;
-  margin-left: 5.332377339557463%;
-  margin-right: 5.332377339557463%;
-  *width: 72.61649532088508%;
-  *margin-left: 5.28029400622413%;
-  *margin-right: 5.28029400622413%;
+  width: 71.0452228837418%;
+  margin-left: 6.144055224795776%;
+  margin-right: 6.144055224795776%;
+  *width: 70.99313955040847%;
+  *margin-left: 6.091971891462443%;
+  *margin-right: 6.091971891462443%;
   float: right;
 }
 .comments ul.children ul.children ul.children ul.children {
   display: block;
-  width: 112.79770561493791%;
-  margin-left: -6.398852807468956%;
-  margin-right: -6.398852807468956%;
-  *width: 112.74562228160458%;
-  *margin-left: -6.450936140802289%;
-  *margin-right: -6.450936140802289%;
+  width: 114.74573253950986%;
+  margin-left: -7.37286626975493%;
+  margin-right: -7.37286626975493%;
+  *width: 114.69364920617653%;
+  *margin-left: -7.424949603088263%;
+  *margin-right: -7.424949603088263%;
   *zoom: 1;
 }
 .comments ul.children ul.children ul.children ul.children:before,
@@ -1223,12 +1223,12 @@ p.nocomments:before {
 .comments ul.children ul.children ul.children ul.children > li {
   display: inline;
   float: left;
-  width: 67.20229438506209%;
-  margin-left: 6.398852807468956%;
-  margin-right: 6.398852807468956%;
-  *width: 67.15021105172876%;
-  *margin-left: 6.346769474135623%;
-  *margin-right: 6.346769474135623%;
+  width: 65.25426746049014%;
+  margin-left: 7.37286626975493%;
+  margin-right: 7.37286626975493%;
+  *width: 65.20218412715681%;
+  *margin-left: 7.320782936421597%;
+  *margin-right: 7.320782936421597%;
   float: right;
 }
 .comments .comment-author {
@@ -1663,12 +1663,12 @@ form.searchform:before {
   .content {
     display: inline;
     float: left;
-    width: 61.334289327109204%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 61.28220599377587%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 60.5226114418709%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 60.470528108537565%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
     float: right;
   }
   .inner-wrap {
@@ -1678,21 +1678,21 @@ form.searchform:before {
   .sidebar {
     display: inline;
     float: left;
-    width: 28.00095599377587%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 27.94887266044254%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 27.18927810853756%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 27.13719477520423%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
   }
   .footer-widgets {
     display: block;
-    width: 105.33237733955745%;
-    margin-left: -2.6661886697787316%;
-    margin-right: -2.6661886697787316%;
-    *width: 105.28029400622412%;
-    *margin-left: -2.718272003112065%;
-    *margin-right: -2.718272003112065%;
+    width: 106.14405522479578%;
+    margin-left: -3.072027612397888%;
+    margin-right: -3.072027612397888%;
+    *width: 106.09197189146245%;
+    *margin-left: -3.1241109457312213%;
+    *margin-right: -3.1241109457312213%;
     *zoom: 1;
   }
   .footer-widgets:before,
@@ -1706,43 +1706,43 @@ form.searchform:before {
   .footer-widgets.columns-1 .footer-sidebar {
     display: inline;
     float: left;
-    width: 94.66762266044255%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 94.61553932710922%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 93.85594477520422%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 93.8038614418709%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
   }
   .footer-widgets.columns-2 .footer-sidebar {
     display: inline;
     float: left;
-    width: 44.66762266044253%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 44.6155393271092%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 43.85594477520423%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 43.80386144187089%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
   }
   .footer-widgets.columns-3 .footer-sidebar {
     display: inline;
     float: left;
-    width: 28.00095599377587%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 27.94887266044254%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 27.18927810853756%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 27.13719477520423%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
   }
   .page-template-templatestemplate-fullwidth-php .content,
   body.fullwidth .content {
     display: inline;
     float: left;
-    width: 94.66762266044255%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 94.61553932710922%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 93.85594477520422%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 93.8038614418709%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
     float: none;
   }
   /**
@@ -1754,12 +1754,12 @@ form.searchform:before {
   .site-intro {
     display: inline;
     float: left;
-    width: 94.66762266044255%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 94.61553932710922%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 93.85594477520422%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 93.8038614418709%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
   }
   .main-nav {
     clear: none;
@@ -1803,12 +1803,12 @@ form.searchform:before {
   .main-nav ul.menu {
     display: inline;
     float: left;
-    width: 94.66762266044255%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 94.61553932710922%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 93.85594477520422%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 93.8038614418709%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
   }
   /**
 	 * Navigation
@@ -1947,12 +1947,12 @@ form.searchform:before {
   .footer .footer-content {
     display: inline;
     float: left;
-    width: 94.66762266044255%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 94.61553932710922%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 93.85594477520422%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 93.8038614418709%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
   }
   /**
 	 * Styles applied when admin bar is present

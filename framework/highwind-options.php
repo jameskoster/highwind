@@ -33,27 +33,27 @@ class HighwindOptions {
 
         // Link Color Default
         $wp_customize->add_setting( 'link_textcolor', array(
-                'default'       => apply_filters( 'highwind_link_textcolor_default', $color = '53a1b8' )
+                'default'       => apply_filters( 'highwind_link_textcolor_default', $color = '#53a1b8' )
         ) );
 
         // Heading Color Default
         $wp_customize->add_setting( 'headercolor', array(
-                'default'       => apply_filters( 'highwind_headercolor_default', $color = '444854' )
+                'default'       => apply_filters( 'highwind_headercolor_default', $color = '#444854' )
         ) );
 
         // Text Color Default
         $wp_customize->add_setting( 'textcolor', array(
-                'default'       => apply_filters( 'highwind_textcolor_default', $color = '666A76' )
+                'default'       => apply_filters( 'highwind_textcolor_default', $color = '#666A76' )
         ) );
 
         // Background Color Default
         $wp_customize->add_setting( 'background_color', array(
-                'default'       => apply_filters( 'highwind_background_color_default', $color = 'f8f8f9' )
+                'default'       => apply_filters( 'highwind_background_color_default', $color = '#f8f8f9' )
         ) );
 
         // Background Color Default
         $wp_customize->add_setting( 'content_background_color', array(
-                'default'       => apply_filters( 'highwind_content_background_color_default', $color = 'f8f8f9' )
+                'default'       => apply_filters( 'highwind_content_background_color_default', $color = '#f8f8f9' )
         ) );
 
 
@@ -300,8 +300,8 @@ function highwind_layouts() {
  * @since 1.0
  */
 function highwind_layout_classes( $existing_classes ) {
-    $options = highwind_get_theme_options();
-    $current_layout = $options['theme_layout'];
+    $options            = highwind_get_theme_options();
+    $current_layout     = $options['theme_layout'];
 
     if ( in_array( $current_layout, array( 'content-sidebar', 'sidebar-content' ) ) )
         $classes = array( 'two-column' );

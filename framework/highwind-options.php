@@ -240,7 +240,7 @@ class HighwindOptions {
  */
 function highwind_custom_background() {
     $args = array(
-        'default-color' => apply_filters( 'highwind_background_color_default', $color = 'f8f8f9' )
+        'default-color' => apply_filters( 'highwind_background_color_default', $color = '#f8f8f9' )
     );
     add_theme_support( 'custom-background', $args );
 }

@@ -1,5 +1,10 @@
 # Highwind changelog
 
+## 06.01.2014 - 1.2.2
+* Fix - By post author comment styles (links).
+* Fix - WooCommerce product image width.
+* Tweak - Gutter widths.
+
 ## 23.12.2013 - 1.2.1
 * Fix - Adjacent list margins.
 * Fix - Replies to author comments no longer inherit author styles.

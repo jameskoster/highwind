@@ -649,6 +649,7 @@ ul.products li.product img {
   height: auto;
   float: right;
   margin: 0 0 0 3.8%;
+  max-width: 100%;
 }
 ul.products li.product .price {
   display: block;

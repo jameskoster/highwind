@@ -5,6 +5,7 @@
 * Fix - WooCommerce product image width.
 * Tweak - Gutter widths.
 * Tweak - WooCommerce star ratings no longer cut off.
+* Tweak - WooCommerce pagination styles.
 
 ## 23.12.2013 - 1.2.1
 * Fix - Adjacent list margins.

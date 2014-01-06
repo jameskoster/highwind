@@ -1032,13 +1032,14 @@ dl.variation dd {
   float: left;
 }
 .woocommerce-pagination ul.page-numbers li a,
-.woocommerce-pagination ul.page-numbers li .current {
-  padding: .844em 1.125em;
+.woocommerce-pagination ul.page-numbers li .current,
+.woocommerce-pagination ul.page-numbers li .page-numbers {
+  padding: .475em .618em;
   -webkit-border-radius: 0.201em;
   border-radius: 0.201em;
   display: inline-block;
   line-height: 1;
-  margin-right: 1em;
+  margin-right: .475em;
 }
 .woocommerce-pagination ul.page-numbers li .current,
 .woocommerce-pagination ul.page-numbers li a:hover {

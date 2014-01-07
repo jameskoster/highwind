@@ -1428,7 +1428,12 @@ form.searchform:before {
 }
 .post-meta li {
   display: inline;
-  margin-right: 1.5em;
+  margin-right: 1em;
+  padding-right: 1em;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.post-meta li:last-child {
+  border-right: 0;
 }
 .post-meta li.comment:before {
   font-family: "FontAwesome";

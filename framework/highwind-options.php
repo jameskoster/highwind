@@ -185,8 +185,8 @@ class HighwindOptions {
                         // Link color applied to border-bottom-color
                         self::generate_css( apply_filters( 'highwind_desktop_link_color_border_color_selectors',  $selectors = '.main-nav ul.menu li.current-menu-item > a:before' ), 'border-bottom-color', 'link_textcolor' );
 
-                        // Background color applied to color
-                        self::generate_css( apply_filters( 'highwind_desktop_background_color_color_selectors', $selectors = '.main-nav ul.menu ul a, .main-nav ul.menu > li:hover > a' ), 'color', 'background_color', '#' );
+                        // Content Background color applied to color
+                        self::generate_css( apply_filters( 'highwind_desktop_background_color_color_selectors', $selectors = '.main-nav ul.menu ul a, .main-nav ul.menu > li:hover > a' ), 'color', 'content_background_color', '#' );
 
                         // Background color applied to background
                         self::generate_css( apply_filters( 'highwind_desktop_background_color_background_selectors', $selectors = 'body' ), 'background-color', 'background_color', '#' );

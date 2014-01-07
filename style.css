@@ -1260,6 +1260,7 @@ p.nocomments:before {
   position: relative;
   text-align: left;
   font-size: 1.333em;
+  font-weight: 400;
   color: inherit;
 }
 .comments .comment-author cite small {
@@ -2077,14 +2078,17 @@ h2,
 h3,
 .gamma {
   font-size: 1.333em;
+  font-weight: 400;
 }
 h4,
 .delta {
   font-size: 1.125em;
+  font-weight: 400;
 }
 h5,
 h6 {
   font-size: 1em;
+  font-weight: 700;
 }
 p + h1,
 p + h2,

@@ -1,5 +1,17 @@
 # Highwind changelog
 
+## 06.01.2014 - 1.2.2
+* Fix - By post author comment styles (links).
+* Fix - WooCommerce product image width.
+* Tweak - If the content / bg colors are different the header section will adjust in width to match the content section.
+* Tweak - Gutter widths.
+* Tweak - WooCommerce star ratings no longer cut off.
+* Tweak - WooCommerce pagination styles.
+* Tweak - Widened the max-width a little to improve readability further
+* Tweak - Font weight adjustment.
+* Tweak - Widget headings are now h2s.
+* Tweak - Removed all text-shadows.
+
 ## 23.12.2013 - 1.2.1
 * Fix - Adjacent list margins.
 * Fix - Replies to author comments no longer inherit author styles.

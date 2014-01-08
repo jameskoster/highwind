@@ -649,6 +649,7 @@ ul.products li.product img {
   height: auto;
   float: right;
   margin: 0 0 0 3.8%;
+  max-width: 100%;
 }
 ul.products li.product .price {
   display: block;
@@ -966,7 +967,7 @@ dl.variation dd {
   height: 1em;
   line-height: 1em;
   font-size: 1em;
-  width: 4.7em;
+  width: 4.8em;
   font-family: "fontawesome";
 }
 .star-rating:before {
@@ -1031,13 +1032,14 @@ dl.variation dd {
   float: left;
 }
 .woocommerce-pagination ul.page-numbers li a,
-.woocommerce-pagination ul.page-numbers li .current {
-  padding: .844em 1.125em;
+.woocommerce-pagination ul.page-numbers li .current,
+.woocommerce-pagination ul.page-numbers li .page-numbers {
+  padding: .475em .618em;
   -webkit-border-radius: 0.201em;
   border-radius: 0.201em;
   display: inline-block;
   line-height: 1;
-  margin-right: 1em;
+  margin-right: .475em;
 }
 .woocommerce-pagination ul.page-numbers li .current,
 .woocommerce-pagination ul.page-numbers li a:hover {
@@ -1161,12 +1163,12 @@ dl.variation dd {
   .highwind-product-search form {
     display: inline;
     float: left;
-    width: 94.66762266044255%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 94.61553932710922%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 93.85594477520422%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 93.8038614418709%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
   }
   .woocommerce-result-count {
     float: left;
@@ -1176,12 +1178,12 @@ dl.variation dd {
   }
   ul.products {
     display: block;
-    width: 107.10983645274328%;
-    margin-left: -3.554918226371642%;
-    margin-right: -3.554918226371642%;
-    *width: 107.05775311940995%;
-    *margin-left: -3.6070015597049756%;
-    *margin-right: -3.6070015597049756%;
+    width: 108.19207363306103%;
+    margin-left: -4.096036816530517%;
+    margin-right: -4.096036816530517%;
+    *width: 108.1399902997277%;
+    *margin-left: -4.14812014986385%;
+    *margin-right: -4.14812014986385%;
     *zoom: 1;
     clear: both;
   }
@@ -1196,12 +1198,12 @@ dl.variation dd {
   ul.products li.product {
     display: inline;
     float: left;
-    width: 26.223496880590048%;
-    margin-left: 3.554918226371642%;
-    margin-right: 3.554918226371642%;
-    *width: 26.171413547256716%;
-    *margin-left: 3.5028348930383086%;
-    *margin-right: 3.5028348930383086%;
+    width: 25.1412597002723%;
+    margin-left: 4.096036816530517%;
+    margin-right: 4.096036816530517%;
+    *width: 25.08917636693897%;
+    *margin-left: 4.043953483197184%;
+    *margin-right: 4.043953483197184%;
     padding-left: 0;
     padding-right: 0;
     clear: none;
@@ -1230,12 +1232,12 @@ dl.variation dd {
   }
   .single-product .content > .product {
     display: block;
-    width: 107.10983645274328%;
-    margin-left: -3.554918226371642%;
-    margin-right: -3.554918226371642%;
-    *width: 107.05775311940995%;
-    *margin-left: -3.6070015597049756%;
-    *margin-right: -3.6070015597049756%;
+    width: 108.19207363306103%;
+    margin-left: -4.096036816530517%;
+    margin-right: -4.096036816530517%;
+    *width: 108.1399902997277%;
+    *margin-left: -4.14812014986385%;
+    *margin-right: -4.14812014986385%;
     *zoom: 1;
   }
   .single-product .content > .product:before,
@@ -1257,21 +1259,21 @@ dl.variation dd {
   .single-product .content > .product .images {
     display: inline;
     float: left;
-    width: 37.334607991701155%;
-    margin-left: 3.554918226371642%;
-    margin-right: 3.554918226371642%;
-    *width: 37.28252465836782%;
-    *margin-left: 3.5028348930383086%;
-    *margin-right: 3.5028348930383086%;
+    width: 36.25237081138341%;
+    margin-left: 4.096036816530517%;
+    margin-right: 4.096036816530517%;
+    *width: 36.20028747805007%;
+    *margin-left: 4.043953483197184%;
+    *margin-right: 4.043953483197184%;
   }
   .single-product .content > .product .images .thumbnails {
     display: block;
-    width: 115.99713201867239%;
-    margin-left: -7.998566009336194%;
-    margin-right: -7.998566009336194%;
-    *width: 115.94504868533906%;
-    *margin-left: -8.050649342669528%;
-    *margin-right: -8.050649342669528%;
+    width: 118.43216567438732%;
+    margin-left: -9.216082837193662%;
+    margin-right: -9.216082837193662%;
+    *width: 118.38008234105399%;
+    *margin-left: -9.268166170526996%;
+    *margin-right: -9.268166170526996%;
     *zoom: 1;
   }
   .single-product .content > .product .images .thumbnails:before,
@@ -1286,23 +1288,23 @@ dl.variation dd {
     display: block;
     display: inline;
     float: left;
-    width: 34.00286798132761%;
-    margin-left: 7.998566009336194%;
-    margin-right: 7.998566009336194%;
-    *width: 33.950784647994276%;
-    *margin-left: 7.946482676002861%;
-    *margin-right: 7.946482676002861%;
+    width: 31.567834325612676%;
+    margin-left: 9.216082837193662%;
+    margin-right: 9.216082837193662%;
+    *width: 31.515750992279344%;
+    *margin-left: 9.163999503860328%;
+    *margin-right: 9.163999503860328%;
     margin-bottom: 1.777em;
   }
   .single-product .content > .product .summary {
     display: inline;
     float: left;
-    width: 48.44571910281227%;
-    margin-left: 3.554918226371642%;
-    margin-right: 3.554918226371642%;
-    *width: 48.393635769478934%;
-    *margin-left: 3.5028348930383086%;
-    *margin-right: 3.5028348930383086%;
+    width: 47.36348192249453%;
+    margin-left: 4.096036816530517%;
+    margin-right: 4.096036816530517%;
+    *width: 47.31139858916119%;
+    *margin-left: 4.043953483197184%;
+    *margin-right: 4.043953483197184%;
     border: 0;
   }
   .woocommerce-tabs {
@@ -1362,12 +1364,12 @@ dl.variation dd {
   }
   .cart-collaterals {
     display: block;
-    width: 105.33237733955745%;
-    margin-left: -2.6661886697787316%;
-    margin-right: -2.6661886697787316%;
-    *width: 105.28029400622412%;
-    *margin-left: -2.718272003112065%;
-    *margin-right: -2.718272003112065%;
+    width: 106.14405522479578%;
+    margin-left: -3.072027612397888%;
+    margin-right: -3.072027612397888%;
+    *width: 106.09197189146245%;
+    *margin-left: -3.1241109457312213%;
+    *margin-right: -3.1241109457312213%;
     *zoom: 1;
   }
   .cart-collaterals:before,
@@ -1391,24 +1393,24 @@ dl.variation dd {
   .cart-collaterals .upsells {
     display: inline;
     float: left;
-    width: 28.00095599377587%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 27.94887266044254%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 27.18927810853756%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 27.13719477520423%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
   }
   .cart-collaterals .cart_totals {
     float: right;
   }
   form.checkout {
     display: block;
-    width: 105.33237733955745%;
-    margin-left: -2.6661886697787316%;
-    margin-right: -2.6661886697787316%;
-    *width: 105.28029400622412%;
-    *margin-left: -2.718272003112065%;
-    *margin-right: -2.718272003112065%;
+    width: 106.14405522479578%;
+    margin-left: -3.072027612397888%;
+    margin-right: -3.072027612397888%;
+    *width: 106.09197189146245%;
+    *margin-left: -3.1241109457312213%;
+    *margin-right: -3.1241109457312213%;
     *zoom: 1;
   }
   form.checkout:before,
@@ -1432,21 +1434,21 @@ dl.variation dd {
   form.checkout #order_review_heading {
     display: inline;
     float: left;
-    width: 44.66762266044253%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 44.6155393271092%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 43.85594477520423%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 43.80386144187089%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
   }
   .addresses {
     display: block;
-    width: 107.10983645274328%;
-    margin-left: -3.554918226371642%;
-    margin-right: -3.554918226371642%;
-    *width: 107.05775311940995%;
-    *margin-left: -3.6070015597049756%;
-    *margin-right: -3.6070015597049756%;
+    width: 108.19207363306103%;
+    margin-left: -4.096036816530517%;
+    margin-right: -4.096036816530517%;
+    *width: 108.1399902997277%;
+    *margin-left: -4.14812014986385%;
+    *margin-right: -4.14812014986385%;
     *zoom: 1;
   }
   .addresses:before,
@@ -1468,11 +1470,11 @@ dl.variation dd {
   .addresses .address {
     display: inline;
     float: left;
-    width: 37.334607991701155%;
-    margin-left: 3.554918226371642%;
-    margin-right: 3.554918226371642%;
-    *width: 37.28252465836782%;
-    *margin-left: 3.5028348930383086%;
-    *margin-right: 3.5028348930383086%;
+    width: 36.25237081138341%;
+    margin-left: 4.096036816530517%;
+    margin-right: 4.096036816530517%;
+    *width: 36.20028747805007%;
+    *margin-left: 4.043953483197184%;
+    *margin-right: 4.043953483197184%;
   }
 }

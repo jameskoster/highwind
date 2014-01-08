@@ -48,7 +48,7 @@ if ( ! function_exists( 'highwind_add_scripts' ) ) {
 		wp_register_style( 'open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' );
 
 		// Enqueue styles
-		wp_enqueue_style( 'highwind-styles', get_stylesheet_uri(), array( 'open-sans' ), '1.2.1' );
+		wp_enqueue_style( 'highwind-styles', get_stylesheet_uri(), array( 'open-sans' ), '1.2.2' );
 
 		// Enqueue Scripts
 		wp_enqueue_script( 'highwind-plugins', get_template_directory_uri() . '/framework/js/plugins.min.js', array( 'jquery' ), '', true );
@@ -76,8 +76,8 @@ if ( ! function_exists( 'highwind_widgets_init' ) ) {
 			'id'            => 'primary-sidebar',
 		    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		    'after_widget' 	=> '</aside>',
-		    'before_title' 	=> '<h1>',
-		    'after_title' 	=> '</h1>',
+		    'before_title' 	=> '<h2>',
+		    'after_title' 	=> '</h2>',
 		) );
 
 		// The footer
@@ -86,8 +86,8 @@ if ( ! function_exists( 'highwind_widgets_init' ) ) {
 			'id'            => 'footer-sidebar-1',
 		    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		    'after_widget' 	=> '</aside>',
-		    'before_title' 	=> '<h1>',
-		    'after_title' 	=> '</h1>',
+		    'before_title' 	=> '<h2>',
+		    'after_title' 	=> '</h2>',
 		) );
 		register_sidebar( array(
 	    	'name'          => __( 'Footer #2', 'highwind' ),
@@ -102,8 +102,8 @@ if ( ! function_exists( 'highwind_widgets_init' ) ) {
 			'id'            => 'footer-sidebar-3',
 		    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		    'after_widget' 	=> '</aside>',
-		    'before_title' 	=> '<h1>',
-		    'after_title' 	=> '</h1>',
+		    'before_title' 	=> '<h2>',
+		    'after_title' 	=> '</h2>',
 		) );
 	}
 }

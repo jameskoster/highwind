@@ -1,5 +1,8 @@
 # Highwind changelog
 
+## 14.01.2014 - 1.2.3
+* Tweak - Heading font weights.
+
 ## 06.01.2014 - 1.2.2
 * Fix - By post author comment styles (links).
 * Fix - WooCommerce product image width.

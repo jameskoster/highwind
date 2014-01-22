@@ -2736,6 +2736,13 @@ img.wp-post-image {
     padding-left: 3.157em;
     padding-right: 3.157em;
   }
+  .background-contrast .main-nav {
+    max-width: 69.75em;
+    margin: 0 auto;
+  }
+  .csstransforms3d.csstransitions .background-contrast .main-nav {
+    left: auto;
+  }
   .site-title {
     font-weight: 400;
     margin: 0;

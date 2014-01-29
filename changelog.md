@@ -1,5 +1,10 @@
 # Highwind changelog
 
+## 29.01.2014 - 1.2.3
+* Tweak - Heading font weights.
+* Tweak - Header width is applied to navigation and footer too.
+* Fix - Removed duplicated fitvids.
+
 ## 06.01.2014 - 1.2.2
 * Fix - By post author comment styles (links).
 * Fix - WooCommerce product image width.

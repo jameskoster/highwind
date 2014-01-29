@@ -4,7 +4,7 @@ Theme URI: http://jameskoster.co.uk/highwind/
 Description: Highwind is a lightweight, free WordPress theme designed to showcase content. It features a clean, responsive design with a strong focus on typography, plus a bunch of presentational options and widgetised regions allowing you to give your site a unique touch. <a href="https://github.com/jameskoster/highwind/wiki">View Documentation</a>.
 Author: jameskoster
 Author URI: http://jameskoster.co.uk
-Version: 1.2.2
+Version: 1.2.3
 Tags: white, two-columns, left-sidebar, right-sidebar, fluid-width, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light
 
 License: GNU General Public License v2 or later
@@ -60,7 +60,7 @@ body {
  * Typography
  */
 h1, h2, h3, h4, h5, h6, .heading, .omega, .psi, .alpha, .beta, .gamma, .delta {
-	font-weight: 300;
+	font-weight: 400;
 	margin:0;
 	margin-bottom:1rem;
 	color: @color_body - #222;
@@ -92,7 +92,6 @@ h1, .site-title, .alpha {
 	font-size:1.777em;
 	letter-spacing: -1px;
 	&.archive-header {
-		font-weight: 300;
 		font-size:1.125em;
 	}
 }
@@ -103,12 +102,12 @@ h2, .beta {
 
 h3, .gamma {
 	font-size:1.333em;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 h4, .delta {
 	font-size:1.125em;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 h5, h6 {
@@ -640,6 +639,23 @@ img.wp-post-image {
 			margin-right: -3.157em;
 			padding-left: 0;
 			padding-right: 0;
+		}
+		.footer {
+			margin-left: -3.157em;
+			margin-right: -3.157em;
+			padding-left: 3.157em;
+			padding-right: 3.157em;
+		}
+		.main-nav {
+			max-width: 69.75em;
+			margin: 0 auto;
+		}
+	}
+	.csstransforms3d.csstransitions  {
+		.background-contrast {
+			.main-nav {
+				left: auto;
+			}
 		}
 	}
 	.site-title {

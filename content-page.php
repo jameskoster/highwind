@@ -12,7 +12,7 @@
 
 	<?php highwind_content_header_top(); ?>
 
-	<h1 class="page-title" data-text="<?php the_title(); ?>"><?php the_title(); ?></h1>
+	<h1 class="page-title" data-text="<?php the_title_attribute(); ?>"><?php the_title(); ?></h1>
 
 	<?php highwind_content_header_bottom(); ?>
 

@@ -1,5 +1,8 @@
 # Highwind changelog
 
+## 30.01.2014 - 1.2.4
+* Fix - Footer widgets have consistent headings.
+
 ## 29.01.2014 - 1.2.3
 * Tweak - Heading font weights.
 * Tweak - Header width is applied to navigation and footer too.

@@ -10,7 +10,7 @@
 
 <?php highwind_comments_before(); ?>
 
-<div id="comments" class="comments" <?php if ( ! comments_open() && post_type_supports( get_post_type(), 'comments' ) && is_page() ) { echo 'class="page-nocomments"'; } ?>>
+<div id="comments" class="comments<?php if ( ! comments_open() && post_type_supports( get_post_type(), 'comments' ) && is_page() ) { echo ' page-nocomments'; } ?>">
 
 	<?php if ( post_password_required() ) : ?>
 

@@ -691,6 +691,12 @@ img.wp-post-image {
 	.main-nav {
 		border-right:0;
 		border-bottom:.422em solid @color_theme;
+		.sub-menu {
+			display: none;
+		}
+		li.menu-item-has-children:hover > .sub-menu {
+			display: block;
+		}
 		ul.menu {
 			> li {
 				&:hover > a, > a:hover {

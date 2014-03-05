@@ -2795,6 +2795,12 @@ img.wp-post-image {
     border-right: 0;
     border-bottom: 0.422em solid #53a1b8;
   }
+  .main-nav .sub-menu {
+    display: none;
+  }
+  .main-nav li.menu-item-has-children:hover > .sub-menu {
+    display: block;
+  }
   .main-nav ul.menu {
     /* CHILDREN */
   }

@@ -489,6 +489,10 @@ img.wp-post-image {
 	margin-bottom:1.777em;
 }
 
+.gallery img {
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /**
  * Comments
@@ -687,6 +691,12 @@ img.wp-post-image {
 	.main-nav {
 		border-right:0;
 		border-bottom:.422em solid @color_theme;
+		.sub-menu {
+			display: none;
+		}
+		li.menu-item-has-children:hover > .sub-menu {
+			display: block;
+		}
 		ul.menu {
 			> li {
 				&:hover > a, > a:hover {

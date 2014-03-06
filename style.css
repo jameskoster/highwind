@@ -2537,6 +2537,10 @@ img.alignleft {
 img.wp-post-image {
   margin-bottom: 1.777em;
 }
+.gallery img {
+	margin-left: auto;
+	margin-right: auto;
+}
 /**
  * Comments
  */
@@ -2790,6 +2794,12 @@ img.wp-post-image {
   .main-nav {
     border-right: 0;
     border-bottom: 0.422em solid #53a1b8;
+  }
+  .main-nav .sub-menu {
+    display: none;
+  }
+  .main-nav li.menu-item-has-children:hover > .sub-menu {
+    display: block;
   }
   .main-nav ul.menu {
     /* CHILDREN */

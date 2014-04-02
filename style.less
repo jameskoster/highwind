@@ -4,7 +4,7 @@ Theme URI: http://jameskoster.co.uk/highwind/
 Description: Highwind is a lightweight, free WordPress theme designed to showcase content. It features a clean, responsive design with a strong focus on typography, plus a bunch of presentational options and widgetised regions allowing you to give your site a unique touch. <a href="https://github.com/jameskoster/highwind/wiki">View Documentation</a>.
 Author: jameskoster
 Author URI: http://jameskoster.co.uk
-Version: 1.2.3
+Version: 1.2.4
 Tags: white, two-columns, left-sidebar, right-sidebar, fluid-width, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light
 
 License: GNU General Public License v2 or later
@@ -489,6 +489,10 @@ img.wp-post-image {
 	margin-bottom:1.777em;
 }
 
+.gallery img {
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /**
  * Comments
@@ -687,6 +691,12 @@ img.wp-post-image {
 	.main-nav {
 		border-right:0;
 		border-bottom:.422em solid @color_theme;
+		.sub-menu {
+			display: none;
+		}
+		li.menu-item-has-children:hover > .sub-menu {
+			display: block;
+		}
 		ul.menu {
 			> li {
 				&:hover > a, > a:hover {

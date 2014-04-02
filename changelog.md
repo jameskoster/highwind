@@ -1,5 +1,10 @@
 # Highwind changelog
 
+## 02.04.2014 - 1.2.4
+* Fix - Footer widgets have consistent headings.
+* WooCommerce Fix - Memory error on single product page.
+* Localization - Portuguese translation. Props Nuno Alves.
+
 ## 29.01.2014 - 1.2.3
 * Tweak - Heading font weights.
 * Tweak - Header width is applied to navigation and footer too.

@@ -107,7 +107,7 @@ function highwind_woocommerce_prep() {
 	add_action( 'woocommerce_before_main_content', 'highwind_woocommerce_content_wrapper', 10 );
 	add_action( 'woocommerce_after_main_content', 'highwind_woocommerce_content_wrapper_end', 10 );
 	add_action( 'woocommerce_after_single_product', 'woocommerce_output_product_data_tabs', 10 );
-	add_action( 'woocommerce_after_single_product', 'woocommerce_upsell_display', 15 );
+	add_action( 'woocommerce_after_single_product', 'highwind_woocommerce_upsell_display', 15 );
 	add_action( 'woocommerce_after_single_product', 'woocommerce_output_related_products', 20 );
 	add_filter( 'loop_shop_columns', 'highwind_woocommerce_product_columns', 999 );
 	add_filter( 'woocommerce_output_related_products_args', 'highwind_woocommerce_related_products' );

@@ -5,14 +5,12 @@
  * @since 1.0
  */
 ?>
-
 <?php
 // File Security Check
 if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename( $_SERVER['SCRIPT_FILENAME'] ) ) {
     die ( __( 'You do not have sufficient permissions to access this page!', 'highwind' ) );
 }
 ?>
-
 <?php get_header(); ?>
 
 <?php highwind_content_before(); ?>

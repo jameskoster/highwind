@@ -4,6 +4,7 @@
 * Fix - Footer widgets have consistent headings.
 * WooCommerce Fix - Memory error on single product page.
 * Localization - Portuguese translation. Props Nuno Alves.
+* Several minor tweaks and improvements. Props Skara.
 
 ## 29.01.2014 - 1.2.3
 * Tweak - Heading font weights.

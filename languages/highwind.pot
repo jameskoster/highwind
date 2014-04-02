@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/highwind\n"
-"POT-Creation-Date: 2014-03-17 16:29:26+00:00\n"
+"POT-Creation-Date: 2014-04-02 15:39:28+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -52,11 +52,11 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: archive.php:90 index.php:36 search.php:42
+#: archive.php:90 index.php:34 search.php:42
 msgid "Nothing Found"
 msgstr ""
 
-#: archive.php:100 index.php:46 search.php:48
+#: archive.php:100 index.php:44 search.php:48
 msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
 msgstr ""
 
@@ -256,7 +256,7 @@ msgid_plural "%d items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: index.php:12
+#: index.php:11
 msgid "You do not have sufficient permissions to access this page!"
 msgstr ""
 

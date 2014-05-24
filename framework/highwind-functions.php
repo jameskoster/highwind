@@ -32,6 +32,7 @@ if ( ! function_exists( 'highwind_setup' ) ) {
 		load_theme_textdomain( 'highwind', get_template_directory() . '/languages' );
 
 		// Content width
+		global $content_width
 		if ( ! isset( $content_width ) ) $content_width = 1089;
 	}
 }

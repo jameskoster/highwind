@@ -648,8 +648,8 @@ table {
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('framework/typefaces/fontawesome-webfont.eot?v=3.0.1');
-  src: url('framework/typefaces/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'), url('framework/typefaces/fontawesome-webfont.woff?v=3.0.1') format('woff'), url('framework/typefaces/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+  src: url('framework/typefaces/fontawesome-webfont.eot?v=4.0.3');
+  src: url('framework/typefaces/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('framework/typefaces/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('framework/typefaces/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('framework/typefaces/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -974,8 +974,7 @@ img.alignleft {
   float: left;
 }
 img.wp-post-image {
-  width: 100%;
-  max-width: none;
+  max-width: 100%;
 }
 .post img {
   -webkit-box-sizing: border-box;
@@ -1032,12 +1031,12 @@ img.wp-post-image {
 p.nocomments {
   display: inline;
   float: left;
-  width: 90.78391716280633%;
-  margin-left: 4.608041418596831%;
-  margin-right: 4.608041418596831%;
-  *width: 90.731833829473%;
-  *margin-left: 4.555958085263498%;
-  *margin-right: 4.555958085263498%;
+  width: 90.78391716%;
+  margin-left: 4.60804142%;
+  margin-right: 4.60804142%;
+  *width: 90.73183383%;
+  *margin-left: 4.55595809%;
+  *margin-right: 4.55595809%;
 }
 p.nocomments:before {
   font-family: "FontAwesome";
@@ -1057,12 +1056,12 @@ p.nocomments:before {
   clear: both;
   display: inline;
   float: left;
-  width: 90.78391716280633%;
-  margin-left: 4.608041418596831%;
-  margin-right: 4.608041418596831%;
-  *width: 90.731833829473%;
-  *margin-left: 4.555958085263498%;
-  *margin-right: 4.555958085263498%;
+  width: 90.78391716%;
+  margin-left: 4.60804142%;
+  margin-right: 4.60804142%;
+  *width: 90.73183383%;
+  *margin-left: 4.55595809%;
+  *margin-right: 4.55595809%;
 }
 #comment-nav-above:before,
 #comment-nav-below:before,
@@ -1116,12 +1115,12 @@ p.nocomments:before {
   margin-bottom: 0;
   margin-left: 0;
   display: block;
-  width: 109.21608283719367%;
-  margin-left: -4.608041418596831%;
-  margin-right: -4.608041418596831%;
-  *width: 109.16399950386034%;
-  *margin-left: -4.660124751930164%;
-  *margin-right: -4.660124751930164%;
+  width: 109.21608284%;
+  margin-left: -4.60804142%;
+  margin-right: -4.60804142%;
+  *width: 109.1639995%;
+  *margin-left: -4.66012475%;
+  *margin-right: -4.66012475%;
   *zoom: 1;
 }
 .comments ul.children:before,
@@ -1135,22 +1134,22 @@ p.nocomments:before {
 .comments ul.children > li {
   display: inline;
   float: left;
-  width: 78.28391716280633%;
-  margin-left: 4.608041418596831%;
-  margin-right: 4.608041418596831%;
-  *width: 78.231833829473%;
-  *margin-left: 4.555958085263498%;
-  *margin-right: 4.555958085263498%;
+  width: 78.28391716%;
+  margin-left: 4.60804142%;
+  margin-right: 4.60804142%;
+  *width: 78.23183383%;
+  *margin-left: 4.55595809%;
+  *margin-right: 4.55595809%;
   float: right;
 }
 .comments ul.children ul.children {
   display: block;
-  width: 110.53266609964989%;
-  margin-left: -5.26633304982495%;
-  margin-right: -5.26633304982495%;
-  *width: 110.48058276631656%;
-  *margin-left: -5.318416383158283%;
-  *margin-right: -5.318416383158283%;
+  width: 110.5326661%;
+  margin-left: -5.26633305%;
+  margin-right: -5.26633305%;
+  *width: 110.48058277%;
+  *margin-left: -5.31841638%;
+  *margin-right: -5.31841638%;
   *zoom: 1;
 }
 .comments ul.children ul.children:before,
@@ -1164,22 +1163,22 @@ p.nocomments:before {
 .comments ul.children ul.children > li {
   display: inline;
   float: left;
-  width: 75.18161961463582%;
-  margin-left: 5.26633304982495%;
-  margin-right: 5.26633304982495%;
-  *width: 75.12953628130249%;
-  *margin-left: 5.214249716491617%;
-  *margin-right: 5.214249716491617%;
+  width: 75.18161961%;
+  margin-left: 5.26633305%;
+  margin-right: 5.26633305%;
+  *width: 75.12953628%;
+  *margin-left: 5.21424972%;
+  *margin-right: 5.21424972%;
   float: right;
 }
 .comments ul.children ul.children ul.children {
   display: block;
-  width: 112.28811044959156%;
-  margin-left: -6.144055224795776%;
-  margin-right: -6.144055224795776%;
-  *width: 112.23602711625823%;
-  *margin-left: -6.196138558129109%;
-  *margin-right: -6.196138558129109%;
+  width: 112.28811045%;
+  margin-left: -6.14405522%;
+  margin-right: -6.14405522%;
+  *width: 112.23602712%;
+  *margin-left: -6.19613856%;
+  *margin-right: -6.19613856%;
   *zoom: 1;
 }
 .comments ul.children ul.children ul.children:before,
@@ -1193,22 +1192,22 @@ p.nocomments:before {
 .comments ul.children ul.children ul.children > li {
   display: inline;
   float: left;
-  width: 71.0452228837418%;
-  margin-left: 6.144055224795776%;
-  margin-right: 6.144055224795776%;
-  *width: 70.99313955040847%;
-  *margin-left: 6.091971891462443%;
-  *margin-right: 6.091971891462443%;
+  width: 71.04522288%;
+  margin-left: 6.14405522%;
+  margin-right: 6.14405522%;
+  *width: 70.99313955%;
+  *margin-left: 6.09197189%;
+  *margin-right: 6.09197189%;
   float: right;
 }
 .comments ul.children ul.children ul.children ul.children {
   display: block;
-  width: 114.74573253950986%;
-  margin-left: -7.37286626975493%;
-  margin-right: -7.37286626975493%;
-  *width: 114.69364920617653%;
-  *margin-left: -7.424949603088263%;
-  *margin-right: -7.424949603088263%;
+  width: 114.74573254%;
+  margin-left: -7.37286627%;
+  margin-right: -7.37286627%;
+  *width: 114.69364921%;
+  *margin-left: -7.4249496%;
+  *margin-right: -7.4249496%;
   *zoom: 1;
 }
 .comments ul.children ul.children ul.children ul.children:before,
@@ -1222,12 +1221,12 @@ p.nocomments:before {
 .comments ul.children ul.children ul.children ul.children > li {
   display: inline;
   float: left;
-  width: 65.25426746049014%;
-  margin-left: 7.37286626975493%;
-  margin-right: 7.37286626975493%;
-  *width: 65.20218412715681%;
-  *margin-left: 7.320782936421597%;
-  *margin-right: 7.320782936421597%;
+  width: 65.25426746%;
+  margin-left: 7.37286627%;
+  margin-right: 7.37286627%;
+  *width: 65.20218413%;
+  *margin-left: 7.32078294%;
+  *margin-right: 7.32078294%;
   float: right;
 }
 .comments .comment-author {
@@ -1668,12 +1667,12 @@ form.searchform:before {
   .content {
     display: inline;
     float: left;
-    width: 60.5226114418709%;
-    margin-left: 3.072027612397888%;
-    margin-right: 3.072027612397888%;
-    *width: 60.470528108537565%;
-    *margin-left: 3.0199442790645543%;
-    *margin-right: 3.0199442790645543%;
+    width: 60.52261144%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 60.47052811%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
     float: right;
   }
   .inner-wrap {
@@ -1683,21 +1682,21 @@ form.searchform:before {
   .sidebar {
     display: inline;
     float: left;
-    width: 27.18927810853756%;
-    margin-left: 3.072027612397888%;
-    margin-right: 3.072027612397888%;
-    *width: 27.13719477520423%;
-    *margin-left: 3.0199442790645543%;
-    *margin-right: 3.0199442790645543%;
+    width: 27.18927811%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 27.13719478%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .footer-widgets {
     display: block;
-    width: 106.14405522479578%;
-    margin-left: -3.072027612397888%;
-    margin-right: -3.072027612397888%;
-    *width: 106.09197189146245%;
-    *margin-left: -3.1241109457312213%;
-    *margin-right: -3.1241109457312213%;
+    width: 106.14405522%;
+    margin-left: -3.07202761%;
+    margin-right: -3.07202761%;
+    *width: 106.09197189%;
+    *margin-left: -3.12411095%;
+    *margin-right: -3.12411095%;
     *zoom: 1;
   }
   .footer-widgets:before,
@@ -1711,43 +1710,43 @@ form.searchform:before {
   .footer-widgets.columns-1 .footer-sidebar {
     display: inline;
     float: left;
-    width: 93.85594477520422%;
-    margin-left: 3.072027612397888%;
-    margin-right: 3.072027612397888%;
-    *width: 93.8038614418709%;
-    *margin-left: 3.0199442790645543%;
-    *margin-right: 3.0199442790645543%;
+    width: 93.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 93.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .footer-widgets.columns-2 .footer-sidebar {
     display: inline;
     float: left;
-    width: 43.85594477520423%;
-    margin-left: 3.072027612397888%;
-    margin-right: 3.072027612397888%;
-    *width: 43.80386144187089%;
-    *margin-left: 3.0199442790645543%;
-    *margin-right: 3.0199442790645543%;
+    width: 43.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 43.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .footer-widgets.columns-3 .footer-sidebar {
     display: inline;
     float: left;
-    width: 27.18927810853756%;
-    margin-left: 3.072027612397888%;
-    margin-right: 3.072027612397888%;
-    *width: 27.13719477520423%;
-    *margin-left: 3.0199442790645543%;
-    *margin-right: 3.0199442790645543%;
+    width: 27.18927811%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 27.13719478%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .page-template-templatestemplate-fullwidth-php .content,
   body.fullwidth .content {
     display: inline;
     float: left;
-    width: 93.85594477520422%;
-    margin-left: 3.072027612397888%;
-    margin-right: 3.072027612397888%;
-    *width: 93.8038614418709%;
-    *margin-left: 3.0199442790645543%;
-    *margin-right: 3.0199442790645543%;
+    width: 93.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 93.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
     float: none;
   }
   /**
@@ -1759,12 +1758,12 @@ form.searchform:before {
   .site-intro {
     display: inline;
     float: left;
-    width: 93.85594477520422%;
-    margin-left: 3.072027612397888%;
-    margin-right: 3.072027612397888%;
-    *width: 93.8038614418709%;
-    *margin-left: 3.0199442790645543%;
-    *margin-right: 3.0199442790645543%;
+    width: 93.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 93.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .main-nav {
     clear: none;
@@ -1808,12 +1807,12 @@ form.searchform:before {
   .main-nav ul.menu {
     display: inline;
     float: left;
-    width: 93.85594477520422%;
-    margin-left: 3.072027612397888%;
-    margin-right: 3.072027612397888%;
-    *width: 93.8038614418709%;
-    *margin-left: 3.0199442790645543%;
-    *margin-right: 3.0199442790645543%;
+    width: 93.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 93.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   /**
 	 * Navigation
@@ -1952,12 +1951,12 @@ form.searchform:before {
   .footer .footer-content {
     display: inline;
     float: left;
-    width: 93.85594477520422%;
-    margin-left: 3.072027612397888%;
-    margin-right: 3.072027612397888%;
-    *width: 93.8038614418709%;
-    *margin-left: 3.0199442790645543%;
-    *margin-right: 3.0199442790645543%;
+    width: 93.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 93.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   /**
 	 * Styles applied when admin bar is present
@@ -2538,8 +2537,8 @@ img.wp-post-image {
   margin-bottom: 1.777em;
 }
 .gallery img {
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 /**
  * Comments

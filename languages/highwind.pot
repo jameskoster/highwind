@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/highwind\n"
-"POT-Creation-Date: 2014-11-11 17:38:47+00:00\n"
+"POT-Creation-Date: 2014-11-11 17:53:37+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -110,39 +110,39 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
-#: framework/highwind-options.php:66
+#: framework/highwind-options.php:71
 msgid "Navigation"
 msgstr ""
 
-#: framework/highwind-options.php:73
+#: framework/highwind-options.php:78
 msgid "Layout"
 msgstr ""
 
-#: framework/highwind-options.php:84
+#: framework/highwind-options.php:89
 msgid "Link Color"
 msgstr ""
 
-#: framework/highwind-options.php:91
+#: framework/highwind-options.php:96
 msgid "Header Color"
 msgstr ""
 
-#: framework/highwind-options.php:98
+#: framework/highwind-options.php:103
 msgid "Text Color"
 msgstr ""
 
-#: framework/highwind-options.php:105
+#: framework/highwind-options.php:110
 msgid "Background Color"
 msgstr ""
 
-#: framework/highwind-options.php:112
+#: framework/highwind-options.php:117
 msgid "Content Background Color"
 msgstr ""
 
-#: framework/highwind-options.php:285
+#: framework/highwind-options.php:290
 msgid "Content on left"
 msgstr ""
 
-#: framework/highwind-options.php:289
+#: framework/highwind-options.php:294
 msgid "Content on right"
 msgstr ""
 
@@ -228,28 +228,28 @@ msgstr ""
 msgid "WooCommerce"
 msgstr ""
 
-#: includes/integrations/woocommerce/functions.php:31
+#: includes/integrations/woocommerce/functions.php:32
 msgid "Display Header Cart"
 msgstr ""
 
-#: includes/integrations/woocommerce/functions.php:44
+#: includes/integrations/woocommerce/functions.php:46
 msgid "Display Header Product Search"
 msgstr ""
 
-#: includes/integrations/woocommerce/functions.php:57
+#: includes/integrations/woocommerce/functions.php:60
 msgid "Archives Full Width?"
 msgstr ""
 
-#: includes/integrations/woocommerce/functions.php:70
+#: includes/integrations/woocommerce/functions.php:74
 msgid "Product Details Full Width?"
 msgstr ""
 
-#: includes/integrations/woocommerce/functions.php:164
+#: includes/integrations/woocommerce/functions.php:168
 #: includes/integrations/woocommerce/template.php:74
 msgid "View your cart"
 msgstr ""
 
-#: includes/integrations/woocommerce/functions.php:164
+#: includes/integrations/woocommerce/functions.php:168
 #: includes/integrations/woocommerce/template.php:74
 msgid "%d item"
 msgid_plural "%d items"

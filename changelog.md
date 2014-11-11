@@ -4,6 +4,7 @@
 * Fix - Search template uses the correct loop
 * Tweak - Removed id arg from highwind_content_nav()
 * Tweak - Several small style tweaks
+* Tweak - Sanitize Customizer settings
 
 ## 02.04.2014 - 1.2.4
 * Fix - Footer widgets have consistent headings.

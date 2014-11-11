@@ -33,27 +33,32 @@ class HighwindOptions {
 
         // Link Color Default
         $wp_customize->add_setting( 'link_textcolor', array(
-                'default'       => apply_filters( 'highwind_link_textcolor_default', $color = '#53a1b8' )
+                'default'           => apply_filters( 'highwind_link_textcolor_default', $color = '#53a1b8' ),
+                'sanitize_callback' => 'sanitize_hex_color',
         ) );
 
         // Heading Color Default
         $wp_customize->add_setting( 'headercolor', array(
-                'default'       => apply_filters( 'highwind_headercolor_default', $color = '#444854' )
+                'default'           => apply_filters( 'highwind_headercolor_default', $color = '#444854' ),
+                'sanitize_callback' => 'sanitize_hex_color',
         ) );
 
         // Text Color Default
         $wp_customize->add_setting( 'textcolor', array(
-                'default'       => apply_filters( 'highwind_textcolor_default', $color = '#666A76' )
+                'default'           => apply_filters( 'highwind_textcolor_default', $color = '#666A76' ),
+                'sanitize_callback' => 'sanitize_hex_color',
         ) );
 
         // Background Color Default
         $wp_customize->add_setting( 'background_color', array(
-                'default'       => apply_filters( 'highwind_background_color_default', $color = '#f8f8f9' )
+                'default'           => apply_filters( 'highwind_background_color_default', $color = '#f8f8f9' ),
+                'sanitize_callback' => 'sanitize_hex_color',
         ) );
 
         // Background Color Default
         $wp_customize->add_setting( 'content_background_color', array(
-                'default'       => apply_filters( 'highwind_content_background_color_default', $color = '#f8f8f9' )
+                'default'           => apply_filters( 'highwind_content_background_color_default', $color = '#f8f8f9' ),
+                'sanitize_callback' => 'sanitize_hex_color',
         ) );
 
 
@@ -326,4 +331,17 @@ function highwind_layout_classes( $existing_classes ) {
     $classes = apply_filters( 'highwind_layout_classes', $classes, $current_layout );
 
     return array_merge( $existing_classes, $classes );
+}
+
+/**
+ * Sanitize Checkboxes
+ *
+ * @since  1.2.5
+ */
+function highwind_sanitize_checkbox( $input ) {
+    if ( $input == 1 ) {
+        return 1;
+    } else {
+        return '';
+    }
 }

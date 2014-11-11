@@ -16,19 +16,20 @@ function highwind_supports_woocommerce() {
 function highwind_woocommerce_customize_register( $wp_customize ){
     // WooCommerce Section
     $wp_customize->add_section( 'highwind_woocommerce', array(
-        'title'    => __( 'WooCommerce', 'hit' ),
+        'title'    => __( 'WooCommerce', 'highwind' ),
         'priority' => 200,
     ) );
 
     // WooCommerce Options
     // Header Cart
     $wp_customize->add_setting( 'highwind_woocommerce_options[header_cart]', array(
-        'capability' => 'edit_theme_options',
-        'type'       => 'option',
+        'capability'        => 'edit_theme_options',
+        'type'              => 'option',
+        'sanitize_callback' => 'highwind_sanitize_checkbox',
     ));
 
     $wp_customize->add_control( 'highwind_woocommerce_header_cart', array(
-        'label'      => __( 'Display Header Cart', 'hit' ),
+        'label'      => __( 'Display Header Cart', 'highwind' ),
         'section'    => 'highwind_woocommerce',
         'settings'   => 'highwind_woocommerce_options[header_cart]',
         'type'       => 'checkbox',
@@ -36,12 +37,13 @@ function highwind_woocommerce_customize_register( $wp_customize ){
 
     // Header Search
     $wp_customize->add_setting( 'highwind_woocommerce_options[header_search]', array(
-        'capability' => 'edit_theme_options',
-        'type'       => 'option',
+        'capability'        => 'edit_theme_options',
+        'type'              => 'option',
+        'sanitize_callback' => 'highwind_sanitize_checkbox',
     ));
 
     $wp_customize->add_control( 'highwind_woocommerce_header_search', array(
-        'label'      => __( 'Display Header Product Search', 'hit' ),
+        'label'      => __( 'Display Header Product Search', 'highwind' ),
         'section'    => 'highwind_woocommerce',
         'settings'   => 'highwind_woocommerce_options[header_search]',
         'type'       => 'checkbox',
@@ -49,12 +51,13 @@ function highwind_woocommerce_customize_register( $wp_customize ){
 
     // Archive Full Width
     $wp_customize->add_setting( 'highwind_woocommerce_options[archive_fullwidth]', array(
-        'capability' => 'edit_theme_options',
-        'type'       => 'option',
+        'capability'        => 'edit_theme_options',
+        'type'              => 'option',
+        'sanitize_callback' => 'highwind_sanitize_checkbox',
     ));
 
     $wp_customize->add_control( 'highwind_woocommerce_archive_fullwidth', array(
-        'label'      => __( 'Archives Full Width?', 'hit' ),
+        'label'      => __( 'Archives Full Width?', 'highwind' ),
         'section'    => 'highwind_woocommerce',
         'settings'   => 'highwind_woocommerce_options[archive_fullwidth]',
         'type'       => 'checkbox',
@@ -62,12 +65,13 @@ function highwind_woocommerce_customize_register( $wp_customize ){
 
     // Product Details Full Width
     $wp_customize->add_setting( 'highwind_woocommerce_options[details_fullwidth]', array(
-        'capability' => 'edit_theme_options',
-        'type'       => 'option',
+        'capability'        => 'edit_theme_options',
+        'type'              => 'option',
+        'sanitize_callback' => 'highwind_sanitize_checkbox',
     ));
 
     $wp_customize->add_control( 'highwind_woocommerce_details_fullwidth', array(
-        'label'      => __( 'Product Details Full Width?', 'hit' ),
+        'label'      => __( 'Product Details Full Width?', 'highwind' ),
         'section'    => 'highwind_woocommerce',
         'settings'   => 'highwind_woocommerce_options[details_fullwidth]',
         'type'       => 'checkbox',
@@ -161,7 +165,7 @@ function highwind_woocommerce_header_cart( $items, $args ) {
 	}
 
 	if ( $args->theme_location == 'main' && $header_cart ) {
-    	$cart_link = '<li class="cart-link ' . $current_menu_item . '"><a href="' . $woocommerce->cart->get_cart_url() . '" title="' . __( 'View your cart', 'hit' ) . '" class="cart-button">' . $woocommerce->cart->get_cart_total() . ' &ndash; <small>' . sprintf( _n( '%d item', '%d items', $woocommerce->cart->cart_contents_count, 'hit' ), $woocommerce->cart->cart_contents_count ) . '</small></a></li>';
+    	$cart_link = '<li class="cart-link ' . $current_menu_item . '"><a href="' . $woocommerce->cart->get_cart_url() . '" title="' . __( 'View your cart', 'highwind' ) . '" class="cart-button">' . $woocommerce->cart->get_cart_total() . ' &ndash; <small>' . sprintf( _n( '%d item', '%d items', $woocommerce->cart->cart_contents_count, 'highwind' ), $woocommerce->cart->cart_contents_count ) . '</small></a></li>';
     }
 
     $items = $cart_link . $items;

@@ -1,6 +1,6 @@
 # Highwind changelog
 
-## 15.05.2014 - 1.2.5
+## 11.11.2014 - 1.2.5
 * Fix - Search template uses the correct loop
 * Tweak - Removed id arg from highwind_content_nav()
 * Tweak - Several small style tweaks

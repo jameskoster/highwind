@@ -654,9 +654,6 @@ ul.products li.product img {
 ul.products li.product .price {
   display: block;
 }
-ul.products li.product .button {
-  display: none;
-}
 ul.products li.product a:first-of-type {
   display: block;
 }
@@ -1163,12 +1160,12 @@ dl.variation dd {
   .highwind-product-search form {
     display: inline;
     float: left;
-    width: 93.85594477520422%;
-    margin-left: 3.072027612397888%;
-    margin-right: 3.072027612397888%;
-    *width: 93.8038614418709%;
-    *margin-left: 3.0199442790645543%;
-    *margin-right: 3.0199442790645543%;
+    width: 93.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 93.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .woocommerce-result-count {
     float: left;
@@ -1178,12 +1175,12 @@ dl.variation dd {
   }
   ul.products {
     display: block;
-    width: 108.19207363306103%;
-    margin-left: -4.096036816530517%;
-    margin-right: -4.096036816530517%;
-    *width: 108.1399902997277%;
-    *margin-left: -4.14812014986385%;
-    *margin-right: -4.14812014986385%;
+    width: 108.19207363%;
+    margin-left: -4.09603682%;
+    margin-right: -4.09603682%;
+    *width: 108.1399903%;
+    *margin-left: -4.14812015%;
+    *margin-right: -4.14812015%;
     *zoom: 1;
     clear: both;
   }
@@ -1198,12 +1195,12 @@ dl.variation dd {
   ul.products li.product {
     display: inline;
     float: left;
-    width: 25.1412597002723%;
-    margin-left: 4.096036816530517%;
-    margin-right: 4.096036816530517%;
-    *width: 25.08917636693897%;
-    *margin-left: 4.043953483197184%;
-    *margin-right: 4.043953483197184%;
+    width: 25.1412597%;
+    margin-left: 4.09603682%;
+    margin-right: 4.09603682%;
+    *width: 25.08917637%;
+    *margin-left: 4.04395348%;
+    *margin-right: 4.04395348%;
     padding-left: 0;
     padding-right: 0;
     clear: none;
@@ -1232,12 +1229,12 @@ dl.variation dd {
   }
   .single-product .content > .product {
     display: block;
-    width: 108.19207363306103%;
-    margin-left: -4.096036816530517%;
-    margin-right: -4.096036816530517%;
-    *width: 108.1399902997277%;
-    *margin-left: -4.14812014986385%;
-    *margin-right: -4.14812014986385%;
+    width: 108.19207363%;
+    margin-left: -4.09603682%;
+    margin-right: -4.09603682%;
+    *width: 108.1399903%;
+    *margin-left: -4.14812015%;
+    *margin-right: -4.14812015%;
     *zoom: 1;
   }
   .single-product .content > .product:before,
@@ -1259,21 +1256,21 @@ dl.variation dd {
   .single-product .content > .product .images {
     display: inline;
     float: left;
-    width: 36.25237081138341%;
-    margin-left: 4.096036816530517%;
-    margin-right: 4.096036816530517%;
-    *width: 36.20028747805007%;
-    *margin-left: 4.043953483197184%;
-    *margin-right: 4.043953483197184%;
+    width: 36.25237081%;
+    margin-left: 4.09603682%;
+    margin-right: 4.09603682%;
+    *width: 36.20028748%;
+    *margin-left: 4.04395348%;
+    *margin-right: 4.04395348%;
   }
   .single-product .content > .product .images .thumbnails {
     display: block;
-    width: 118.43216567438732%;
-    margin-left: -9.216082837193662%;
-    margin-right: -9.216082837193662%;
-    *width: 118.38008234105399%;
-    *margin-left: -9.268166170526996%;
-    *margin-right: -9.268166170526996%;
+    width: 118.43216567%;
+    margin-left: -9.21608284%;
+    margin-right: -9.21608284%;
+    *width: 118.38008234%;
+    *margin-left: -9.26816617%;
+    *margin-right: -9.26816617%;
     *zoom: 1;
   }
   .single-product .content > .product .images .thumbnails:before,
@@ -1288,23 +1285,23 @@ dl.variation dd {
     display: block;
     display: inline;
     float: left;
-    width: 31.567834325612676%;
-    margin-left: 9.216082837193662%;
-    margin-right: 9.216082837193662%;
-    *width: 31.515750992279344%;
-    *margin-left: 9.163999503860328%;
-    *margin-right: 9.163999503860328%;
+    width: 31.56783433%;
+    margin-left: 9.21608284%;
+    margin-right: 9.21608284%;
+    *width: 31.51575099%;
+    *margin-left: 9.1639995%;
+    *margin-right: 9.1639995%;
     margin-bottom: 1.777em;
   }
   .single-product .content > .product .summary {
     display: inline;
     float: left;
-    width: 47.36348192249453%;
-    margin-left: 4.096036816530517%;
-    margin-right: 4.096036816530517%;
-    *width: 47.31139858916119%;
-    *margin-left: 4.043953483197184%;
-    *margin-right: 4.043953483197184%;
+    width: 47.36348192%;
+    margin-left: 4.09603682%;
+    margin-right: 4.09603682%;
+    *width: 47.31139859%;
+    *margin-left: 4.04395348%;
+    *margin-right: 4.04395348%;
     border: 0;
   }
   .woocommerce-tabs {
@@ -1364,12 +1361,12 @@ dl.variation dd {
   }
   .cart-collaterals {
     display: block;
-    width: 106.14405522479578%;
-    margin-left: -3.072027612397888%;
-    margin-right: -3.072027612397888%;
-    *width: 106.09197189146245%;
-    *margin-left: -3.1241109457312213%;
-    *margin-right: -3.1241109457312213%;
+    width: 106.14405522%;
+    margin-left: -3.07202761%;
+    margin-right: -3.07202761%;
+    *width: 106.09197189%;
+    *margin-left: -3.12411095%;
+    *margin-right: -3.12411095%;
     *zoom: 1;
   }
   .cart-collaterals:before,
@@ -1393,24 +1390,24 @@ dl.variation dd {
   .cart-collaterals .upsells {
     display: inline;
     float: left;
-    width: 27.18927810853756%;
-    margin-left: 3.072027612397888%;
-    margin-right: 3.072027612397888%;
-    *width: 27.13719477520423%;
-    *margin-left: 3.0199442790645543%;
-    *margin-right: 3.0199442790645543%;
+    width: 27.18927811%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 27.13719478%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .cart-collaterals .cart_totals {
     float: right;
   }
   form.checkout {
     display: block;
-    width: 106.14405522479578%;
-    margin-left: -3.072027612397888%;
-    margin-right: -3.072027612397888%;
-    *width: 106.09197189146245%;
-    *margin-left: -3.1241109457312213%;
-    *margin-right: -3.1241109457312213%;
+    width: 106.14405522%;
+    margin-left: -3.07202761%;
+    margin-right: -3.07202761%;
+    *width: 106.09197189%;
+    *margin-left: -3.12411095%;
+    *margin-right: -3.12411095%;
     *zoom: 1;
   }
   form.checkout:before,
@@ -1434,21 +1431,21 @@ dl.variation dd {
   form.checkout #order_review_heading {
     display: inline;
     float: left;
-    width: 43.85594477520423%;
-    margin-left: 3.072027612397888%;
-    margin-right: 3.072027612397888%;
-    *width: 43.80386144187089%;
-    *margin-left: 3.0199442790645543%;
-    *margin-right: 3.0199442790645543%;
+    width: 43.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 43.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .addresses {
     display: block;
-    width: 108.19207363306103%;
-    margin-left: -4.096036816530517%;
-    margin-right: -4.096036816530517%;
-    *width: 108.1399902997277%;
-    *margin-left: -4.14812014986385%;
-    *margin-right: -4.14812014986385%;
+    width: 108.19207363%;
+    margin-left: -4.09603682%;
+    margin-right: -4.09603682%;
+    *width: 108.1399903%;
+    *margin-left: -4.14812015%;
+    *margin-right: -4.14812015%;
     *zoom: 1;
   }
   .addresses:before,
@@ -1470,11 +1467,11 @@ dl.variation dd {
   .addresses .address {
     display: inline;
     float: left;
-    width: 36.25237081138341%;
-    margin-left: 4.096036816530517%;
-    margin-right: 4.096036816530517%;
-    *width: 36.20028747805007%;
-    *margin-left: 4.043953483197184%;
-    *margin-right: 4.043953483197184%;
+    width: 36.25237081%;
+    margin-left: 4.09603682%;
+    margin-right: 4.09603682%;
+    *width: 36.20028748%;
+    *margin-left: 4.04395348%;
+    *margin-right: 4.04395348%;
   }
 }

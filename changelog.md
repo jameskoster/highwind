@@ -1,5 +1,10 @@
 # Highwind changelog
 
+## 11.11.2014 - 1.2.5
+* Fix - Search template uses the correct loop
+* Tweak - Removed id arg from highwind_content_nav()
+* Tweak - Several small style tweaks
+
 ## 02.04.2014 - 1.2.4
 * Fix - Footer widgets have consistent headings.
 * WooCommerce Fix - Memory error on single product page.

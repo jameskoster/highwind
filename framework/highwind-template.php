@@ -174,7 +174,7 @@ if ( ! function_exists( 'highwind_comment_navigation' ) ) {
  * @since 1.0
  */
 if ( ! function_exists( 'highwind_content_nav' ) ) {
-	function highwind_content_nav( $nav_id ) {
+	function highwind_content_nav() {
 		global $wp_query, $post;
 
 		// Don't print empty markup on single pages if there's nowhere to navigate.
@@ -193,7 +193,7 @@ if ( ! function_exists( 'highwind_content_nav' ) ) {
 		$nav_class = ( is_single() ) ? 'navigation-post' : 'navigation-paging';
 
 		?>
-		<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
+		<nav role="navigation" class="<?php echo $nav_class; ?>">
 			<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'highwind' ); ?></h1>
 
 		<?php if ( is_single() ) : // navigation links for single posts ?>
@@ -213,7 +213,7 @@ if ( ! function_exists( 'highwind_content_nav' ) ) {
 
 		<?php endif; ?>
 
-		</nav><!-- #<?php echo esc_html( $nav_id ); ?> -->
+		</nav>
 		<?php
 	}
 }

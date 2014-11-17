@@ -1,5 +1,8 @@
 # Highwind changelog
 
+## 17.11.2014 - 1.2.6
+* Tweak - Remove codekit config file
+
 ## 11.11.2014 - 1.2.5
 * Fix - Search template uses the correct loop
 * Tweak - Removed id arg from highwind_content_nav()

@@ -429,6 +429,9 @@ p.demo_store {
   font-size: .844em;
   text-transform: uppercase;
 }
+#review_form .comment-respond .comment-form-rating {
+  float: left ;
+}
 p.stars {
   position: relative;
   height: 1em;
@@ -456,6 +459,13 @@ p.stars a.star-5:after {
   top: 0;
   left: 0;
   padding-right: 1em;
+}
+p.stars a.star-1:hover,
+p.stars a.star-2:hover,
+p.stars a.star-3:hover,
+p.stars a.star-4:hover,
+p.stars a.star-5:hover {
+  text-decoration: none ;
 }
 p.stars a.star-1 {
   width: 2em;

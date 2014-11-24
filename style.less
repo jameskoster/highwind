@@ -275,6 +275,7 @@ input[type="radio"]:checked {
 }
 input[type="checkbox"] {
     -webkit-appearance:none;  /* Hides the default checkbox style */
+    -moz-appearance:none;  /* Hides the default checkbox style */
     height:1.5em;
     width:1.5em;
     cursor:pointer;
@@ -342,6 +343,10 @@ input[type=number]::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance:textfield;
+}
+
+.form-row label.inline input{
+	margin-top: 1em ;
 }
 
 /**

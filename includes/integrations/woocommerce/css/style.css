@@ -331,6 +331,7 @@ p.demo_store {
 .woocommerce-error .button,
 .woocommerce-info .button {
   float: right;
+  margin-top: -8px;
 }
 .woocommerce-error {
   padding: 1em 1.999em 1em 3.157em;
@@ -370,6 +371,7 @@ p.demo_store {
 }
 .woocommerce-error .button {
   float: right;
+  margin-top: -8px;
 }
 .woocommerce-message {
   padding: 1em 1.999em 1em 3.157em;
@@ -409,6 +411,7 @@ p.demo_store {
 }
 .woocommerce-message .button {
   float: right;
+  margin-top: -8px;
 }
 .onsale {
   position: absolute;
@@ -875,6 +878,7 @@ table.cart .actions .checkout-button {
 }
 #payment .payment_box .button {
   float: right;
+  margin-top: -8px;
 }
 #payment .payment_box p:last-child {
   margin-bottom: 0;

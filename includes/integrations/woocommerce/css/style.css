@@ -837,6 +837,7 @@ table.cart .actions .checkout-button {
   background: #cfe8f3;
   border-left: 0.236em solid #56acd3;
   color: #1e5872;
+  clear: both ;
 }
 #payment .payment_box:before {
   font-family: "FontAwesome";

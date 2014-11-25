@@ -770,13 +770,25 @@ div.product .quantity {
   content: "\f179";
   content: "\f071";
 }
-table.cart .product-remove,
-table.cart .product-thumbnail,
-table.cart .product-price {
-  display: none;
+table.cart .product-remove .remove {
+  font-size: 24px ;
+  font-weight: 800 ;
+  background-color: #016DA3 ;
+  color: #fff ;
+  padding: 0px 8px  ;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+table.cart .product-remove .remove:hover {
+  text-decoration: none ;
+}
+table.cart .product-thumbnail {
+  padding-top: 2em ;
+  display: none ;
 }
 table.cart .product-thumbnail img {
   width: 2.665em;
+  height: 2.665em;
   height: auto;
 }
 table.cart .actions {

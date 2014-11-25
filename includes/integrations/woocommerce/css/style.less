@@ -328,11 +328,27 @@ div.product {
 }
 table.cart {
 	.product-remove, .product-thumbnail, .product-price {
-		display:none;
+		// display:none;
+	}
+	.product-remove {
+		.remove {
+			font-size: 24px ;
+			font-weight: 800 ;	
+			background-color: #016DA3 ;
+			color: #fff ;
+			padding: 0px 8px  ;
+			.border_radius(3px);
+			&:hover {
+				text-decoration: none ;
+			}
+		}
 	}
 	.product-thumbnail {
+		padding-top: 2em ;
+		display: none ;
 		img {
 			width:2.665em;
+			height:2.665em;
 			height: auto;
 		}
 	}

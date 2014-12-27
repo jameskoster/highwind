@@ -3,6 +3,7 @@
 ## 27.12.2014 - 1.2.7
 * Fix - Background color setting.
 * Fix - ul/ol padding.
+* Tweak - View cart button styling on product archives.
 
 ## 17.11.2014 - 1.2.6
 * Tweak - Remove codekit config file

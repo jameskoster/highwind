@@ -23,7 +23,12 @@ add_filter( 'body_class', 'highwind_woocommerce_layout_classes' );
 
 // Header cart functions
 add_filter( 'wp_nav_menu_items', 'highwind_woocommerce_header_cart', 10, 2 );
-add_filter( 'add_to_cart_fragments', 'highwind_woocommerce_cart_fragment' );
+
+if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '2.3', '>=' ) ) {
+	add_filter( 'woocommerce_add_to_cart_fragments', 'highwind_woocommerce_cart_fragment' );
+} else {
+	add_filter( 'add_to_cart_fragments', 'highwind_woocommerce_cart_fragment' );
+}
 
 
 // Product search functions

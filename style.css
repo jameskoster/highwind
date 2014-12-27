@@ -2214,6 +2214,10 @@ span.ampersand {
   font-family: Baskerville, Palatino, "Book Antiqua", serif;
   font-style: italic;
 }
+ul,
+ol {
+  padding: 0;
+}
 /**
  * Anchors
  */

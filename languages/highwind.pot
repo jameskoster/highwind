@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/highwind\n"
-"POT-Creation-Date: 2014-11-11 17:53:37+00:00\n"
+"POT-Creation-Date: 2014-12-27 12:35:07+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -110,39 +110,39 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
-#: framework/highwind-options.php:71
+#: framework/highwind-options.php:68
 msgid "Navigation"
 msgstr ""
 
-#: framework/highwind-options.php:78
+#: framework/highwind-options.php:75
 msgid "Layout"
 msgstr ""
 
-#: framework/highwind-options.php:89
+#: framework/highwind-options.php:86
 msgid "Link Color"
 msgstr ""
 
-#: framework/highwind-options.php:96
+#: framework/highwind-options.php:93
 msgid "Header Color"
 msgstr ""
 
-#: framework/highwind-options.php:103
+#: framework/highwind-options.php:100
 msgid "Text Color"
 msgstr ""
 
-#: framework/highwind-options.php:110
+#: framework/highwind-options.php:107
 msgid "Background Color"
 msgstr ""
 
-#: framework/highwind-options.php:117
+#: framework/highwind-options.php:114
 msgid "Content Background Color"
 msgstr ""
 
-#: framework/highwind-options.php:290
+#: framework/highwind-options.php:287
 msgid "Content on left"
 msgstr ""
 
-#: framework/highwind-options.php:294
+#: framework/highwind-options.php:291
 msgid "Content on right"
 msgstr ""
 

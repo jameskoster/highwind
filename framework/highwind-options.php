@@ -24,6 +24,9 @@ class HighwindOptions {
         /**
          * Theme Option Defaults
          */
+
+        $wp_customize->get_setting( 'background_color' )->default = '#f8f8f9';
+
         // Layout Default
         $wp_customize->add_setting( 'highwind_theme_options[theme_layout]', array(
             'type'              => 'option',
@@ -46,12 +49,6 @@ class HighwindOptions {
         // Text Color Default
         $wp_customize->add_setting( 'textcolor', array(
                 'default'           => apply_filters( 'highwind_textcolor_default', $color = '#666A76' ),
-                'sanitize_callback' => 'sanitize_hex_color',
-        ) );
-
-        // Background Color Default
-        $wp_customize->add_setting( 'background_color', array(
-                'default'           => apply_filters( 'highwind_background_color_default', $color = '#f8f8f9' ),
                 'sanitize_callback' => 'sanitize_hex_color',
         ) );
 

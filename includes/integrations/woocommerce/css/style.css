@@ -529,6 +529,9 @@ p.stars a.star-5.active:after {
   line-height: 1;
   content: "\f015";
 }
+.added_to_cart {
+  display: block;
+}
 .cart-button:after {
   font-family: "FontAwesome";
   font-weight: normal;

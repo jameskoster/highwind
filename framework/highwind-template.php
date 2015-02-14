@@ -336,14 +336,15 @@ function highwind_footer_widgets() {
  * Hooked into highwind_footer
  * @since 1.0
  */
-function highwind_credit() {
-	?>
-	<p>
-		<?php _e( 'Powered by', 'highwind' ); ?> <a href="http://wordpress.org" title="WordPress.org">WordPress</a> &amp; <a href="http://jameskoster.co.uk/highwind/" title="<?php _e( 'Highwind - Customisable and extendable WordPress theme', 'highwind' ); ?>">Highwind</a>.
-	</p>
-	<?php
+if ( ! function_exists( 'highwind_credit' ) ) {
+	function highwind_credit() {
+		?>
+		<p>
+			<?php _e( 'Powered by', 'highwind' ); ?> <a href="http://wordpress.org" title="WordPress.org">WordPress</a> &amp; <a href="http://jameskoster.co.uk/highwind/" title="<?php _e( 'Highwind - Customisable and extendable WordPress theme', 'highwind' ); ?>">Highwind</a>.
+		</p>
+		<?php
+	}
 }
-
 
 /**
  * Back to top link

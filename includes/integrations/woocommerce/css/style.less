@@ -39,6 +39,9 @@ p.demo_store {
 	font-size: .844em;
 	text-transform: uppercase;
 }
+#review_form .comment-respond .comment-form-rating {
+	float: left ;
+}
 p.stars {
 	position: relative;
 	height: 1em;
@@ -61,6 +64,9 @@ p.stars {
 				top:0;
 				left:0;
 				padding-right:1em;
+			}
+			&:hover {
+				text-decoration: none ;
 			}
 		}
 		&.star-1 {
@@ -326,11 +332,27 @@ div.product {
 }
 table.cart {
 	.product-remove, .product-thumbnail, .product-price {
-		display:none;
+		// display:none;
+	}
+	.product-remove {
+		.remove {
+			font-size: 24px ;
+			font-weight: 800 ;	
+			background-color: @color_theme ;
+			color: #fff ;
+			padding: 0px 8px  ;
+			.border_radius(3px);
+			&:hover {
+				text-decoration: none ;
+			}
+		}
 	}
 	.product-thumbnail {
+		padding-top: 2em ;
+		display: none ;
 		img {
 			width:2.665em;
+			height:2.665em;
 			height: auto;
 		}
 	}
@@ -355,6 +377,7 @@ table.cart {
 		.button {
 			width:48%;
 			float: left;
+			margin-top: 3px;
 		}
 		.checkout-button {
 			float:right;
@@ -396,6 +419,7 @@ table.cart {
 	}
 	.payment_box {
 		.message( "\f178" );
+		clear: both ;
 		p:last-child {
 			margin-bottom:0;
 		}

@@ -25,8 +25,9 @@ Highwind is distributed under the terms of the GNU GPL
 /**
  * Imports
  */
-@import 'framework/less/mixins.less';
+
 @import 'framework/less/normalize.less';
+@import 'framework/less/mixins.less';
 @import 'framework/less/grid.less';
 @import 'framework/less/core.less';
 
@@ -278,6 +279,7 @@ input[type="radio"]:checked {
 }
 input[type="checkbox"] {
     -webkit-appearance:none;  /* Hides the default checkbox style */
+    -moz-appearance:none;  /* Hides the default checkbox style */
     height:1.5em;
     width:1.5em;
     cursor:pointer;
@@ -333,6 +335,23 @@ input[type="button"],
 	}
 }
 
+/**
+ *  fix for mozila bug for spinners
+ */
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.form-row label.inline input{
+	margin-top: 1em ;
+}
 
 /**
  * General
@@ -381,7 +400,7 @@ img {
 	p.toggle-container {
 		width:2.369em;
 		height:2.369em;
-		margin:0 0 1.777em;
+		margin:0 0 0.777em;
 	}
 }
 .site-intro {

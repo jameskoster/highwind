@@ -1,5 +1,9 @@
 # Highwind changelog
 
+## 16.02.2015 - 1.3.0
+* Tweak - Several styling tweaks / fixes. Props @amiyasahu
+* Dev - Made `highwind_credit()` pluggable. Props @napolux
+
 ## 27.12.2014 - 1.2.7
 * Fix - Background color setting.
 * Fix - ul/ol padding.

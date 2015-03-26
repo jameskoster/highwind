@@ -1,0 +1,342 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/highwind\n"
+"POT-Creation-Date: 2014-12-27 12:35:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-03-26 21:34-0000\n"
+"Last-Translator: Adam\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.7.5\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
+
+# @ highwind
+#: 404.php:24
+msgid "404 not found"
+msgstr "404 - 页面不存在"
+
+#: 404.php:34
+msgid ""
+"It seems the page you're looking for no longer (or indeed never did) exists "
+"at this location. Please try searching..."
+msgstr "看来你正在寻找不再存在于该位置（或甚至从来没有）的页面。请尝试搜索..."
+
+# @ highwind
+#: 404.php:40
+msgid "Try looking in the monthly archives."
+msgstr "请尝试查看每月归档。"
+
+# @ highwind
+#: archive.php:25
+#, php-format
+msgid "Category Archives: %s"
+msgstr "按分类归档：%s"
+
+# @ highwind
+#: archive.php:28
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "按标签归档：%s"
+
+# @ highwind
+#: archive.php:35
+#, php-format
+msgid "Author Archives: %s"
+msgstr "按作者归档：%s"
+
+# @ highwind
+#: archive.php:43
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "每日归档：%s"
+
+# @ highwind
+#: archive.php:46
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "每月归档：%s"
+
+# @ highwind
+#: archive.php:49
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "年度归档：%s"
+
+# @ highwind
+#: archive.php:52
+msgid "Archives"
+msgstr "文章归档"
+
+#: archive.php:90 index.php:34 search.php:38
+msgid "Nothing Found"
+msgstr "什么也没有找到"
+
+#: archive.php:100 index.php:44 search.php:44
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr "抱歉，没有找到所请求的文章归档。也许您可以搜索到其他相关的文章。"
+
+#: comments.php:17
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr "这篇日志是受密码保护的。请输入密码以查看评论。"
+
+# @ highwind
+#: comments.php:30
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s 条关于 &ldquo;%2$s&rdquo; 的看法"
+
+# @ highwind
+#: comments.php:45
+msgid "Comments are closed."
+msgstr "评论已关闭。"
+
+# @ highwind
+#: content-page.php:29
+msgid "Pages:"
+msgstr "页码："
+
+#: content.php:18 framework/highwind-template.php:147 image.php:27
+msgid "Permalink to %s"
+msgstr "到 %s 的固定链接"
+
+#: content.php:31
+msgid "Continue Reading..."
+msgstr "继续阅读..."
+
+# @ highwind
+#: framework/highwind-functions.php:21
+msgid "Main menu"
+msgstr "主菜单"
+
+# @ highwind
+#: framework/highwind-functions.php:75
+msgid "Sidebar"
+msgstr "侧边栏"
+
+# @ highwind
+#: framework/highwind-functions.php:85
+msgid "Footer #1"
+msgstr "页脚 #1"
+
+# @ highwind
+#: framework/highwind-functions.php:93
+msgid "Footer #2"
+msgstr "页脚 #2"
+
+# @ highwind
+#: framework/highwind-functions.php:101
+msgid "Footer #3"
+msgstr "页脚 #3"
+
+# @ highwind
+#: framework/highwind-functions.php:184
+#, php-format
+msgid "Page %s"
+msgstr "第 %s 页"
+
+# @ highwind
+#: framework/highwind-options.php:68
+msgid "Navigation"
+msgstr "导航"
+
+# @ highwind
+#: framework/highwind-options.php:75
+msgid "Layout"
+msgstr "布局"
+
+# @ highwind
+#: framework/highwind-options.php:86
+msgid "Link Color"
+msgstr "链接颜色"
+
+# @ highwind
+#: framework/highwind-options.php:93
+msgid "Header Color"
+msgstr "标题栏颜色"
+
+# @ highwind
+#: framework/highwind-options.php:100
+msgid "Text Color"
+msgstr "文本颜色"
+
+# @ highwind
+#: framework/highwind-options.php:107
+msgid "Background Color"
+msgstr "背景颜色"
+
+#: framework/highwind-options.php:114
+msgid "Content Background Color"
+msgstr "主体背景颜色"
+
+# @ highwind
+#: framework/highwind-options.php:287
+msgid "Content on left"
+msgstr "内容在左边"
+
+# @ highwind
+#: framework/highwind-options.php:291
+msgid "Content on right"
+msgstr "内容在右边"
+
+# @ highwind
+#: framework/highwind-template.php:20
+msgid "Skip to navigation"
+msgstr "跳到导航栏"
+
+# @ highwind
+#: framework/highwind-template.php:69
+msgid "Home"
+msgstr "主页"
+
+# @ highwind
+#: framework/highwind-template.php:70
+msgid "Return to Content"
+msgstr "返回"
+
+# @ highwind
+#: framework/highwind-template.php:125
+msgid "0 Comments"
+msgstr "没有评论"
+
+# @ highwind
+#: framework/highwind-template.php:125
+msgid "1 Comment"
+msgstr "1 条评论"
+
+# @ highwind
+#: framework/highwind-template.php:125
+msgid "% Comments"
+msgstr "% 条评论"
+
+# @ highwind
+#: framework/highwind-template.php:162
+msgid "Comment navigation"
+msgstr "评论导航"
+
+# @ highwind
+#: framework/highwind-template.php:163
+msgid "Older Comments"
+msgstr "更早的评论"
+
+# @ highwind
+#: framework/highwind-template.php:164
+msgid "Newer Comments"
+msgstr "较新的评论"
+
+# @ highwind
+#: framework/highwind-template.php:197
+msgid "Post navigation"
+msgstr "日志导航"
+
+#: framework/highwind-template.php:207
+msgid "Older posts"
+msgstr "较早的文章"
+
+# @ highwind
+#: framework/highwind-template.php:211
+msgid "Newer posts"
+msgstr "较新的文章"
+
+# @ highwind
+#. translators: 1: date, 2: time
+#: framework/highwind-template.php:247
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s %2$s"
+
+# @ highwind
+#: framework/highwind-template.php:247
+msgid "Edit"
+msgstr "编辑"
+
+# @ default
+#: framework/highwind-template.php:250
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+# @ highwind
+#: framework/highwind-template.php:254
+msgid "Your comment is awaiting moderation."
+msgstr "您的评论正在等待审核。"
+
+# @ highwind
+#: framework/highwind-template.php:342
+msgid "Powered by"
+msgstr ""
+
+# @ highwind
+#: framework/highwind-template.php:342
+msgid "Highwind - Customisable and extendable WordPress theme"
+msgstr "Highwind - 可定制和扩展的 WordPress 主题"
+
+#: framework/highwind-template.php:356
+msgid "Back to top"
+msgstr "返回顶部"
+
+#: includes/integrations/woocommerce/functions.php:19
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:32
+msgid "Display Header Cart"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:46
+msgid "Display Header Product Search"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:60
+msgid "Archives Full Width?"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:74
+msgid "Product Details Full Width?"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:168
+#: includes/integrations/woocommerce/template.php:74
+msgid "View your cart"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:168
+#: includes/integrations/woocommerce/template.php:74
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: index.php:11
+msgid "You do not have sufficient permissions to access this page!"
+msgstr "您没有足够的权限访问本页面。"
+
+# @ highwind
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr "%s 的搜索结果"
+
+# @ highwind
+#: searchform.php:8
+msgctxt "assistive text"
+msgid "Search"
+msgstr "搜索"
+
+# @ highwind
+#: searchform.php:9
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "搜索 &hellip;"
+
+# @ highwind
+#: searchform.php:10
+msgctxt "submit button"
+msgid "Search"
+msgstr "搜索"

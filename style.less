@@ -4,8 +4,8 @@ Theme URI: http://jameskoster.co.uk/highwind/
 Description: Highwind is a lightweight, free WordPress theme designed to showcase content. It features a clean, responsive design with a strong focus on typography, plus a bunch of presentational options and widgetised regions allowing you to give your site a unique touch. <a href="https://github.com/jameskoster/highwind/wiki">View Documentation</a>.
 Author: jameskoster
 Author URI: http://jameskoster.co.uk
-Version: 1.1.1
-Tags: white, two-columns, left-sidebar, right-sidebar, flexible-width, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light
+Version: 1.2.7
+Tags: white, two-columns, left-sidebar, right-sidebar, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -51,7 +51,7 @@ body {
  * Wrappers
  */
 .inner-wrap {
-	padding: 0 1.777em;
+	padding: 0 1.125em;
 	background-color: @color_bg;
 }
 
@@ -60,7 +60,7 @@ body {
  * Typography
  */
 h1, h2, h3, h4, h5, h6, .heading, .omega, .psi, .alpha, .beta, .gamma, .delta {
-	font-weight: 300;
+	font-weight: 400;
 	margin:0;
 	margin-bottom:1rem;
 	color: @color_body - #222;
@@ -92,7 +92,6 @@ h1, .site-title, .alpha {
 	font-size:1.777em;
 	letter-spacing: -1px;
 	&.archive-header {
-		font-weight: 300;
 		font-size:1.125em;
 	}
 }
@@ -103,14 +102,17 @@ h2, .beta {
 
 h3, .gamma {
 	font-size:1.333em;
+	font-weight: 600;
 }
 
 h4, .delta {
 	font-size:1.125em;
+	font-weight: 600;
 }
 
 h5, h6 {
 	font-size: 1em;
+	font-weight: 700;
 }
 
 p + h1, p + h2, p + h3, p + h4 {
@@ -122,7 +124,6 @@ p, ul, ol, dl, blockquote, pre, table, fieldset, article, article footer, nav, f
 }
 
 ul, ol {
-	padding-left:0;
 	ul, ol {
 		margin:0 0 0 1.777em;
 	}
@@ -170,6 +171,7 @@ ins {
 
 blockquote {
 	.opacity(0.8);
+	padding-left:1.777em;
 	p:last-child {
 		margin-bottom:0;
 	}
@@ -197,12 +199,6 @@ blockquote {
 	}
 }
 
-blockquote + blockquote {
-	p:first-child {
-		padding-top:1.777em;
-	}
-}
-
 code, pre {
 	background: rgba(0,0,0,0.05);
 	padding:0.1em 0.201em;
@@ -210,7 +206,6 @@ code, pre {
 	color: #dc5494;
 	margin:0 .201em;
 	padding:0 .201em;
-	text-shadow:0 1px 0 rgba(0,0,0,0.05);
 	border:1px solid rgba(0,0,0,0.1);
 	font-weight: 600;
 }
@@ -229,6 +224,10 @@ span.ampersand {
 	font-style: italic;
 }
 
+ul,
+ol {
+	padding: 0;
+}
 
 /**
  * Anchors
@@ -372,9 +371,9 @@ img {
  * Header
  */
 .header {
-	padding:1.777em 1.777em 2.665em 1.777em;
-	margin-left:-1.777em;
-	margin-right:-1.777em;
+	padding:1.777em 1.125em 2.665em 1.125em;
+	margin-left:-1.125em;
+	margin-right:-1.125em;
 	margin-bottom:4.209em;
 	background-color:@color_theme;
 	background-position:center center;
@@ -403,7 +402,6 @@ img {
 }
 .site-title, .site-description {
 	color: #fff;
-	text-shadow:0 0 4px rgba(0,0,0,0.15);
 	a {
 		color: #fff;
 	}
@@ -411,7 +409,6 @@ img {
 .site-title {
 	.psi;
 	color: #fff;
-	text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 	margin-bottom:0;
 }
 .site-description {
@@ -434,18 +431,21 @@ ul.menu {
 	margin-bottom: 2.618em;
 	background: @color_bg;
 	.buttons {
-		padding: 1.777em;
+		padding: 1.777em 1.125em;
 	}
 	.menu {
-		padding:0 1.777em;
+		padding:0 1.125em;
 	}
 	h2 {
-		padding:0 1.777em;
+		padding:0 1.125em;
 	}
 }
 .navigation-paging, .navigation-post, .navigation-comments {
 	margin-top:1em;
 	margin-bottom:2.665em;
+}
+.infinite-scroll .navigation-paging {
+	display: none;
 }
 
 
@@ -478,6 +478,12 @@ article.post, article.page {
 	line-height: 1.33em
 }
 
+.wp-caption {
+	img {
+		margin-bottom: 1em;
+	}
+}
+
 img.alignleft {
 	margin:1.777em 1.777em 1.777em 0;
 }
@@ -486,16 +492,33 @@ img.wp-post-image {
 	margin-bottom:1.777em;
 }
 
+.gallery img {
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /**
  * Comments
  */
 .comments {
 	.bypostauthor {
-		.comment-content {
-			.box_shadow(0,0,0,.134em,rgba(0,0,0,0.1));
+		> .comment-body .comment-content {
+			background: @color_theme;
+			-webkit-box-shadow: none;
+			box-shadow:			none;
+			color: #fff;
+			&:after {
+				border-color: transparent transparent @color_theme transparent;
+			}
 			&:before {
-				border-color: transparent transparent rgba(0,0,0,0.1) transparent;
+				display: none;
+			}
+			a {
+				color: @color_bg;
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -507,6 +530,9 @@ img.wp-post-image {
 		position: relative;
 		p:last-child {
 			margin-bottom:0;
+		}
+		> ul, > ol {
+			margin-bottom:1.777em;
 		}
 		&:before, &:after {
 			content: "";
@@ -587,6 +613,7 @@ img.wp-post-image {
 
 	body {
 		padding:0;
+		font-size: 1.125em;
 	}
 	.inner-wrap {
 		padding:0 3.157em;
@@ -612,6 +639,31 @@ img.wp-post-image {
 		margin-right:-999em;
 		background-color: @color_theme;
 
+	}
+	.background-contrast {
+		.header {
+			margin-left: -3.157em;
+			margin-right: -3.157em;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.footer {
+			margin-left: -3.157em;
+			margin-right: -3.157em;
+			padding-left: 3.157em;
+			padding-right: 3.157em;
+		}
+		.main-nav {
+			max-width: 69.75em;
+			margin: 0 auto;
+		}
+	}
+	.csstransforms3d.csstransitions  {
+		.background-contrast {
+			.main-nav {
+				left: auto;
+			}
+		}
 	}
 	.site-title {
 		.omega;
@@ -642,6 +694,12 @@ img.wp-post-image {
 	.main-nav {
 		border-right:0;
 		border-bottom:.422em solid @color_theme;
+		.sub-menu {
+			display: none;
+		}
+		li.menu-item-has-children:hover > .sub-menu {
+			display: block;
+		}
 		ul.menu {
 			> li {
 				&:hover > a, > a:hover {
@@ -706,19 +764,10 @@ img.wp-post-image {
 	 * Sidebar
 	 */
 	 .sidebar {
-	 	background:rgba(0,0,0,0.02);
-		padding:4.209rem 0 1.999rem 3.157rem;
+		padding:4.209rem 0 0 0;
 		.borderbox;
 		font-size:.844em;
 		margin-top:-4.209rem;
-		-webkit-box-shadow:
-			14.5em 0 0 rgba(0,0,0,0.025),
-			38em 0 0 rgba(0,0,0,0.025),
-			61.5em 0 0 rgba(0,0,0,0.025);
-		box-shadow:
-			15.45em 0 0 rgba(0,0,0,0.025),
-			38em 0 0 rgba(0,0,0,0.025),
-			61.5em 0 0 rgba(0,0,0,0.025);
 		/**
 		  * Sidebar Widgets
 		  */
@@ -735,6 +784,10 @@ img.wp-post-image {
 		.psi;
 	}
 
+	blockquote {
+		padding-left: 0;
+	}
+
 
 	/**
 	 * Comments
@@ -745,28 +798,4 @@ img.wp-post-image {
 		}
 	}
 
-
-	/**
-	 * Footer
-	 */
-	.footer {
-	}
-
-
-	/**
-	 * Sidebar-Content layout
-	 */
-	body.sidebar-content {
-		.sidebar {
-			padding:4.209rem 3.157rem 1.999rem 0;
-			-webkit-box-shadow:
-				-14.5em 0 0 rgba(0,0,0,0.025),
-				-38em 0 0 rgba(0,0,0,0.025),
-				-61.5em 0 0 rgba(0,0,0,0.025);
-			box-shadow:
-				-14.5em 0 0 rgba(0,0,0,0.025),
-				-38em 0 0 rgba(0,0,0,0.025),
-				-61.5em 0 0 rgba(0,0,0,0.025);
-		}
-	}
 }

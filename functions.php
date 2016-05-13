@@ -27,6 +27,7 @@ if ( is_woocommerce_activated() ) {
 	require_once( get_template_directory() . '/includes/integrations/woocommerce/functions.php' );
 	require_once( get_template_directory() . '/includes/integrations/woocommerce/template.php' );
 }
+require_once( get_template_directory() . '/includes/integrations/jetpack/functions.php' );
 
 
 /**

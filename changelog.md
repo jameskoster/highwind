@@ -1,5 +1,56 @@
 # Highwind changelog
 
+## 27.12.2014 - 1.2.7
+* Fix - Background color setting.
+* Fix - ul/ol padding.
+* Tweak - View cart button styling on product archives.
+
+## 17.11.2014 - 1.2.6
+* Tweak - Remove codekit config file
+
+## 11.11.2014 - 1.2.5
+* Fix - Search template uses the correct loop
+* Tweak - Removed id arg from highwind_content_nav()
+* Tweak - Several small style tweaks
+* Tweak - Sanitize Customizer settings
+
+## 02.04.2014 - 1.2.4
+* Fix - Footer widgets have consistent headings.
+* WooCommerce Fix - Memory error on single product page.
+* Localization - Portuguese translation. Props Nuno Alves.
+* Several minor tweaks and improvements. Props Skara.
+
+## 29.01.2014 - 1.2.3
+* Tweak - Heading font weights.
+* Tweak - Header width is applied to navigation and footer too.
+* Fix - Removed duplicated fitvids.
+
+## 06.01.2014 - 1.2.2
+* Fix - By post author comment styles (links).
+* Fix - WooCommerce product image width.
+* Tweak - If the content / bg colors are different the header section will adjust in width to match the content section.
+* Tweak - Gutter widths.
+* Tweak - WooCommerce star ratings no longer cut off.
+* Tweak - WooCommerce pagination styles.
+* Tweak - Widened the max-width a little to improve readability further
+* Tweak - Font weight adjustment.
+* Tweak - Widget headings are now h2s.
+* Tweak - Removed all text-shadows.
+
+## 23.12.2013 - 1.2.1
+* Fix - Adjacent list margins.
+* Fix - Replies to author comments no longer inherit author styles.
+* Tweak - Typography on desktop orientation slightly larger with a smaller measure.
+
+## 12.12.2013 - 1.2.0
+* Persian translated kudos mmnaderi.
+* Added support for jetpack infinite scroll (Thanks BFTrick).
+* Added codekit-config.json (Thanks BFTrick).
+* Comment by post author style.
+* Tweaked comment form display and layout on handheld devices.
+* Removed sidebar background.
+* Tweaked caption spacing.
+
 ## 11.10.2013 - 1.1.1
 * Renamed setup_styles() to highwind_woocommerce_setup_styles().
 * Renamed woocommerce_prep() to highwind_woocommerce_prep().

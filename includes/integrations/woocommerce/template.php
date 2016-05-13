@@ -34,7 +34,7 @@ function highwind_woocommerce_content_wrapper_end() {
  * Display upsells in 3 columns
  * @since 1.1.0
  */
-function woocommerce_upsell_display() {
+function highwind_woocommerce_upsell_display() {
     woocommerce_upsell_display( -1, 3 );
 }
 

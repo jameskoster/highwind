@@ -124,6 +124,9 @@ if ( ! function_exists( 'highwind_post_meta' ) ) {
 				<li class="categories"><?php the_category( ', ' ); ?></li>
 				<li class="comment"><?php comments_popup_link( __( '0 Comments', 'highwind' ), __( '1 Comment', 'highwind' ), __( '% Comments', 'highwind' ) ); ?></li>
 				<?php the_tags( '<li class="tags">', ', ','</li>' ); ?>
+				<?php if ( apply_filters( 'highwind_meta_author', true ) ) { ?>
+					<li class="author"><?php if ( apply_filters( 'highwind_meta_author_link', true ) ) { the_author_posts_link(); } else { the_author(); } ?></li>
+				<?php } // endif ?>
 			</ul>
 		</aside><!-- /.post-meta -->
 		<?php
@@ -171,7 +174,7 @@ if ( ! function_exists( 'highwind_comment_navigation' ) ) {
  * @since 1.0
  */
 if ( ! function_exists( 'highwind_content_nav' ) ) {
-	function highwind_content_nav( $nav_id ) {
+	function highwind_content_nav() {
 		global $wp_query, $post;
 
 		// Don't print empty markup on single pages if there's nowhere to navigate.
@@ -190,7 +193,7 @@ if ( ! function_exists( 'highwind_content_nav' ) ) {
 		$nav_class = ( is_single() ) ? 'navigation-post' : 'navigation-paging';
 
 		?>
-		<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
+		<nav role="navigation" class="<?php echo $nav_class; ?>">
 			<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'highwind' ); ?></h1>
 
 		<?php if ( is_single() ) : // navigation links for single posts ?>
@@ -210,7 +213,7 @@ if ( ! function_exists( 'highwind_content_nav' ) ) {
 
 		<?php endif; ?>
 
-		</nav><!-- #<?php echo esc_html( $nav_id ); ?> -->
+		</nav>
 		<?php
 	}
 }

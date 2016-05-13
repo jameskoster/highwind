@@ -24,6 +24,9 @@ class HighwindOptions {
         /**
          * Theme Option Defaults
          */
+
+        $wp_customize->get_setting( 'background_color' )->default = '#f8f8f9';
+
         // Layout Default
         $wp_customize->add_setting( 'highwind_theme_options[theme_layout]', array(
             'type'              => 'option',
@@ -33,27 +36,26 @@ class HighwindOptions {
 
         // Link Color Default
         $wp_customize->add_setting( 'link_textcolor', array(
-                'default'       => apply_filters( 'highwind_link_textcolor_default', $color = '53a1b8' )
+                'default'           => apply_filters( 'highwind_link_textcolor_default', $color = '#53a1b8' ),
+                'sanitize_callback' => 'sanitize_hex_color',
         ) );
 
         // Heading Color Default
         $wp_customize->add_setting( 'headercolor', array(
-                'default'       => apply_filters( 'highwind_headercolor_default', $color = '444854' )
+                'default'           => apply_filters( 'highwind_headercolor_default', $color = '#444854' ),
+                'sanitize_callback' => 'sanitize_hex_color',
         ) );
 
         // Text Color Default
         $wp_customize->add_setting( 'textcolor', array(
-                'default'       => apply_filters( 'highwind_textcolor_default', $color = '666A76' )
-        ) );
-
-        // Background Color Default
-        $wp_customize->add_setting( 'background_color', array(
-                'default'       => apply_filters( 'highwind_background_color_default', $color = 'f8f8f9' )
+                'default'           => apply_filters( 'highwind_textcolor_default', $color = '#666A76' ),
+                'sanitize_callback' => 'sanitize_hex_color',
         ) );
 
         // Background Color Default
         $wp_customize->add_setting( 'content_background_color', array(
-                'default'       => apply_filters( 'highwind_content_background_color_default', $color = 'f8f8f9' )
+                'default'           => apply_filters( 'highwind_content_background_color_default', $color = '#f8f8f9' ),
+                'sanitize_callback' => 'sanitize_hex_color',
         ) );
 
 
@@ -144,10 +146,13 @@ class HighwindOptions {
                     self::generate_css( apply_filters( 'highwind_link_color_color_selectors', $selectors = 'a' ), 'color', 'link_textcolor' );
 
                     // Link color applied to background
-                    self::generate_css( apply_filters( 'highwind_link_color_background_selectors', $selectors = 'input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, .header' ), 'background-color', 'link_textcolor' );
+                    self::generate_css( apply_filters( 'highwind_link_color_background_selectors', $selectors = 'input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, .header, .comments .bypostauthor > .comment-body .comment-content' ), 'background-color', 'link_textcolor' );
 
                     // Text color applied to color
                     self::generate_css( apply_filters( 'highwind_text_color_color_selectors', $selectors = 'body, input[type="text"], input[type="password"], input[type="email"], input[type="search"], input.input-text, textarea' ), 'color', 'textcolor' );
+
+                    // Link color applied to border-color
+                    self::generate_css( apply_filters( 'highwind_link_color_border_color_selectors', $selectors = '.comments .bypostauthor > .comment-body .comment-content:after' ), 'border-bottom-color', 'link_textcolor' );
 
                     // Text color applied to background
                     self::generate_css( apply_filters( 'highwind_text_color_background_selectors', $selectors = 'hr, input[type="checkbox"], input[type="radio"]' ), 'background', 'textcolor' );
@@ -159,7 +164,7 @@ class HighwindOptions {
                     self::generate_css( apply_filters( 'highwind_header_color_color_selectors', $selectors = 'h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta, .page-title, .post-title' ), 'color', 'headercolor' );
 
                     // Content Background color applied to color
-                    self::generate_css( apply_filters( 'highwind_background_color_color_selectors', $selectors = 'input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, input[type="checkbox"]:before, input[type="checkbox"]:checked:before' ), 'color', 'content_background_color' );
+                    self::generate_css( apply_filters( 'highwind_background_color_color_selectors', $selectors = 'input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, input[type="checkbox"]:before, input[type="checkbox"]:checked:before, .comments .bypostauthor > .comment-body .comment-content, .comments .bypostauthor > .comment-body .comment-content a' ), 'color', 'content_background_color' );
 
                     // Content Background color applied to border-color
                     self::generate_css( apply_filters( 'highwind_background_color_border_color_selectors', $selectors = '.comments .comment-content:after' ), 'border-bottom-color', 'content_background_color' );
@@ -182,8 +187,8 @@ class HighwindOptions {
                         // Link color applied to border-bottom-color
                         self::generate_css( apply_filters( 'highwind_desktop_link_color_border_color_selectors',  $selectors = '.main-nav ul.menu li.current-menu-item > a:before' ), 'border-bottom-color', 'link_textcolor' );
 
-                        // Background color applied to color
-                        self::generate_css( apply_filters( 'highwind_desktop_background_color_color_selectors', $selectors = '.main-nav ul.menu ul a, .main-nav ul.menu > li:hover > a' ), 'color', 'background_color', '#' );
+                        // Content Background color applied to color
+                        self::generate_css( apply_filters( 'highwind_desktop_background_color_color_selectors', $selectors = '.main-nav ul.menu ul a, .main-nav ul.menu > li:hover > a' ), 'color', 'content_background_color', '#' );
 
                         // Background color applied to background
                         self::generate_css( apply_filters( 'highwind_desktop_background_color_background_selectors', $selectors = 'body' ), 'background-color', 'background_color', '#' );
@@ -237,7 +242,7 @@ class HighwindOptions {
  */
 function highwind_custom_background() {
     $args = array(
-        'default-color' => apply_filters( 'highwind_background_color_default', $color = 'f8f8f9' )
+        'default-color' => apply_filters( 'highwind_background_color_default', $color = '#f8f8f9' )
     );
     add_theme_support( 'custom-background', $args );
 }
@@ -297,8 +302,10 @@ function highwind_layouts() {
  * @since 1.0
  */
 function highwind_layout_classes( $existing_classes ) {
-    $options = highwind_get_theme_options();
-    $current_layout = $options['theme_layout'];
+    $options                    = highwind_get_theme_options();
+    $current_layout             = $options['theme_layout'];
+    $background_color           = str_replace( '#', '', get_theme_mod( 'background_color' ) );
+    $content_background_color   = str_replace( '#', '', get_theme_mod( 'content_background_color' ) );
 
     if ( in_array( $current_layout, array( 'content-sidebar', 'sidebar-content' ) ) )
         $classes = array( 'two-column' );
@@ -312,7 +319,26 @@ function highwind_layout_classes( $existing_classes ) {
     else
         $classes[] = $current_layout;
 
+    if ( $background_color == $content_background_color ) {
+        $classes[] = 'no-background-contrast';
+    } else {
+        $classes[] = 'background-contrast';
+    }
+
     $classes = apply_filters( 'highwind_layout_classes', $classes, $current_layout );
 
     return array_merge( $existing_classes, $classes );
+}
+
+/**
+ * Sanitize Checkboxes
+ *
+ * @since  1.2.5
+ */
+function highwind_sanitize_checkbox( $input ) {
+    if ( $input == 1 ) {
+        return 1;
+    } else {
+        return '';
+    }
 }

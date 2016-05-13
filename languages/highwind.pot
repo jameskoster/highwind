@@ -1,0 +1,280 @@
+# Copyright (C) 2014 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/highwind\n"
+"POT-Creation-Date: 2014-12-27 12:35:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:24
+msgid "404 not found"
+msgstr ""
+
+#: 404.php:34
+msgid "It seems the page you're looking for no longer (or indeed never did) exists at this location. Please try searching..."
+msgstr ""
+
+#: 404.php:40
+msgid "Try looking in the monthly archives."
+msgstr ""
+
+#: archive.php:25
+msgid "Category Archives: %s"
+msgstr ""
+
+#: archive.php:28
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: archive.php:35
+msgid "Author Archives: %s"
+msgstr ""
+
+#: archive.php:43
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:46
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:49
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:52
+msgid "Archives"
+msgstr ""
+
+#: archive.php:90 index.php:34 search.php:38
+msgid "Nothing Found"
+msgstr ""
+
+#: archive.php:100 index.php:44 search.php:44
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr ""
+
+#: comments.php:17
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:30
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:45
+msgid "Comments are closed."
+msgstr ""
+
+#: content-page.php:29
+msgid "Pages:"
+msgstr ""
+
+#: content.php:18 framework/highwind-template.php:147 image.php:27
+msgid "Permalink to %s"
+msgstr ""
+
+#: content.php:31
+msgid "Continue Reading..."
+msgstr ""
+
+#: framework/highwind-functions.php:21
+msgid "Main menu"
+msgstr ""
+
+#: framework/highwind-functions.php:75
+msgid "Sidebar"
+msgstr ""
+
+#: framework/highwind-functions.php:85
+msgid "Footer #1"
+msgstr ""
+
+#: framework/highwind-functions.php:93
+msgid "Footer #2"
+msgstr ""
+
+#: framework/highwind-functions.php:101
+msgid "Footer #3"
+msgstr ""
+
+#: framework/highwind-functions.php:184
+msgid "Page %s"
+msgstr ""
+
+#: framework/highwind-options.php:68
+msgid "Navigation"
+msgstr ""
+
+#: framework/highwind-options.php:75
+msgid "Layout"
+msgstr ""
+
+#: framework/highwind-options.php:86
+msgid "Link Color"
+msgstr ""
+
+#: framework/highwind-options.php:93
+msgid "Header Color"
+msgstr ""
+
+#: framework/highwind-options.php:100
+msgid "Text Color"
+msgstr ""
+
+#: framework/highwind-options.php:107
+msgid "Background Color"
+msgstr ""
+
+#: framework/highwind-options.php:114
+msgid "Content Background Color"
+msgstr ""
+
+#: framework/highwind-options.php:287
+msgid "Content on left"
+msgstr ""
+
+#: framework/highwind-options.php:291
+msgid "Content on right"
+msgstr ""
+
+#: framework/highwind-template.php:20
+msgid "Skip to navigation"
+msgstr ""
+
+#: framework/highwind-template.php:69
+msgid "Home"
+msgstr ""
+
+#: framework/highwind-template.php:70
+msgid "Return to Content"
+msgstr ""
+
+#: framework/highwind-template.php:125
+msgid "0 Comments"
+msgstr ""
+
+#: framework/highwind-template.php:125
+msgid "1 Comment"
+msgstr ""
+
+#: framework/highwind-template.php:125
+msgid "% Comments"
+msgstr ""
+
+#: framework/highwind-template.php:162
+msgid "Comment navigation"
+msgstr ""
+
+#: framework/highwind-template.php:163
+msgid "Older Comments"
+msgstr ""
+
+#: framework/highwind-template.php:164
+msgid "Newer Comments"
+msgstr ""
+
+#: framework/highwind-template.php:197
+msgid "Post navigation"
+msgstr ""
+
+#: framework/highwind-template.php:207
+msgid "Older posts"
+msgstr ""
+
+#: framework/highwind-template.php:211
+msgid "Newer posts"
+msgstr ""
+
+#. translators: 1: date, 2: time
+
+#: framework/highwind-template.php:247
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: framework/highwind-template.php:247
+msgid "Edit"
+msgstr ""
+
+#: framework/highwind-template.php:250
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: framework/highwind-template.php:254
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: framework/highwind-template.php:342
+msgid "Powered by"
+msgstr ""
+
+#: framework/highwind-template.php:342
+msgid "Highwind - Customisable and extendable WordPress theme"
+msgstr ""
+
+#: framework/highwind-template.php:356
+msgid "Back to top"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:19
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:32
+msgid "Display Header Cart"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:46
+msgid "Display Header Product Search"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:60
+msgid "Archives Full Width?"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:74
+msgid "Product Details Full Width?"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:168
+#: includes/integrations/woocommerce/template.php:74
+msgid "View your cart"
+msgstr ""
+
+#: includes/integrations/woocommerce/functions.php:168
+#: includes/integrations/woocommerce/template.php:74
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: index.php:11
+msgid "You do not have sufficient permissions to access this page!"
+msgstr ""
+
+#: search.php:22
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:8
+msgctxt "assistive text"
+msgid "Search"
+msgstr ""
+
+#: searchform.php:9
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:10
+msgctxt "submit button"
+msgid "Search"
+msgstr ""

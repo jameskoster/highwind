@@ -4,8 +4,8 @@ Theme URI: http://jameskoster.co.uk/highwind/
 Description: Highwind is a lightweight, free WordPress theme designed to showcase content. It features a clean, responsive design with a strong focus on typography, plus a bunch of presentational options and widgetised regions allowing you to give your site a unique touch. <a href="https://github.com/jameskoster/highwind/wiki">View Documentation</a>.
 Author: jameskoster
 Author URI: http://jameskoster.co.uk
-Version: 1.1.1
-Tags: white, two-columns, left-sidebar, right-sidebar, flexible-width, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light
+Version: 1.2.7
+Tags: white, two-columns, left-sidebar, right-sidebar, sticky-post, threaded-comments, translation-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, light
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -243,6 +243,18 @@ Highwind is distributed under the terms of the GNU GPL
   content: "\f179";
   content: "\f016";
 }
+.icon_user:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f007";
+}
 @-webkit-keyframes buttonshadow {
   0% {
     -webkit-box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.1);
@@ -341,19 +353,14 @@ audio:not([controls]) {
 html {
   background: #fff;
   /* 1 */
-
   color: #000;
   /* 2 */
-
   font-family: sans-serif;
   /* 3 */
-
   -ms-text-size-adjust: 100%;
   /* 4 */
-
   -webkit-text-size-adjust: 100%;
   /* 4 */
-
 }
 /**
  * Remove default margin.
@@ -508,10 +515,8 @@ fieldset {
 legend {
   border: 0;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /**
  * 1. Correct font family not being inherited in all browsers.
@@ -524,13 +529,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-
   font-size: 100%;
   /* 2 */
-
   margin: 0;
   /* 3 */
-
 }
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -563,10 +565,8 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-
   cursor: pointer;
   /* 3 */
-
 }
 /**
  * Re-set default cursor for disabled elements.
@@ -583,10 +583,8 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -596,11 +594,9 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-
   box-sizing: content-box;
 }
 /**
@@ -626,10 +622,8 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   /* 1 */
-
   vertical-align: top;
   /* 2 */
-
 }
 /* ==========================================================================
    Tables
@@ -654,14 +648,13 @@ table {
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('framework/typefaces/fontawesome-webfont.eot?v=3.0.1');
-  src: url('framework/typefaces/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'), url('framework/typefaces/fontawesome-webfont.woff?v=3.0.1') format('woff'), url('framework/typefaces/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+  src: url('framework/typefaces/fontawesome-webfont.eot?v=4.0.3');
+  src: url('framework/typefaces/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('framework/typefaces/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('framework/typefaces/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('framework/typefaces/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 html {
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
 }
 body {
@@ -692,26 +685,20 @@ body:after {
   overflow: hidden;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
 }
 .inner-wrap {
   position: relative;
   width: 100%;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   left: 0;
 }
 /**
@@ -728,13 +715,6 @@ img,
 form label {
   display: block;
 }
-form .comment-form-author,
-form .comment-form-email,
-form .comment-form-url {
-  width: 30.75%;
-  float: left;
-  margin-right: 3.8%;
-}
 form .comment-form-author label,
 form .comment-form-email label,
 form .comment-form-url label {
@@ -746,21 +726,15 @@ form .comment-form-email input,
 form .comment-form-url input {
   clear: left;
 }
-form .comment-form-url {
-  float: right;
-  margin-right: 0;
-}
 form ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.35);
 }
 form :-moz-placeholder {
   /* Firefox 18- */
-
   color: rgba(0, 0, 0, 0.35);
 }
 form ::-moz-placeholder {
   /* Firefox 19+ */
-
   color: rgba(0, 0, 0, 0.35);
 }
 form :-ms-input-placeholder {
@@ -789,13 +763,10 @@ textarea {
   width: 100%;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   outline: none;
 }
 input[type="submit"],
@@ -1003,19 +974,15 @@ img.alignleft {
   float: left;
 }
 img.wp-post-image {
-  width: 100%;
-  max-width: none;
+  max-width: 100%;
 }
 .post img {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
 }
 .post img.wp-smiley {
   padding: 0;
@@ -1032,13 +999,10 @@ img.wp-post-image {
   margin: 0;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
 }
 /**
  * Gallery
@@ -1067,12 +1031,12 @@ img.wp-post-image {
 p.nocomments {
   display: inline;
   float: left;
-  width: 92.0014339906638%;
-  margin-left: 3.999283004668097%;
-  margin-right: 3.999283004668097%;
-  *width: 91.94935065733047%;
-  *margin-left: 3.9471996713347637%;
-  *margin-right: 3.9471996713347637%;
+  width: 90.78391716%;
+  margin-left: 4.60804142%;
+  margin-right: 4.60804142%;
+  *width: 90.73183383%;
+  *margin-left: 4.55595809%;
+  *margin-right: 4.55595809%;
 }
 p.nocomments:before {
   font-family: "FontAwesome";
@@ -1092,12 +1056,12 @@ p.nocomments:before {
   clear: both;
   display: inline;
   float: left;
-  width: 92.0014339906638%;
-  margin-left: 3.999283004668097%;
-  margin-right: 3.999283004668097%;
-  *width: 91.94935065733047%;
-  *margin-left: 3.9471996713347637%;
-  *margin-right: 3.9471996713347637%;
+  width: 90.78391716%;
+  margin-left: 4.60804142%;
+  margin-right: 4.60804142%;
+  *width: 90.73183383%;
+  *margin-left: 4.55595809%;
+  *margin-right: 4.55595809%;
 }
 #comment-nav-above:before,
 #comment-nav-below:before,
@@ -1151,12 +1115,12 @@ p.nocomments:before {
   margin-bottom: 0;
   margin-left: 0;
   display: block;
-  width: 107.9985660093362%;
-  margin-left: -3.999283004668097%;
-  margin-right: -3.999283004668097%;
-  *width: 107.94648267600287%;
-  *margin-left: -4.05136633800143%;
-  *margin-right: -4.05136633800143%;
+  width: 109.21608284%;
+  margin-left: -4.60804142%;
+  margin-right: -4.60804142%;
+  *width: 109.1639995%;
+  *margin-left: -4.66012475%;
+  *margin-right: -4.66012475%;
   *zoom: 1;
 }
 .comments ul.children:before,
@@ -1170,22 +1134,22 @@ p.nocomments:before {
 .comments ul.children > li {
   display: inline;
   float: left;
-  width: 79.5014339906638%;
-  margin-left: 3.999283004668097%;
-  margin-right: 3.999283004668097%;
-  *width: 79.44935065733047%;
-  *margin-left: 3.9471996713347637%;
-  *margin-right: 3.9471996713347637%;
+  width: 78.28391716%;
+  margin-left: 4.60804142%;
+  margin-right: 4.60804142%;
+  *width: 78.23183383%;
+  *margin-left: 4.55595809%;
+  *margin-right: 4.55595809%;
   float: right;
 }
 .comments ul.children ul.children {
   display: block;
-  width: 109.14121829638421%;
-  margin-left: -4.570609148192111%;
-  margin-right: -4.570609148192111%;
-  *width: 109.08913496305088%;
-  *margin-left: -4.622692481525444%;
-  *margin-right: -4.622692481525444%;
+  width: 110.5326661%;
+  margin-left: -5.26633305%;
+  margin-right: -5.26633305%;
+  *width: 110.48058277%;
+  *margin-left: -5.31841638%;
+  *margin-right: -5.31841638%;
   *zoom: 1;
 }
 .comments ul.children ul.children:before,
@@ -1199,22 +1163,22 @@ p.nocomments:before {
 .comments ul.children ul.children > li {
   display: inline;
   float: left;
-  width: 76.57306741790148%;
-  margin-left: 4.570609148192111%;
-  margin-right: 4.570609148192111%;
-  *width: 76.52098408456816%;
-  *margin-left: 4.518525814858778%;
-  *margin-right: 4.518525814858778%;
+  width: 75.18161961%;
+  margin-left: 5.26633305%;
+  margin-right: 5.26633305%;
+  *width: 75.12953628%;
+  *margin-left: 5.21424972%;
+  *margin-right: 5.21424972%;
   float: right;
 }
 .comments ul.children ul.children ul.children {
   display: block;
-  width: 110.66475467911492%;
-  margin-left: -5.332377339557463%;
-  margin-right: -5.332377339557463%;
-  *width: 110.61267134578159%;
-  *margin-left: -5.384460672890796%;
-  *margin-right: -5.384460672890796%;
+  width: 112.28811045%;
+  margin-left: -6.14405522%;
+  margin-right: -6.14405522%;
+  *width: 112.23602712%;
+  *margin-left: -6.19613856%;
+  *margin-right: -6.19613856%;
   *zoom: 1;
 }
 .comments ul.children ul.children ul.children:before,
@@ -1228,22 +1192,22 @@ p.nocomments:before {
 .comments ul.children ul.children ul.children > li {
   display: inline;
   float: left;
-  width: 72.66857865421841%;
-  margin-left: 5.332377339557463%;
-  margin-right: 5.332377339557463%;
-  *width: 72.61649532088508%;
-  *margin-left: 5.28029400622413%;
-  *margin-right: 5.28029400622413%;
+  width: 71.04522288%;
+  margin-left: 6.14405522%;
+  margin-right: 6.14405522%;
+  *width: 70.99313955%;
+  *margin-left: 6.09197189%;
+  *margin-right: 6.09197189%;
   float: right;
 }
 .comments ul.children ul.children ul.children ul.children {
   display: block;
-  width: 112.79770561493791%;
-  margin-left: -6.398852807468956%;
-  margin-right: -6.398852807468956%;
-  *width: 112.74562228160458%;
-  *margin-left: -6.450936140802289%;
-  *margin-right: -6.450936140802289%;
+  width: 114.74573254%;
+  margin-left: -7.37286627%;
+  margin-right: -7.37286627%;
+  *width: 114.69364921%;
+  *margin-left: -7.4249496%;
+  *margin-right: -7.4249496%;
   *zoom: 1;
 }
 .comments ul.children ul.children ul.children ul.children:before,
@@ -1257,12 +1221,12 @@ p.nocomments:before {
 .comments ul.children ul.children ul.children ul.children > li {
   display: inline;
   float: left;
-  width: 67.20229438506209%;
-  margin-left: 6.398852807468956%;
-  margin-right: 6.398852807468956%;
-  *width: 67.15021105172876%;
-  *margin-left: 6.346769474135623%;
-  *margin-right: 6.346769474135623%;
+  width: 65.25426746%;
+  margin-left: 7.37286627%;
+  margin-right: 7.37286627%;
+  *width: 65.20218413%;
+  *margin-left: 7.32078294%;
+  *margin-right: 7.32078294%;
   float: right;
 }
 .comments .comment-author {
@@ -1287,7 +1251,7 @@ p.nocomments:before {
 }
 .comments .comment-author cite {
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 1rem;
   color: #444854;
@@ -1295,6 +1259,7 @@ p.nocomments:before {
   position: relative;
   text-align: left;
   font-size: 1.333em;
+  font-weight: 600;
   color: inherit;
 }
 .comments .comment-author cite small {
@@ -1462,7 +1427,12 @@ form.searchform:before {
 }
 .post-meta li {
   display: inline;
-  margin-right: 1.5em;
+  margin-right: 1em;
+  padding-right: 1em;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.post-meta li:last-child {
+  border-right: 0;
 }
 .post-meta li.comment:before {
   font-family: "FontAwesome";
@@ -1511,6 +1481,18 @@ form.searchform:before {
   line-height: 1;
   content: "\f179";
   content: "\f02b";
+}
+.post-meta li.author:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f007";
 }
 .navigation-paging,
 .navigation-post,
@@ -1647,8 +1629,8 @@ form.searchform:before {
     -webkit-text-size-adjust: none;
   }
   /**
-  	 * Wrappers
-  	 */
+	 * Wrappers
+	 */
   .inner-wrap {
     left: 0 !important;
     -webkit-transform: none !important;
@@ -1656,7 +1638,7 @@ form.searchform:before {
     -ms-transform: none !important;
     -o-transform: none !important;
     transform: none !important;
-    max-width: 74.55em;
+    max-width: 69.75em;
     margin: 1.777em auto;
     *zoom: 1;
   }
@@ -1680,17 +1662,17 @@ form.searchform:before {
     clear: both;
   }
   /**
-  	 * Layout
-  	 */
+	 * Layout
+	 */
   .content {
     display: inline;
     float: left;
-    width: 61.334289327109204%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 61.28220599377587%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 60.52261144%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 60.47052811%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
     float: right;
   }
   .inner-wrap {
@@ -1700,21 +1682,21 @@ form.searchform:before {
   .sidebar {
     display: inline;
     float: left;
-    width: 28.00095599377587%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 27.94887266044254%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 27.18927811%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 27.13719478%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .footer-widgets {
     display: block;
-    width: 105.33237733955745%;
-    margin-left: -2.6661886697787316%;
-    margin-right: -2.6661886697787316%;
-    *width: 105.28029400622412%;
-    *margin-left: -2.718272003112065%;
-    *margin-right: -2.718272003112065%;
+    width: 106.14405522%;
+    margin-left: -3.07202761%;
+    margin-right: -3.07202761%;
+    *width: 106.09197189%;
+    *margin-left: -3.12411095%;
+    *margin-right: -3.12411095%;
     *zoom: 1;
   }
   .footer-widgets:before,
@@ -1728,60 +1710,60 @@ form.searchform:before {
   .footer-widgets.columns-1 .footer-sidebar {
     display: inline;
     float: left;
-    width: 94.66762266044255%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 94.61553932710922%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 93.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 93.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .footer-widgets.columns-2 .footer-sidebar {
     display: inline;
     float: left;
-    width: 44.66762266044253%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 44.6155393271092%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 43.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 43.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .footer-widgets.columns-3 .footer-sidebar {
     display: inline;
     float: left;
-    width: 28.00095599377587%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 27.94887266044254%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 27.18927811%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 27.13719478%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .page-template-templatestemplate-fullwidth-php .content,
   body.fullwidth .content {
     display: inline;
     float: left;
-    width: 94.66762266044255%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 94.61553932710922%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 93.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 93.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
     float: none;
   }
   /**
-  	 * Header
-  	 */
+	 * Header
+	 */
   .toggle-container {
     display: none !important;
   }
   .site-intro {
     display: inline;
     float: left;
-    width: 94.66762266044255%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 94.61553932710922%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 93.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 93.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   .main-nav {
     clear: none;
@@ -1803,19 +1785,16 @@ form.searchform:before {
     display: none;
   }
   .main-nav .highwind-navigation {
-    max-width: 74.55em;
+    max-width: 69.75em;
     padding: 0 3.157em;
     margin: 0 auto;
     *zoom: 1;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
-  
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
-  
     box-sizing: border-box;
     /* Opera/IE 8+ */
-  
   }
   .main-nav .highwind-navigation:before,
   .main-nav .highwind-navigation:after {
@@ -1828,16 +1807,16 @@ form.searchform:before {
   .main-nav ul.menu {
     display: inline;
     float: left;
-    width: 94.66762266044255%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 94.61553932710922%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 93.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 93.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   /**
-  	 * Navigation
-  	 */
+	 * Navigation
+	 */
   .main-nav {
     margin-bottom: 0;
   }
@@ -1846,7 +1825,6 @@ form.searchform:before {
     margin-bottom: 0;
     padding: 0;
     /* CHILDREN */
-  
   }
   .main-nav ul.menu li {
     position: relative;
@@ -1858,13 +1836,10 @@ form.searchform:before {
     display: inline-block;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
-  
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
-  
     box-sizing: border-box;
     /* Opera/IE 8+ */
-  
   }
   .main-nav ul.menu ul {
     position: absolute;
@@ -1909,15 +1884,26 @@ form.searchform:before {
     -webkit-transform: translateY(0);
   }
   /**
-  	 * Layout
-  	 */
+	 * Layout
+	 */
   .post .attachment-post-thumbnail,
   article.attachment .attachment-post-thumbnail {
     height: auto;
   }
+  form .comment-form-author,
+  form .comment-form-email,
+  form .comment-form-url {
+    width: 30.75%;
+    float: left;
+    margin-right: 3.8%;
+  }
+  form .comment-form-url {
+    float: right;
+    margin-right: 0;
+  }
   /**
-  	 * Posts
-  	 */
+	 * Posts
+	 */
   .post {
     *zoom: 1;
   }
@@ -1935,8 +1921,8 @@ form.searchform:before {
     float: none;
   }
   /**
-  	 * Pages
-  	 */
+	 * Pages
+	 */
   .page {
     *zoom: 1;
   }
@@ -1949,14 +1935,14 @@ form.searchform:before {
     clear: both;
   }
   /**
-  	 * Comments
-  	 */
+	 * Comments
+	 */
   .comments ol.commentlist {
     margin-bottom: 0;
   }
   /**
-  	 * Footer
-  	 */
+	 * Footer
+	 */
   .footer {
     clear: both;
     float: none;
@@ -1965,23 +1951,23 @@ form.searchform:before {
   .footer .footer-content {
     display: inline;
     float: left;
-    width: 94.66762266044255%;
-    margin-left: 2.6661886697787316%;
-    margin-right: 2.6661886697787316%;
-    *width: 94.61553932710922%;
-    *margin-left: 2.614105336445398%;
-    *margin-right: 2.614105336445398%;
+    width: 93.85594478%;
+    margin-left: 3.07202761%;
+    margin-right: 3.07202761%;
+    *width: 93.80386144%;
+    *margin-left: 3.01994428%;
+    *margin-right: 3.01994428%;
   }
   /**
-  	 * Styles applied when admin bar is present
-  	 */
+	 * Styles applied when admin bar is present
+	 */
   .admin-bar .main-nav {
     top: 28px;
   }
   /**
-  	 * Layout options
-  	 * sidebar-content is default, these styles override floats / margins etc for content-sidebar
-  	 */
+	 * Layout options
+	 * sidebar-content is default, these styles override floats / margins etc for content-sidebar
+	 */
   body.content-sidebar .sidebar {
     float: right;
   }
@@ -2006,7 +1992,7 @@ body {
  * Wrappers
  */
 .inner-wrap {
-  padding: 0 1.777em;
+  padding: 0 1.125em;
   background-color: #f8f8f9;
 }
 /**
@@ -2025,7 +2011,7 @@ h6,
 .beta,
 .gamma,
 .delta {
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 1rem;
   color: #444854;
@@ -2086,7 +2072,6 @@ h1,
 h1.archive-header,
 .site-title.archive-header,
 .alpha.archive-header {
-  font-weight: 300;
   font-size: 1.125em;
 }
 h2,
@@ -2096,14 +2081,17 @@ h2,
 h3,
 .gamma {
   font-size: 1.333em;
+  font-weight: 600;
 }
 h4,
 .delta {
   font-size: 1.125em;
+  font-weight: 600;
 }
 h5,
 h6 {
   font-size: 1em;
+  font-weight: 700;
 }
 p + h1,
 p + h2,
@@ -2125,10 +2113,6 @@ nav,
 form,
 .wp-post-image {
   margin: 0 0 1.777em 0;
-}
-ul,
-ol {
-  padding-left: 0;
 }
 ul ul,
 ol ul,
@@ -2180,6 +2164,7 @@ blockquote {
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
   opacity: 0.8;
+  padding-left: 1.777em;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -2205,9 +2190,6 @@ blockquote:before {
   font-family: "FontAwesome";
   line-height: 1;
 }
-blockquote + blockquote p:first-child {
-  padding-top: 1.777em;
-}
 code,
 pre {
   background: rgba(0, 0, 0, 0.05);
@@ -2217,7 +2199,6 @@ pre {
   color: #dc5494;
   margin: 0 .201em;
   padding: 0 .201em;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-weight: 600;
 }
@@ -2232,6 +2213,10 @@ pre code {
 span.ampersand {
   font-family: Baskerville, Palatino, "Book Antiqua", serif;
   font-style: italic;
+}
+ul,
+ol {
+  padding: 0;
 }
 /**
  * Anchors
@@ -2261,13 +2246,10 @@ textarea {
   outline: none;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
 }
 textarea {
   padding: 1em;
@@ -2275,15 +2257,11 @@ textarea {
 input[type="radio"] {
   -webkit-appearance: none;
   /* Hides the default radio style */
-
   height: 1.5em;
   width: 1.5em;
   /* Safari/Chrome, other WebKit */
-
   /* Firefox, other Gecko */
-
   /* Opera/IE 8+ */
-
   font-size: .844em;
   border: 0.422em solid #666a76;
   background: #666a76;
@@ -2293,13 +2271,10 @@ input[type="radio"] {
   border-radius: 100%;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   margin-right: 1em;
   float: left;
   -webkit-transition: all ease 0.238s;
@@ -2313,7 +2288,6 @@ input[type="radio"]:checked {
 input[type="checkbox"] {
   -webkit-appearance: none;
   /* Hides the default checkbox style */
-
   height: 1.5em;
   width: 1.5em;
   cursor: pointer;
@@ -2425,9 +2399,9 @@ img.wp-smiley {
  * Header
  */
 .header {
-  padding: 1.777em 1.777em 2.665em 1.777em;
-  margin-left: -1.777em;
-  margin-right: -1.777em;
+  padding: 1.777em 1.125em 2.665em 1.125em;
+  margin-left: -1.125em;
+  margin-right: -1.125em;
   margin-bottom: 4.209em;
   background-color: #53a1b8;
   background-position: center center;
@@ -2459,13 +2433,13 @@ img.wp-smiley {
 .site-title,
 .site-description {
   color: #fff;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 }
 .site-title a,
 .site-description a {
   color: #fff;
 }
 .site-title {
+  font-weight: 400;
   margin: 0;
   margin-bottom: 1rem;
   color: #444854;
@@ -2476,7 +2450,6 @@ img.wp-smiley {
   letter-spacing: -1px;
   font-weight: 300;
   color: #fff;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   margin-bottom: 0;
 }
 .site-title small {
@@ -2510,19 +2483,22 @@ ul.menu {
   background: #f8f8f9;
 }
 .main-nav .buttons {
-  padding: 1.777em;
+  padding: 1.777em 1.125em;
 }
 .main-nav .menu {
-  padding: 0 1.777em;
+  padding: 0 1.125em;
 }
 .main-nav h2 {
-  padding: 0 1.777em;
+  padding: 0 1.125em;
 }
 .navigation-paging,
 .navigation-post,
 .navigation-comments {
   margin-top: 1em;
   margin-bottom: 2.665em;
+}
+.infinite-scroll .navigation-paging {
+  display: none;
 }
 /**
  * Posts
@@ -2551,21 +2527,40 @@ article.page {
   font-size: .844em;
   line-height: 1.33em;
 }
+.wp-caption img {
+  margin-bottom: 1em;
+}
 img.alignleft {
   margin: 1.777em 1.777em 1.777em 0;
 }
 img.wp-post-image {
   margin-bottom: 1.777em;
 }
+.gallery img {
+  margin-left: auto;
+  margin-right: auto;
+}
 /**
  * Comments
  */
-.comments .bypostauthor .comment-content {
-  -webkit-box-shadow: 0 0 0 0.134em rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 0 0.134em rgba(0, 0, 0, 0.1);
+.comments .bypostauthor > .comment-body .comment-content {
+  background: #53a1b8;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
 }
-.comments .bypostauthor .comment-content:before {
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+.comments .bypostauthor > .comment-body .comment-content:after {
+  border-color: transparent transparent #53a1b8 transparent;
+}
+.comments .bypostauthor > .comment-body .comment-content:before {
+  display: none;
+}
+.comments .bypostauthor > .comment-body .comment-content a {
+  color: #f8f8f9;
+  text-decoration: underline;
+}
+.comments .bypostauthor > .comment-body .comment-content a:hover {
+  text-decoration: none;
 }
 .comments .comment-content {
   padding: 1em;
@@ -2578,6 +2573,10 @@ img.wp-post-image {
 }
 .comments .comment-content p:last-child {
   margin-bottom: 0;
+}
+.comments .comment-content > ul,
+.comments .comment-content > ol {
+  margin-bottom: 1.777em;
 }
 .comments .comment-content:before,
 .comments .comment-content:after {
@@ -2706,19 +2705,20 @@ img.wp-post-image {
   /* Only apply the layout if the user is on a desktop / tablet */
   body {
     padding: 0;
+    font-size: 1.125em;
   }
   .inner-wrap {
     padding: 0 3.157em;
   }
   /**
-  	 * Layout
-  	 */
+	 * Layout
+	 */
   .content {
     padding-bottom: 4.209em;
   }
   /**
-  	 * Header
-  	 */
+	 * Header
+	 */
   .header {
     padding-top: 7.478em;
     padding-left: 999em;
@@ -2727,7 +2727,27 @@ img.wp-post-image {
     margin-right: -999em;
     background-color: #53a1b8;
   }
+  .background-contrast .header {
+    margin-left: -3.157em;
+    margin-right: -3.157em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .background-contrast .footer {
+    margin-left: -3.157em;
+    margin-right: -3.157em;
+    padding-left: 3.157em;
+    padding-right: 3.157em;
+  }
+  .background-contrast .main-nav {
+    max-width: 69.75em;
+    margin: 0 auto;
+  }
+  .csstransforms3d.csstransitions .background-contrast .main-nav {
+    left: auto;
+  }
   .site-title {
+    font-weight: 400;
     margin: 0;
     margin-bottom: 1rem;
     color: #444854;
@@ -2768,15 +2788,20 @@ img.wp-post-image {
     text-align: center;
   }
   /**
-  	 * Navigation
-  	 */
+	 * Navigation
+	 */
   .main-nav {
     border-right: 0;
     border-bottom: 0.422em solid #53a1b8;
   }
+  .main-nav .sub-menu {
+    display: none;
+  }
+  .main-nav li.menu-item-has-children:hover > .sub-menu {
+    display: block;
+  }
   .main-nav ul.menu {
     /* CHILDREN */
-  
   }
   .main-nav ul.menu > li:hover > a,
   .main-nav ul.menu > li > a:hover {
@@ -2850,28 +2875,21 @@ img.wp-post-image {
     color: #fff;
   }
   /**
-  	 * Sidebar
-  	 */
+	 * Sidebar
+	 */
   .sidebar {
-    background: rgba(0, 0, 0, 0.02);
-    padding: 4.209rem 0 1.999rem 3.157rem;
+    padding: 4.209rem 0 0 0;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
-  
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
-  
     box-sizing: border-box;
     /* Opera/IE 8+ */
-  
     font-size: .844em;
     margin-top: -4.209rem;
-    -webkit-box-shadow: 14.5em 0 0 rgba(0, 0, 0, 0.025), 38em 0 0 rgba(0, 0, 0, 0.025), 61.5em 0 0 rgba(0, 0, 0, 0.025);
-    box-shadow: 15.45em 0 0 rgba(0, 0, 0, 0.025), 38em 0 0 rgba(0, 0, 0, 0.025), 61.5em 0 0 rgba(0, 0, 0, 0.025);
     /**
-  		  * Sidebar Widgets
-  		  */
-  
+		  * Sidebar Widgets
+		  */
   }
   .sidebar .widget {
     filter: alpha(opacity=@opacity * 100);
@@ -2880,10 +2898,11 @@ img.wp-post-image {
     opacity: 0.8;
   }
   /**
-  	 * Posts
-  	 */
+	 * Posts
+	 */
   .page-title,
   .post-title {
+    font-weight: 400;
     margin: 0;
     margin-bottom: 1rem;
     color: #444854;
@@ -2905,21 +2924,13 @@ img.wp-post-image {
   .post-title a {
     text-decoration: none;
   }
-  /**
-  	 * Comments
-  	 */
-  .comments .comment-content {
-    padding: 1.999em;
+  blockquote {
+    padding-left: 0;
   }
   /**
-  	 * Footer
-  	 */
-  /**
-  	 * Sidebar-Content layout
-  	 */
-  body.sidebar-content .sidebar {
-    padding: 4.209rem 3.157rem 1.999rem 0;
-    -webkit-box-shadow: -14.5em 0 0 rgba(0, 0, 0, 0.025), -38em 0 0 rgba(0, 0, 0, 0.025), -61.5em 0 0 rgba(0, 0, 0, 0.025);
-    box-shadow: -14.5em 0 0 rgba(0, 0, 0, 0.025), -38em 0 0 rgba(0, 0, 0, 0.025), -61.5em 0 0 rgba(0, 0, 0, 0.025);
+	 * Comments
+	 */
+  .comments .comment-content {
+    padding: 1.999em;
   }
 }

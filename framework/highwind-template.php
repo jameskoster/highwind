@@ -339,7 +339,7 @@ function highwind_footer_widgets() {
 function highwind_credit() {
 	?>
 	<p>
-		<?php _e( 'Powered by', 'highwind' ); ?> <a href="http://wordpress.org" title="WordPress.org">WordPress</a> &amp; <a href="http://jameskoster.co.uk/highwind/" title="<?php _e( 'Highwind - Customisable and extendable WordPress theme', 'highwind' ); ?>">Highwind</a>.
+		<?php _e( 'Powered by', 'highwind' ); ?> <a href="http://wordpress.org" title="WordPress.org">WordPress</a> &amp; <a href="https://wordpress.org/themes/highwind/" title="<?php _e( 'Highwind - Customisable and extendable WordPress theme', 'highwind' ); ?>">Highwind</a>.
 	</p>
 	<?php
 }
